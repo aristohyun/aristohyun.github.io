@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T11:34:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;h1 id=&quot;heading-c-vector-예제&quot;&gt;C++ vector 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html">C++ vector 예제</summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;h1 id=&quot;heading-c-queue-예제&quot;&gt;C++ queue 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html">C++ queue 예제</summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T13:34:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;h1 id=&quot;heading-c-vector-예제&quot;&gt;C++ vector 예제&lt;/h1&gt;
+&lt;style&gt;
+    .small{
+      font-size:12px;
+    }
+    .normal{
+      font-size:12px;
+      margin-left:15px;
+    }
+  &lt;/style&gt;
+
+&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-c-vector-예제&quot; id=&quot;markdown-toc-heading-c-vector-예제&quot;&gt;C++ vector 예제&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-생성&quot; id=&quot;markdown-toc-heading-생성&quot;&gt;생성&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-멤버-함수&quot; id=&quot;markdown-toc-heading-멤버-함수&quot;&gt;멤버 함수&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-생성&quot;&gt;생성&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v&lt;/code&gt;   &lt;span class=&quot;normal&quot;&gt;  빈 컨테이너 생성&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; 기본값(0)으로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n,x)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; x로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v2(v1)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; v1을 복사한 v2  &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-멤버-함수&quot;&gt;멤버 함수&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.assign(n,x)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;v에 x의 값으로 n개만큼 할당&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.at(i)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v[i]&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;i번 원소 참조&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;속도 : at(i) &amp;lt; [i]&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;안정성 : at(i) &amp;gt; [i] &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;at()은 범위를 점검하기에 느리지만 안전함&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.back()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;첫번째, 마지막 원소값 리턴&lt;/span&gt; &lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.push_back(x)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.pop_back()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;원소삽입, 삭제&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.insert(i,x)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;i번째 위치에 x 삽입, 해당 iter 리턴&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v2.swap(v1)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;v2와 v1의 원소와 capacity까지 교환&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;v1의 capacity를 없애고 싶을때도 사용 가능&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(iter)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;iter이 가리키는 원소 제거&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(start, end)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; [start, end) 제거&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.size()&lt;/code&gt;   &lt;span class=&quot;normal&quot;&gt;원소의 갯수(int) 리턴&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.capacity()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;vector의 크기 리턴&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.clear()&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt;모든 원소 제거 , 메모리 공간은 그대로&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.empty()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; 비었는지 확인, true == empty&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; ::iterator iter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.end()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;첫번째 원소와 마지막다음 원소를 가르킴&lt;/span&gt;
+    &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rbegin()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rend()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html">C++ vector 예제 C++ vector 예제</summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;h1 id=&quot;heading-c-queue-예제&quot;&gt;C++ queue 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html">C++ queue 예제</summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
@@ -242,7 +339,7 @@ code with tildes
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-javascript&quot; id=&quot;markdown-toc-heading-javascript&quot;&gt;Javascript&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-vanilla&quot; id=&quot;markdown-toc-heading-vanilla&quot;&gt;vanilla&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-qquery&quot; id=&quot;markdown-toc-heading-qquery&quot;&gt;qquery&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-jquery&quot; id=&quot;markdown-toc-heading-jquery&quot;&gt;jquery&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-react&quot; id=&quot;markdown-toc-heading-react&quot;&gt;react&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-htmlcss-scss&quot; id=&quot;markdown-toc-heading-htmlcss-scss&quot;&gt;html+css (scss)&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -304,7 +401,7 @@ code with tildes
     &lt;h3 id=&quot;heading-vanilla&quot;&gt;vanilla&lt;/h3&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;heading-qquery&quot;&gt;qquery&lt;/h3&gt;
+    &lt;h3 id=&quot;heading-jquery&quot;&gt;jquery&lt;/h3&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;heading-react&quot;&gt;react&lt;/h3&gt;
