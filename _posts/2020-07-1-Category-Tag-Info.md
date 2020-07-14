@@ -29,7 +29,7 @@ redirect_from:
 # Javascript 
 
 * ### vanilla
-* ### qquery
+* ### jquery
 * ### react
 * ### html+css (scss)
 
