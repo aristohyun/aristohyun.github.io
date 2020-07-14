@@ -7,9 +7,6 @@ tags: [STL, vector]
 redirect_from:
   - /2020/07/14/
 ---
-
-
-# C++ vector 예제
   <style>
     .small{
       font-size:12px;
@@ -40,11 +37,11 @@ redirect_from:
 --------------
 
 * `v.assign(n,x)` <span class="normal">v에 x의 값으로 n개만큼 할당</span> 
+* `v.front()` `v.back()` <span class="normal">첫번째, 마지막 원소값 리턴</span> <br>
 * `v.at(i)` `v[i]` <span class="normal">i번 원소 참조</span> 
   - <span class="small">속도 : at(i) < [i]</span>
   - <span class="small">안정성 : at(i) > [i] </span>
   - <span class="small">at()은 범위를 점검하기에 느리지만 안전함</span>
-* `v.front()` `v.back()` <span class="normal">첫번째, 마지막 원소값 리턴</span> <br>
 
 ----------------
 
@@ -56,6 +53,7 @@ redirect_from:
 ---------------
 * `v.erase(iter)` <span class="normal">iter이 가리키는 원소 제거</span>
   - `v.erase(start, end)` <span class="normal"> [start, end) 제거</span>
+
 * `v.size()`   <span class="normal">원소의 갯수(int) 리턴</span>
 * `v.capacity()` <span class="normal">vector의 크기 리턴</span>
 
@@ -66,6 +64,7 @@ redirect_from:
 
 * `vector<int> ::iterator iter`
 * `v.begin()` `v.end()` <span class="normal">첫번째 원소와 마지막다음 원소를 가르킴</span> 
+* `v.rbegin()` `v.rend()`<span class="normal"> 역순으로 첫번째, 마지막다음 원소를 가르킴 </span>
    ~~~ c++
     vector<int> v;
     vector<int> ::iterator iter;
@@ -75,7 +74,5 @@ redirect_from:
 
 -----------------
 
-* `v.rbegin()`
-* `v.rend()`
-* `v.reserve()`
-* `v.resize()`
+* `v.reserve(n)` <span class="normal"> n개의 원소를 저장할 공간 예약, capacity 설정 </span>
+* `v.resize(n)` `v.resize(n,x)` <span class="normal"> v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 </span><br>
