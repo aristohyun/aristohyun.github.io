@@ -2,8 +2,8 @@
 layout: post
 title: "Kramdown 사용법"
 description: "A quick post to some kramdown features."
-categories: [github]
-tags: [kramdown]
+categories: [DevEnviroment]
+tags: [gitblog]
 redirect_from:
   - /2020/07/13/
 ---

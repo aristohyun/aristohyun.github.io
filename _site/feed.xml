@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T10:55:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>note</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">Kramdown 사용법</title><link href="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/" rel="alternate" type="text/html" title="Kramdown 사용법" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/quick-kramdown-demo</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T11:34:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;h1 id=&quot;heading-c-vector-예제&quot;&gt;C++ vector 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html">C++ vector 예제</summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;h1 id=&quot;heading-c-queue-예제&quot;&gt;C++ queue 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html">C++ queue 예제</summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-simple-highlight&quot; id=&quot;markdown-toc-heading-simple-highlight&quot;&gt;Simple Highlight&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-external-gist&quot; id=&quot;markdown-toc-heading-external-gist&quot;&gt;External Gist&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/h1&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~~~~~~
+code with tildes
+~~~~~~~~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/h1&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction() {
+    alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;heading-highlighted&quot;&gt;Highlighted&lt;/h1&gt;
+&lt;h2 id=&quot;heading-simple-highlight&quot;&gt;Simple Highlight&lt;/h2&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//~~~ c++&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//~~~&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;heading-external-gist&quot;&gt;External Gist&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="gitblog" /><summary type="html"></summary></entry><entry><title type="html">Kramdown 사용법</title><link href="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/" rel="alternate" type="text/html" title="Kramdown 사용법" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/quick-kramdown-demo</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/">&lt;blockquote&gt;
   &lt;p&gt;This is &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt; formatting test page for &lt;a href=&quot;https://github.com/yizeng/jekyll-theme-simple-texture&quot;&gt;Simple Texture&lt;/a&gt; theme.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -171,60 +227,122 @@
       &lt;p&gt;This is a footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html">This is kramdown formatting test page for Simple Texture theme.</summary></entry><entry><title type="html">알고리즘</title><link href="http://localhost:4000/blog/2020/07/13/algorithm/" rel="alternate" type="text/html" title="알고리즘" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/algorithm/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="algorithm" /><category term="leetcode" /><category term="book" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-simple-highlight&quot; id=&quot;markdown-toc-heading-simple-highlight&quot;&gt;Simple Highlight&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-external-gist&quot; id=&quot;markdown-toc-heading-external-gist&quot;&gt;External Gist&lt;/a&gt;&lt;/li&gt;
+&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="gitblog" /><summary type="html">This is kramdown formatting test page for Simple Texture theme.</summary></entry><entry><title type="html">카테고리-태그 맵</title><link href="http://localhost:4000/blog/2020/07/01/Category-Tag-Info/" rel="alternate" type="text/html" title="카테고리-태그 맵" /><published>2020-07-01T00:00:00+09:00</published><updated>2020-07-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/01/Category-Tag-Info</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/01/Category-Tag-Info/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-algorithm&quot; id=&quot;markdown-toc-heading-algorithm&quot;&gt;Algorithm&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-book_name--site_name&quot; id=&quot;markdown-toc-heading-book_name--site_name&quot;&gt;book_name / site_name&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-이론&quot; id=&quot;markdown-toc-heading-이론&quot;&gt;이론&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-문제예제&quot; id=&quot;markdown-toc-heading-문제예제&quot;&gt;문제(예제)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-주요-알고리즘&quot; id=&quot;markdown-toc-heading-주요-알고리즘&quot;&gt;주요 알고리즘&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-관련-stl&quot; id=&quot;markdown-toc-heading-관련-stl&quot;&gt;관련 STL&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-c&quot; id=&quot;markdown-toc-heading-c&quot;&gt;C++&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-stl&quot; id=&quot;markdown-toc-heading-stl&quot;&gt;STL&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-javascript&quot; id=&quot;markdown-toc-heading-javascript&quot;&gt;Javascript&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-vanilla&quot; id=&quot;markdown-toc-heading-vanilla&quot;&gt;vanilla&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-qquery&quot; id=&quot;markdown-toc-heading-qquery&quot;&gt;qquery&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-react&quot; id=&quot;markdown-toc-heading-react&quot;&gt;react&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-htmlcss-scss&quot; id=&quot;markdown-toc-heading-htmlcss-scss&quot;&gt;html+css (scss)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-python&quot; id=&quot;markdown-toc-heading-python&quot;&gt;Python&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-crawler&quot; id=&quot;markdown-toc-heading-crawler&quot;&gt;crawler&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-django&quot; id=&quot;markdown-toc-heading-django&quot;&gt;django&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-tensorflow&quot; id=&quot;markdown-toc-heading-tensorflow&quot;&gt;tensorflow&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-db&quot; id=&quot;markdown-toc-heading-db&quot;&gt;DB&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-mysql&quot; id=&quot;markdown-toc-heading-mysql&quot;&gt;mysql&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-devenviroment&quot; id=&quot;markdown-toc-heading-devenviroment&quot;&gt;DevEnviroment&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-git&quot; id=&quot;markdown-toc-heading-git&quot;&gt;git&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-gitblog&quot; id=&quot;markdown-toc-heading-gitblog&quot;&gt;gitblog&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;카테고리는 시작은 대문자&lt;br /&gt;
+태그는 모두 소문자&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~~~~~~
-code with tildes
-~~~~~~~~
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;heading-algorithm&quot;&gt;Algorithm&lt;/h1&gt;
 
-&lt;h1 id=&quot;heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-book_name--site_name&quot;&gt;book_name / site_name&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-이론&quot;&gt;이론&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-문제예제&quot;&gt;문제(예제)&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-주요-알고리즘&quot;&gt;주요 알고리즘&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-관련-stl&quot;&gt;관련 STL&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction() {
-    alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;heading-c&quot;&gt;C++&lt;/h1&gt;
 
-&lt;h1 id=&quot;heading-highlighted&quot;&gt;Highlighted&lt;/h1&gt;
-&lt;h2 id=&quot;heading-simple-highlight&quot;&gt;Simple Highlight&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-stl&quot;&gt;STL&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//~~~ c++&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;h1 id=&quot;heading-javascript&quot;&gt;Javascript&lt;/h1&gt;
 
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//~~~&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-vanilla&quot;&gt;vanilla&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-qquery&quot;&gt;qquery&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-react&quot;&gt;react&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-htmlcss-scss&quot;&gt;html+css (scss)&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;h1 id=&quot;heading-python&quot;&gt;Python&lt;/h1&gt;
 
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-crawler&quot;&gt;crawler&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-django&quot;&gt;django&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-tensorflow&quot;&gt;tensorflow&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;heading-external-gist&quot;&gt;External Gist&lt;/h2&gt;
+&lt;h1 id=&quot;heading-db&quot;&gt;DB&lt;/h1&gt;
 
-&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html"></summary></entry></feed>
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-mysql&quot;&gt;mysql&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;heading-devenviroment&quot;&gt;DevEnviroment&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-git&quot;&gt;git&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;heading-gitblog&quot;&gt;gitblog&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="gitblog" /><summary type="html"></summary></entry></feed>

@@ -2,8 +2,8 @@
 layout: post
 title: "코드 강조하기"
 description: "code highlighting features"
-categories: [github]
-tags: [kramdown]
+categories: [DevEnviroment]
+tags: [gitblog]
 redirect_from:
   - /2020/07/13/
 ---
