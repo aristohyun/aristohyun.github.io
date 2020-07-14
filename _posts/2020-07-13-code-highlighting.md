@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to write Code"
+title: "코드 강조"
 description: "code highlighting features"
 categories: [github]
 tags: [kramdown]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "algorithm"
+title: "알고리즘"
 description: "algorithm category test"
 categories: [algorithm]
 tags: [algorithm, leetcode, book]

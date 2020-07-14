@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quick kramdown"
+title: "Kramdown 사용법"
 description: "A quick post to some kramdown features."
 categories: [github]
 tags: [kramdown]
