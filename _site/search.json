@@ -1,0 +1,24 @@
+[
+  
+    {
+      "title"      : "Quick kramdown",
+      "url"        : "/blog/2020/07/13/quick-kramdown-demo/",
+      "date"       : "2020-07-13 00:00:00 +0900",
+      "shortdate"  : "July 13, 2020"
+    } ,
+  
+    {
+      "title"      : "How to write Code",
+      "url"        : "/blog/2020/07/13/code-highlighting/",
+      "date"       : "2020-07-13 00:00:00 +0900",
+      "shortdate"  : "July 13, 2020"
+    } ,
+  
+    {
+      "title"      : "algorithm",
+      "url"        : "/blog/2020/07/13/algorithm/",
+      "date"       : "2020-07-13 00:00:00 +0900",
+      "shortdate"  : "July 13, 2020"
+    } 
+  
+]
