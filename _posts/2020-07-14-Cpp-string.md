@@ -7,3 +7,5 @@ tags: [STL, string]
 redirect_from:
   - /2020/07/14/
 ---
+
+# C++ string 예제
