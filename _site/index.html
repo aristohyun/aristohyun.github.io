@@ -55,12 +55,12 @@
     
 
     <ul id="menu">
-        <li data-menuanchor="bio"><a href="#bio">Biography</a></li>
+        <li data-menuanchor="main"><a href="#main">Biography</a></li>
         <li data-menuanchor="social"><a href="#social">Social Links</a></li>
+        <li data-menuanchor="about"><a href="#about">Social Links</a></li>
     </ul>
 
-    <div id="section0" class="section" data-name="bio">
-
+    <div id="section0" class="section" data-name="main">
         <!--[if IE]>
     <p class="site-notice">You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -69,7 +69,7 @@
 </noscript>
 
 
-        <div class="headings animated fadeInLeft">
+        <div class="headings animated fadeInLeft pointer" onclick="location.href=/blog/">
             <h1>강녕</h1>
             
             
@@ -102,14 +102,31 @@
                 
             
         </div>
+        
     </div>
+    <div id="section2" class="section" data-name="about">
+        <!--[if IE]>
+    <p class="site-notice">You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<noscript>
+    <p class="site-notice">This site requires JavaScript. Here are the instructions <a href="http://www.enable-javascript.com/" target="_blank">how to enable JavaScript in your web browser</a>.</p>
+</noscript>
 
+        <a class="btn-before animated hidden" title="More" href="#social"></a>
+
+        <div class="headings animated hidden pointer" onclick="location.href=/blog/">
+            <h1>강녕</h1>
+            
+            
+        </div>
+       
+    </div>
     <script src="/assets/javascripts/jquery.fullPage.min.js"></script>
 <script src="/assets/javascripts/jquery.easing.min.js"></script>
 <script>
     $(document).ready(function () {
         $.fn.fullpage({
-            anchors: ['bio', 'social'],
+            anchors: ['main', 'social','about'],
             css3: true,
             fixedElements: '.site-notice',
             menu: '#menu',
@@ -120,20 +137,29 @@
 
             afterLoad: function (anchorLink, index) {
                 if (index === 1) {
-                    $('#section0 .headings, #section0').removeClass('hidden').addClass('fadeInDown');
-                    $('.btn-continue').removeClass('hidden').addClass('bounce');
+                    $('#section0 .headings').removeClass('hidden').addClass('fadeInLeft');
+                    $('#section0 .btn-continue').removeClass('hidden').addClass('bounce');
                 }
                 if (index === 2) {
                     $('#section1 h1, #section1 .social-links').removeClass('hidden').addClass('fadeInUp');
                 }
+                if (index === 3) {
+                    $('#section2 .headings').removeClass('hidden').addClass('fadeInLeft');
+                    $('#section2 .btn-before').removeClass('hidden').addClass('bounce');
+                }
             },
 
-            onLeave: function (index, direction) {
-                if (index == 1 && direction == 'down') {
-                    $('#section0 .headings, #section0 .btn-continue').addClass('hidden').removeClass('bounce fadeInDown fadeInLeft');
+            onLeave: function (index) {
+                if (index == 1) {
+                    $('#section0 .headings').addClass('hidden').removeClass('fadeInLeft');
+                    $('#section0 .btn-continue').addClass('hidden').removeClass('bounce');
                 }
-                if (index == 2 && direction == 'up') {
+                if (index == 2) {
                     $('#section1 h1, #section1 .social-links').addClass('hidden').removeClass('fadeInUp');
+                }
+                if (index === 3) {
+                    $('#section2 .headings').addClass('hidden').removeClass('fadeInLeft');
+                    $('#section2 .btn-before').addClass('hidden').removeClass('bounce');
                 }
             }
         });

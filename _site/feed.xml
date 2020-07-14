@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T18:29:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;style&gt;
-    .small{
-      font-size:12px;
-    }
-    .normal{
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-15T00:05:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;style&gt;
+    .margin{
       font-size:12px;
       margin-left:15px;
+    }
+    .nomargin{
+      font-size:12px;
+    }
+    .space{
+      margin:-10px 0;
     }
   &lt;/style&gt;
 
@@ -19,10 +22,10 @@
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v&lt;/code&gt;   &lt;span class=&quot;normal&quot;&gt;  빈 컨테이너 생성&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; 기본값(0)으로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n,x)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; x로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v2(v1)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt; v1을 복사한 v2  &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v&lt;/code&gt;   &lt;span class=&quot;margin&quot;&gt;빈 컨테이너 생성&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n)&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;기본값(0)으로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v(n,x)&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;x로 초기화된 n개의 원소를 가진 컨테이너 &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; v2(v1)&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;v1을 복사한 v2  &lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -33,70 +36,66 @@
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.assign(n,x)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;v에 x의 값으로 n개만큼 할당&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.back()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;첫번째, 마지막 원소값 리턴&lt;/span&gt; &lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.at(i)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v[i]&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;i번 원소 참조&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;속도 : at(i) &amp;lt; [i]&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;안정성 : at(i) &amp;gt; [i] &lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;at()은 범위를 점검하기에 느리지만 안전함&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.assign(n,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;v에 x의 값으로 n개만큼 할당&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.back()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;첫번째, 마지막 원소값 리턴&lt;/span&gt; &lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.at(i)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v[i]&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;i번 원소 참조&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;속도 : at(i) &amp;lt; [i]&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;안정성 : at(i) &amp;gt; [i] &lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;at()은 범위를 점검하기에 느리지만 안전함&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.push_back(x)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.pop_back()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;원소삽입, 삭제&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.insert(i,x)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;i번째 위치에 x 삽입, 해당 iter 리턴&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v2.swap(v1)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;v2와 v1의 원소와 capacity까지 교환&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;v1의 capacity를 없애고 싶을때도 사용 가능&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(iter)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;iter이 가리키는 원소 제거&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(start, end)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; [start, end) 제거&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.size()&lt;/code&gt;   &lt;span class=&quot;normal&quot;&gt;원소의 갯수(int) 리턴&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.push_back(x)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.pop_back()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;원소삽입, 삭제&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.insert(i,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;i번째 위치에 x 삽입, 해당 iter 리턴&lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.capacity()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;vector의 크기 리턴&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v2.swap(v1)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;v2와 v1의 원소와 capacity까지 교환&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;v1의 capacity를 없애고 싶을때도 사용 가능&lt;/span&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.clear()&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt;모든 원소 제거 , 메모리 공간은 그대로&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.empty()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; 비었는지 확인, true == empty&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(iter)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;iter이 가리키는 원소 제거&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.erase(start, end)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; [start, end) 제거&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.size()&lt;/code&gt;   &lt;span class=&quot;margin&quot;&gt;원소의 갯수(int) 리턴&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.capacity()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;vector의 크기 리턴&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.clear()&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;모든 원소 제거 , 메모리 공간은 그대로&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.empty()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; 비었는지 확인, true == empty&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&amp;lt;int&amp;gt; ::iterator iter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.end()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;첫번째 원소와 마지막다음 원소를 가르킴&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rend()&lt;/code&gt;&lt;span class=&quot;normal&quot;&gt; 역순으로 첫번째, 마지막다음 원소를 가르킴 &lt;/span&gt;
-    &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.end()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;첫번째 원소와 마지막다음 원소를 가르킴&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.rend()&lt;/code&gt;&lt;span class=&quot;margin&quot;&gt; 역순으로 첫번째, 마지막다음 원소를 가르킴 &lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve(n)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; n개의 원소를 저장할 공간 예약, capacity 설정 &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n,x)&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve(n)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; n개의 원소를 저장할 공간 예약, capacity 설정 &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;style&gt;
-    .small{
+    .margin {
       font-size:12px;
+      margin-left:10px;
     }
-    .normal{
+    .nomargin{
       font-size:12px;
-      margin-left:15px;
+      margin-left:0;
+    }
+    .space{
+      margin:-10px 0;
     }
   &lt;/style&gt;
 
@@ -109,59 +108,53 @@
   &lt;p&gt;선입 선출 (FIFO , First In First Out)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;queue&amp;gt;&lt;/code&gt; 필요&lt;/p&gt;
-
 &lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;hr /&gt;
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;queue&amp;gt;&lt;/code&gt; &lt;span class=&quot;nomargin&quot;&gt;필요&lt;/span&gt;&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;queue&amp;lt;[Data Type]&amp;gt; name&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;queue&amp;lt;[Data Type],[Container Type]&amp;gt; name&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;내부 컨테이너를 바꿀 수 있음&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;queue&amp;lt;[Data Type],[Container Type]&amp;gt; name&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;내부 컨테이너를 바꿀 수 있음&lt;span&gt;
+&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;hr /&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.push(x)&lt;/code&gt;&lt;br /&gt;
-&lt;span class=&quot;small&quot;&gt; 가장 뒤에 x 삽입&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.pop()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;가장 앞에 있는 원소 삭제&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.back()&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt;맨앞, 맨뒤 원소 참조&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.empty()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt;비었는지 확인, true == empty&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.size()&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt;원소 갯수 리턴, int &lt;/span&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q1.swap(q2)&lt;/code&gt;  &lt;span class=&quot;normal&quot;&gt;queue 두개의 내용물 교환&lt;/span&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.emplace()&lt;/code&gt; &lt;span class=&quot;normal&quot;&gt; 생성자를 호출해 컨테이너 내부에 객체를 바로 생성하고 큐의 끝에 추가한다.&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emplae()&lt;/code&gt; &lt;span class=&quot;small&quot;&gt;차이점&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;push는 값의 복사본을 넣음&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;emplace는 생성자를 호출해 새로 만들어서 넣음&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span class=&quot;small&quot;&gt;이렇게 다르다는 뜻&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;        &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.push(x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; 가장 뒤에 x 삽입&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.pop()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;가장 앞에 있는 원소 삭제&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.back()&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;맨앞, 맨뒤 원소 참조&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.empty()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;비었는지 확인, true == empty&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.size()&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;원소 갯수 리턴, int &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q1.swap(q2)&lt;/code&gt;  &lt;span class=&quot;margin&quot;&gt;queue 두개의 내용물 교환&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q.emplace()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; 생성자를 호출해 컨테이너 내부에 객체를 바로 생성하고 큐의 끝에 추가한다.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emplae()&lt;/code&gt; &lt;span class=&quot;nomargin&quot;&gt;차이점&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;push는 값의 복사본을 넣음&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;emplace는 생성자를 호출해 새로 만들어서 넣음&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;이렇게 다르다는 뜻&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;q1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;q2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;emplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;emplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-map/">&lt;h1 id=&quot;heading-c-queue-예제&quot;&gt;C++ queue 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html">C++ queue 예제</summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-map/">&lt;h1 id=&quot;heading-c-queue-예제&quot;&gt;C++ queue 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html">C++ queue 예제</summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
