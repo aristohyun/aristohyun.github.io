@@ -13,20 +13,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>How to write Code | Sihyeon&#39;s Note</title>
+<title>코드 강조하기 | Note</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="How to write Code" />
+<meta property="og:title" content="코드 강조하기" />
 <meta name="author" content="Sihyeon" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="code highlighting features" />
 <meta property="og:description" content="code highlighting features" />
 <link rel="canonical" href="http://localhost:4000/blog/2020/07/13/code-highlighting/" />
 <meta property="og:url" content="http://localhost:4000/blog/2020/07/13/code-highlighting/" />
-<meta property="og:site_name" content="Sihyeon&#39;s Note" />
+<meta property="og:site_name" content="Note" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-13T00:00:00+09:00" />
 <script type="application/ld+json">
-{"description":"code highlighting features","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/07/13/code-highlighting/"},"@type":"BlogPosting","headline":"How to write Code","url":"http://localhost:4000/blog/2020/07/13/code-highlighting/","dateModified":"2020-07-13T00:00:00+09:00","datePublished":"2020-07-13T00:00:00+09:00","author":{"@type":"Person","name":"Sihyeon"},"@context":"https://schema.org"}</script>
+{"description":"code highlighting features","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/07/13/code-highlighting/"},"@type":"BlogPosting","headline":"코드 강조하기","url":"http://localhost:4000/blog/2020/07/13/code-highlighting/","dateModified":"2020-07-13T00:00:00+09:00","datePublished":"2020-07-13T00:00:00+09:00","author":{"@type":"Person","name":"Sihyeon"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <meta name="keywords" content="kramdown" />
@@ -35,7 +35,7 @@
 
 
 
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sihyeon's Note" />
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Note" />
     <link href='/assets/stylesheets/blog.css' rel="stylesheet" type="text/css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script>window.Modernizr || document.write('<script src="/assets/javascripts/modernizr-2.8.3.min.js"><\/script>')</script>
@@ -71,7 +71,7 @@
             <ul>
                 <li><a href="/blog/categories/">Categories</a></li>
                 <li><a href="/blog/tags/">Tags</a></li>
-                <li><a href="/">About</a></li>
+                <li><a href="/">Main</a></li>
             </ul>
         </div>
     </div>
@@ -94,7 +94,7 @@
                 <ul>
                     <li class="logo nav-link">
                         <button class="btn-menu" title="Menu"></button>
-                        <a href="/blog/">Sihyeon's Note</a>
+                        <a href="/blog/">Note</a>
                         <!--[if !IE]> -->
                         <button class="btn-search" title="Search"></button>
                         <!-- <![endif]-->
@@ -121,7 +121,7 @@
             <header>
                 <div class="unit-head">
                     <div class="unit-inner unit-head-inner">
-                        <h1 class="entry-title" itemprop="name">How to write Code</h1>
+                        <h1 class="entry-title" itemprop="name">코드 강조하기</h1>
                     </div>
                 </div>
             </header>
@@ -180,7 +180,6 @@
   <li><a href="#heading-highlighted" id="markdown-toc-heading-highlighted">Highlighted</a>    <ul>
       <li><a href="#heading-simple-highlight" id="markdown-toc-heading-simple-highlight">Simple Highlight</a></li>
       <li><a href="#heading-external-gist" id="markdown-toc-heading-external-gist">External Gist</a></li>
-      <li><a href="#heading-highlight-with-line-numbers-and-long-lines" id="markdown-toc-heading-highlight-with-line-numbers-and-long-lines">Highlight with line numbers and long lines</a></li>
     </ul>
   </li>
 </ul>
@@ -202,36 +201,37 @@ code with tildes
 <h1 id="heading-highlighted">Highlighted</h1>
 <h2 id="heading-simple-highlight">Simple Highlight</h2>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iosteam&gt;
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//~~~ c++</span>
+<span class="cp">#include &lt;iosteam&gt;
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"hello world"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
+<span class="c1">//~~~</span>
 </code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iosteam&gt;
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="cp">#include &lt;iosteam&gt;
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"hello world"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="heading-external-gist">External Gist</h2>
 
 <script src="https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js"></script>
 
-<h2 id="heading-highlight-with-line-numbers-and-long-lines">Highlight with line numbers and long lines</h2>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span class="dl">"</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure>
 
                     </div>
                 </div>
@@ -244,10 +244,10 @@ code with tildes
                     </div>
                     <nav class="pagination">
                         
-                            <a class="internal" rel="prev" href="/blog/2020/07/13/algorithm/" title=" 'algorithm'"> ← algorithm</a>
+                            <a class="internal" rel="prev" href="/blog/2020/07/13/algorithm/" title=" '알고리즘'"> ← 알고리즘</a>
                         
                         
-                            <a class="internal" rel="next" href="/blog/2020/07/13/quick-kramdown-demo/" title="Next 'Quick kramdown'">Quick kramdown → </a>
+                            <a class="internal" rel="next" href="/blog/2020/07/13/quick-kramdown-demo/" title="Next 'Kramdown 사용법'">Kramdown 사용법 → </a>
                         
                     </nav>
                 </div>
@@ -268,7 +268,7 @@ code with tildes
         <div class="unit-inner unit-foot-inner">
             <div class="misc vcard">
                 <div class="about">
-                    <h4><a href="/">About</a></h4>
+                    <h4><a href="/">Main</a></h4>
                     
                         <p>A gem-based responsive simple texture styled <a href="http://jekyllrb.com/">Jekyll</a> theme.</p>
                     

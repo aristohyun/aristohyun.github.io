@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-13T23:26:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sihyeon's Note</title><subtitle>note</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">Quick kramdown</title><link href="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/" rel="alternate" type="text/html" title="Quick kramdown" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/quick-kramdown-demo</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-14T10:55:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>note</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">Kramdown 사용법</title><link href="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/" rel="alternate" type="text/html" title="Kramdown 사용법" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/quick-kramdown-demo</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/quick-kramdown-demo/">&lt;blockquote&gt;
   &lt;p&gt;This is &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt; formatting test page for &lt;a href=&quot;https://github.com/yizeng/jekyll-theme-simple-texture&quot;&gt;Simple Texture&lt;/a&gt; theme.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -171,13 +171,12 @@
       &lt;p&gt;This is a footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html">This is kramdown formatting test page for Simple Texture theme.</summary></entry><entry><title type="html">algorithm</title><link href="http://localhost:4000/blog/2020/07/13/algorithm/" rel="alternate" type="text/html" title="algorithm" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/algorithm/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="algorithm" /><category term="leetcode" /><category term="book" /><summary type="html"></summary></entry><entry><title type="html">How to write Code</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="How to write Code" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html">This is kramdown formatting test page for Simple Texture theme.</summary></entry><entry><title type="html">알고리즘</title><link href="http://localhost:4000/blog/2020/07/13/algorithm/" rel="alternate" type="text/html" title="알고리즘" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/algorithm/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="algorithm" /><category term="leetcode" /><category term="book" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-simple-highlight&quot; id=&quot;markdown-toc-heading-simple-highlight&quot;&gt;Simple Highlight&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-external-gist&quot; id=&quot;markdown-toc-heading-external-gist&quot;&gt;External Gist&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-highlight-with-line-numbers-and-long-lines&quot; id=&quot;markdown-toc-heading-highlight-with-line-numbers-and-long-lines&quot;&gt;Highlight with line numbers and long lines&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -199,33 +198,33 @@ code with tildes
 &lt;h1 id=&quot;heading-highlighted&quot;&gt;Highlighted&lt;/h1&gt;
 &lt;h2 id=&quot;heading-simple-highlight&quot;&gt;Simple Highlight&lt;/h2&gt;
 
-&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//~~~ c++&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//~~~&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iosteam&amp;gt;
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;heading-external-gist&quot;&gt;External Gist&lt;/h2&gt;
 
-&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;heading-highlight-with-line-numbers-and-long-lines&quot;&gt;Highlight with line numbers and long lines&lt;/h2&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html"></summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="kramdown" /><summary type="html"></summary></entry></feed>
