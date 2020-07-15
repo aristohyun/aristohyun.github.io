@@ -1,4 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-15T14:22:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-15T23:28:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-map/">&lt;style&gt;
+    .margin {
+      font-size:12px;
+      margin-left:10px;
+    }
+    .nomargin{
+      font-size:12px;
+      margin-left:0;
+    }
+    .space{
+      margin:-10px 0;
+    }
+  &lt;/style&gt;
+
+&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-multiset&quot; id=&quot;markdown-toc-heading-multiset&quot;&gt;multiset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-unordered_map&quot; id=&quot;markdown-toc-heading-unordered_map&quot;&gt;unordered_map&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&amp;lt; Key - Value &amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;map&amp;gt;&lt;/code&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_map&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;  map은 Key값이 오름차순으로 정렬되어 있음&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;  unordered_map은 Key값이 정렬되어 있지 않아 더 빠름&lt;/span&gt;  &lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m[key] = val&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;으로 데이터 수정, 삽입 가능&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; k는 pair&amp;lt;key,val&amp;gt; &lt;/span&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;return 확인요망&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(start,end)&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;iter,범위값이 가르키는 위치 삭제&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;다음 iter return&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;return 확인요망&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;k값의 반복자 return,  없을경우 m.end() return&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.rend()&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.size()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.clear()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.empty()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m2.swap(m1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;heading-multiset&quot;&gt;multiset&lt;/h3&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;map&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multimap&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;return iter&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.count(k)&lt;/code&gt;    &lt;span class=&quot;margin&quot;&gt;k값이 몇번 나오는지 return&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.lower_bound(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.upper_bound(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.equal_range(k)&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;값이 중복이 가능함에 따라 k 값의 시작, 종료지점의 위치 return&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;equal_range()는 return pair&amp;lt;start_iter,end_iter&amp;gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;heading-unordered_map&quot;&gt;unordered_map&lt;/h3&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_map&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_map&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;정렬 X&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;해시로 동작&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;해시는 특정 타입이 들어오면 나름대로의 타입을 정수로 바꾸는 과정을 취한 후, 그 정수에 대한 값을 기준으로 그 값에 접근을 하게 됩니다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">C++ set 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-set/" rel="alternate" type="text/html" title="C++ set 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-set/">&lt;style&gt;
+    .margin {
+      font-size:12px;
+      margin-left:10px;
+    }
+    .nomargin{
+      font-size:12px;
+      margin-left:0;
+    }
+    .space{
+      margin:-10px 0;
+    }
+  &lt;/style&gt;
+
+&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-multiset&quot; id=&quot;markdown-toc-heading-multiset&quot;&gt;multiset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-unordered_set&quot; id=&quot;markdown-toc-heading-unordered_set&quot;&gt;unordered_set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;노드 기반의 균형 이진트리&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;set&amp;gt;&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_set&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_set&amp;lt;[Type]&amp;gt;&lt;/code&gt;    &lt;br /&gt;
+&lt;span class=&quot;nomargin&quot;&gt; set은 키값 중복 X, 자동으로 오름차순 정렬됨&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; k값 삽입, 자동정렬 &lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;return pair&amp;lt;iter,bool&amp;gt;&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;iter == 삽입위치, bool == 성공,실패&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;중복된경우 실패&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(start,end)&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;iter,범위값이 가르키는 위치 삭제&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;다음 iter return&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;k값의 반복자 return,  없을경우 s.end() return&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt;
+&lt;span class=&quot;margin&quot;&gt;실행시간이 O(logn)&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rend()&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.size()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.clear()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.empty()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s2.swap(s1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;heading-multiset&quot;&gt;multiset&lt;/h3&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;set&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multiset&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;return iter&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.count(k)&lt;/code&gt;    &lt;span class=&quot;margin&quot;&gt;k값이 몇번 나오는지 return&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.lower_bound(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.upper_bound(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.equal_range(k)&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;값이 중복이 가능함에 따라 k 값의 시작, 종료지점의 위치 return&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;equal_range()는 return pair&amp;lt;start_iter,end_iter&amp;gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;heading-unordered_set&quot;&gt;unordered_set&lt;/h3&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_set&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_set&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;정렬 X&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;해시로 동작&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;해시는 특정 타입이 들어오면 나름대로의 타입을 정수로 바꾸는 과정을 취한 후, 그 정수에 대한 값을 기준으로 그 값에 접근을 하게 됩니다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;style&gt;
     .margin{
       font-size:12px;
       margin-left:15px;
@@ -85,7 +297,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve(n)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; n개의 원소를 저장할 공간 예약, capacity 설정 &lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -154,47 +366,7 @@
       &lt;span class=&quot;n&quot;&gt;q2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;emplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-map/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&amp;lt; Key - Value &amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;map&amp;gt;&lt;/code&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_map&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;map은 Key값이 오름차순으로 정렬되어 있음&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;nomargin&quot;&gt;unordered_map은 Key값이 정렬되어 있지 않아 더 빠름&lt;/span&gt;  &lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;h1 id=&quot;heading-c-stack-예제&quot;&gt;C++ stack 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html">C++ stack 예제</summary></entry><entry><title type="html">코드 강조하기</title><link href="http://localhost:4000/blog/2020/07/13/code-highlighting/" rel="alternate" type="text/html" title="코드 강조하기" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/13/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/13/code-highlighting/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-fenced-code-blocks&quot; id=&quot;markdown-toc-heading-fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-simple-codeblock&quot; id=&quot;markdown-toc-heading-simple-codeblock&quot;&gt;Simple codeblock&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-highlighted&quot; id=&quot;markdown-toc-heading-highlighted&quot;&gt;Highlighted&lt;/a&gt;    &lt;ul&gt;
