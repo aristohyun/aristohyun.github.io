@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-16T13:54:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ list 사용법</title><link href="http://localhost:4000/blog/2020/07/16/Cpp-list/" rel="alternate" type="text/html" title="C++ list 사용법" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/Cpp-list</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/Cpp-list/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-16T21:53:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ list 사용법</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="C++ list 사용법" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -110,7 +110,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt.unique()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;인접한 원소가 같으면 유일하게 만든다(하나빼고 모두 삭제)&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-map/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Map/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -223,7 +223,7 @@
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">C++ set 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-set/" rel="alternate" type="text/html" title="C++ set 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-set/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">C++ set 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Set/" rel="alternate" type="text/html" title="C++ set 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Set/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -326,14 +326,14 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;해시는 특정 타입이 들어오면 나름대로의 타입을 정수로 바꾸는 과정을 취한 후, 그 정수에 대한 값을 기준으로 그 값에 접근을 하게 됩니다&lt;/p&gt;
+  &lt;p&gt;해시는 특정 타입이 들어오면 나름대로의 타입을 정수로 바꾸는 과정을 취한 후, 그 정수에 대한 값을 기준으로 그 값에 접근을 함&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html"></summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-queue/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">O( ) : 시간 복잡도 분석</title><link href="http://localhost:4000/blog/2020/07/14/Time-Complexity/" rel="alternate" type="text/html" title="O( ) : 시간 복잡도 분석" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/%20Time-Complexity</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Time-Complexity/"></content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="book" /><category term="알고리즘 문제해결 전략" /><category term="이론" /><category term="문제" /><summary type="html"></summary></entry><entry><title type="html">C++ queue 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Queue/" rel="alternate" type="text/html" title="C++ queue 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Queue</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Queue/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -412,7 +412,6 @@
 &lt;h3 id=&quot;heading-deque&quot;&gt;deque&lt;/h3&gt;
 
 &lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;deque&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deque&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -437,7 +436,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dq.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dq.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dq.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dq.rend()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-stack/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="queue" /><summary type="html"></summary></entry><entry><title type="html">C++ stack 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Stack/" rel="alternate" type="text/html" title="C++ stack 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Stack/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -509,7 +508,116 @@
       &lt;span class=&quot;n&quot;&gt;stk2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;emplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html"></summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-string/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-string</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-string/">&lt;h1 id=&quot;heading-c-string-예제&quot;&gt;C++ string 예제&lt;/h1&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html">C++ string 예제</summary></entry><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Cpp-vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Cpp-vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Cpp-vector/">&lt;style&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="stack" /><summary type="html"></summary></entry><entry><title type="html">C++ string 사용법</title><link href="http://localhost:4000/blog/2020/07/14/String/" rel="alternate" type="text/html" title="C++ string 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/String</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/String/">&lt;style&gt;
+    .margin {
+      font-size:12px;
+      margin-left:10px;
+    }
+    .nomargin{
+      font-size:12px;
+      margin-left:0;
+    }
+    .space{
+      margin:-8px 0;
+    }
+  &lt;/style&gt;
+
+&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
+
+&lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;string&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string str(&quot;text&quot;)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string str; str=&quot;text&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string str2(str1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.at(index)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str[index]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.front()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.back()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.push_back(char)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.pop_back()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swap(str1, str2)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.size()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.length()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.capacity()&lt;/code&gt;
+&lt;span class=&quot;margin&quot;&gt;string은 메모리 할당을 여유있게 하기에 size보다 capacity가 더 크게 잡혀있음&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.resize(n)&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;기존 사이즈보다 작으면 남은 스트링은 버림&lt;/span&gt;
+&lt;span class=&quot;margin&quot;&gt;크면 빈 스트링은 그냥 남은 공간&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.shrink_to_fit()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;비어있는 capacity를 없앰. 낭비되는 메모리 제거&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.reserve(n)&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;데이터 공간 예약 &lt;/span&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;중간중간 계속 사이즈를 늘리다보면 성능저하가 오기에 미리 할당시키는게 좋음&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.clear()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.empty()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.end()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.find(string, index)&lt;/code&gt;   &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;str에서 string을 찾음&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;일치하는 첫번째 index return&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;index입력 시 해당 index부터 찾음&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.substr(index, len)&lt;/code&gt;   &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; index부터 len만큼 잘라서 반환&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt; len이 빈칸이면 index부터 끝까지&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.c_str()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; return char*&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str.copy(char*, len, index)&lt;/code&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;return len&lt;/span&gt;    &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;str의 index부터 len개를 char*에 복사&lt;/span&gt;   &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;char*만 넣으면 전체 복사&lt;/span&gt;   &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;index를 설정하지 않으면 맨 처음부터 len개&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str1.replace(index, len, str2)&lt;/code&gt;     &lt;span class=&quot;margin&quot;&gt;str의 index부터 len개를 str2로 대체&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str1.compare(str2)&lt;/code&gt;
+&lt;span class=&quot;margin&quot;&gt;앞에서부터 사전순 비교&lt;/span&gt;
+&lt;span class=&quot;margin&quot;&gt;같으면 0, 크면 1, 작으면 -1&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str1.compare(index,len,str2)&lt;/code&gt;
+&lt;span class=&quot;margin&quot;&gt;str1의 index부터 len개를 str2와 비교&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html"></summary></entry><entry><title type="html">C++ vector 사용법</title><link href="http://localhost:4000/blog/2020/07/14/Vector/" rel="alternate" type="text/html" title="C++ vector 사용법" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Vector/">&lt;style&gt;
     .margin{
       font-size:12px;
       margin-left:15px;
