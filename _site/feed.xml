@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-15T23:28:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-map/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-16T11:43:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">C++ map 사용법</title><link href="http://localhost:4000/blog/2020/07/15/Cpp-map/" rel="alternate" type="text/html" title="C++ map 사용법" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Cpp-map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Cpp-map/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -20,7 +20,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&amp;lt; Key - Value &amp;gt;&lt;/p&gt;
+  &lt;p&gt;&amp;lt; Key - Value &amp;gt;,&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;heading-생성자&quot;&gt;생성자&lt;/h3&gt;
@@ -32,37 +32,43 @@
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_map&amp;lt;[Key],[Value]&amp;gt;&lt;/code&gt; &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt;  map은 Key값이 오름차순으로 정렬되어 있음&lt;/span&gt;  &lt;br /&gt;
-&lt;span class=&quot;margin&quot;&gt;  unordered_map은 Key값이 정렬되어 있지 않아 더 빠름&lt;/span&gt;  &lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;span class=&quot;margin&quot;&gt;  unordered_map은 Key값이 정렬되어 있지 않아 더 빠름&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;iter-&amp;gt;first //key&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;iter-&amp;gt;second //value&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;hr /&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m[key] = val&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;으로 데이터 수정, 삽입 가능&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; k는 pair&amp;lt;key,val&amp;gt; &lt;/span&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;return 확인요망&lt;/p&gt;
-    &lt;/blockquote&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m[key] = val&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;으로 데이터 수정, 삽입 가능&lt;/span&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;Key값이 이미 존재하면 수정, 없으면 삽입&lt;/span&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(start,end)&lt;/code&gt; &lt;br /&gt;
-&lt;span class=&quot;margin&quot;&gt;iter,범위값이 가르키는 위치 삭제&lt;/span&gt;  &lt;br /&gt;
-&lt;span class=&quot;margin&quot;&gt;다음 iter return&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;return 확인요망&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;k값의 반복자 return,  없을경우 m.end() return&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(pair&amp;lt;key,val&amp;gt;)&lt;/code&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;return pair&amp;lt;iter,bool&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;iter == 삽입위치, bool == 성공/실패, 중복된경우 실패&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(k)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(start_iter,end_iter)&lt;/code&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;key-value 삭제&lt;/span&gt; 
+&lt;span class=&quot;margin&quot;&gt;성공 실패여부 return&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;k값의 반복자 return,  없을경우 m.end() return&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.rend()&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -136,8 +142,12 @@
 &lt;p&gt;      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;set&amp;gt;&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;unordered_set&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&amp;lt;[Type]&amp;gt;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_set&amp;lt;[Type]&amp;gt;&lt;/code&gt;    &lt;br /&gt;
-&lt;span class=&quot;nomargin&quot;&gt; set은 키값 중복 X, 자동으로 오름차순 정렬됨&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unordered_set&amp;lt;[Type]&amp;gt;&lt;/code&gt;    &lt;br /&gt;
+&lt;span class=&quot;nomargin&quot;&gt; set은 키값 중복 X, 자동으로 오름차순 정렬됨&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;  &lt;br /&gt;
+  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*iter //key(value)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;heading-멤버함수&quot;&gt;멤버함수&lt;/h3&gt;
@@ -152,9 +162,9 @@
 &lt;span class=&quot;margin&quot;&gt;중복된경우 실패&lt;/span&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(start,end)&lt;/code&gt; &lt;br /&gt;
-&lt;span class=&quot;margin&quot;&gt;iter,범위값이 가르키는 위치 삭제&lt;/span&gt;  &lt;br /&gt;
-&lt;span class=&quot;margin&quot;&gt;다음 iter return&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(iter)&lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(start_iter,end_iter)&lt;/code&gt; &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;key값 삭제&lt;/span&gt;  &lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;성공 실패여부 return&lt;/span&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;k값의 반복자 return,  없을경우 s.end() return&lt;/span&gt;&lt;/p&gt;
@@ -168,9 +178,9 @@
 &lt;p&gt;&lt;span class=&quot;space&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&amp;lt;int&amp;gt;:: iterator iter&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rend()&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.begin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.end()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rbegin()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.rend()&lt;/code&gt;
+&lt;span class=&quot;margin&quot;&gt;return iter&lt;/span&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.size()&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.clear()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.empty()&lt;/code&gt;&lt;/li&gt;
