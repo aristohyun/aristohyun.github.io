@@ -218,7 +218,9 @@ textarea {
         transition: ease 2s;
     }
     #YC-text {
-        display:none;
+        display:inline-block;
+        margin:0 0 0 12px;
+        opacity: 0;
     }
     &:hover {
         .YC-icon {
@@ -228,9 +230,9 @@ textarea {
         #YC-text {
             font-size:1.75em;
             margin:0 0 0 12px;
-            display:inline-block;
+            opacity: 1;
             transform: translateX(-80px);
-            transition: display 0 ease-out 2s;
+            transition: opacity 0.3s ease 0.5s;
         }
     }
 }
