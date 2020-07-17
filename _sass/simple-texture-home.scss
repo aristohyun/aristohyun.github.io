@@ -206,30 +206,34 @@ textarea {
 .pointer {
     cursor: pointer;
 }
-.YC-icon{
-    circle {
-        fill:transparent;
+
+.btn-link.YC {
+    position: absolute;
+    left: 50%;
+    margin-left:-32px;
+    margin-top:-32px;
+    display: flex;
+    align-items: center;
+    .YC-icon {
+        transition: ease 2s;
     }
-    polygon {
-        fill:transparent;
+    #YC-text {
+        display:none;
     }
-    path {
-        fill:red;
-    }
-    &:hover{
-        circle {
-            fill:red;
-            transition:fill 2s;
+    &:hover {
+        .YC-icon {
+            transform: translateX(-80px);
+            transition: ease 2s;
         }
-        polygon {
-            fill:white;
-            transition:fill 1s;
-        }
-        path {
-            fill:white;
-            transition:fill 0.5s;
+        #YC-text {
+            font-size:1.75em;
+            margin:0 0 0 12px;
+            display:inline-block;
+            transform: translateX(-80px);
+            transition: display 0 ease-out 2s;
         }
     }
 }
+
 @import 'simple-texture/home/responsive';
 
