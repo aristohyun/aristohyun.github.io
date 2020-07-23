@@ -2,7 +2,7 @@
 layout: post
 title: "카테고리-태그 맵"
 description: "카테고리 - 태그 순서"
-categories: [DevEnvioment]
+categories: [DevEnviroment]
 tags: [gitblog]
 redirect_from:
   - /2020/07/01/
