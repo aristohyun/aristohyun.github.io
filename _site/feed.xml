@@ -1,17 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-23T14:07:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">계산 복잡도 이론</title><link href="http://localhost:4000/blog/2020/07/23/P_NP/" rel="alternate" type="text/html" title="계산 복잡도 이론 " /><published>2020-07-23T00:00:00+09:00</published><updated>2020-07-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/23/P_NP</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/23/P_NP/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-24T13:03:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">계산 복잡도 이론</title><link href="http://localhost:4000/blog/2020/07/23/P_NP/" rel="alternate" type="text/html" title="계산 복잡도 이론 " /><published>2020-07-23T00:00:00+09:00</published><updated>2020-07-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/23/P_NP</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/23/P_NP/">&lt;style&gt;
+    .margin {
+      font-size:12px;
+      margin-left:12px;
+    }
+    .nomargin{
+      font-size:12px;
+      margin-left:0;
+    }
+    .space{
+      margin:-10px 0;
+    }
+  &lt;/style&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-다항-시간-알고리즘&quot; id=&quot;markdown-toc-heading-다항-시간-알고리즘&quot;&gt;다항 시간 알고리즘?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-선형-시간-알고리즘&quot; id=&quot;markdown-toc-heading-선형-시간-알고리즘&quot;&gt;선형 시간 알고리즘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-다항-시간-알고리즘&quot; id=&quot;markdown-toc-heading-다항-시간-알고리즘&quot;&gt;다항 시간 알고리즘&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-p-np란&quot; id=&quot;markdown-toc-heading-p-np란&quot;&gt;P, NP란?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;heading-다항-시간-알고리즘&quot;&gt;다항 시간 알고리즘?&lt;/h3&gt;
-&lt;p&gt;어떠한 문제를 계산하는 데에 걸리는 시간 m(n)이 문제의 크기 n의 다항식 함수보다 크지 않은 것을 가리킨다.
-대문자 O 표기법을 사용하면 m(n) = O(nk)이 된다. 여기서 k는 문제에 따라 다른 상수 값이다.&lt;/p&gt;
+&lt;h3 id=&quot;heading-선형-시간-알고리즘&quot;&gt;선형 시간 알고리즘&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;계산 복잡도 이론에서, 입력의 길이 n에 대하여 어떤 알고리즘의 실행시간이 선형(O(n))이 되는 것을 뜻한다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;heading-p-np란&quot;&gt;P, NP란?&lt;/h3&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">C++ list 사용법</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="C++ list 사용법" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
+&lt;h3 id=&quot;heading-다항-시간-알고리즘&quot;&gt;다항 시간 알고리즘&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;어떠한 문제를 계산하는 데에 걸리는 시간 m(n)이 문제의 크기 n의 다항식 함수보다 크지 않은 것을 가리킨다.  &lt;br /&gt;
+m(n) = O(n^k)이 된다.(k는 문제의 크기)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-p-np란&quot;&gt;P, NP란?&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;P : Polynomial time, 다항시간&lt;br /&gt;
+NP : non-Polynomial time&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span class=&quot;margin&quot;&gt;P 문제란, 다항시간 내에 풀 수 있는 문제&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;그렇다면 NP 문제란, 다항시간 내에 풀 수 없는 문제? X&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;==&amp;gt; 답이 주어 졌을 때 다항 시간 내에 확인 할 수 있는 문제, 역으로 확인만 함&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;margin&quot;&gt;SAT문제는 모든 NP문제 이상으로 어렵다&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;=&amp;gt; SAT문제를 다항 시간에 풀 수 있으면 NP문제는 모두 다항 시간에 풀 수 있다&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;margin&quot;&gt;==&amp;gt; 이런 문제들을 NP-Hard(NP-난해) 문제라고 함&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NP-Hard이며 NP인 문제를 NP-Complete(NP-완비)문제 라고함&lt;/code&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">C++ list 사용법</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="C++ list 사용법" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
