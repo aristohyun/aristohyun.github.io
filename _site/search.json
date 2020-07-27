@@ -1,6 +1,20 @@
 [
   
     {
+      "title"      : "C++ algorithm",
+      "url"        : "/blog/2020/07/27/header-algorithm-Info-copy/",
+      "date"       : "2020-07-27 00:00:00 +0900",
+      "shortdate"  : "July 27, 2020"
+    } ,
+  
+    {
+      "title"      : "알고리즘의 정당성 증명",
+      "url"        : "/blog/2020/07/24/Justification/",
+      "date"       : "2020-07-24 00:00:00 +0900",
+      "shortdate"  : "July 24, 2020"
+    } ,
+  
+    {
       "title"      : "계산 복잡도 이론 ",
       "url"        : "/blog/2020/07/23/P_NP/",
       "date"       : "2020-07-23 00:00:00 +0900",
@@ -8,49 +22,49 @@
     } ,
   
     {
-      "title"      : "C++ list 사용법",
+      "title"      : "#include list",
       "url"        : "/blog/2020/07/16/List/",
       "date"       : "2020-07-16 00:00:00 +0900",
       "shortdate"  : "July 16, 2020"
     } ,
   
     {
-      "title"      : "C++ set 사용법",
+      "title"      : "#include set",
       "url"        : "/blog/2020/07/15/Set/",
       "date"       : "2020-07-15 00:00:00 +0900",
       "shortdate"  : "July 15, 2020"
     } ,
   
     {
-      "title"      : "C++ map 사용법",
+      "title"      : "#include map ",
       "url"        : "/blog/2020/07/15/Map/",
       "date"       : "2020-07-15 00:00:00 +0900",
       "shortdate"  : "July 15, 2020"
     } ,
   
     {
-      "title"      : "C++ vector 사용법",
+      "title"      : "#include vector ",
       "url"        : "/blog/2020/07/14/Vector/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "C++ string 사용법",
+      "title"      : "#include string",
       "url"        : "/blog/2020/07/14/String/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "C++ stack 사용법",
+      "title"      : "#include stack",
       "url"        : "/blog/2020/07/14/Stack/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "C++ queue 사용법",
+      "title"      : "#include queue",
       "url"        : "/blog/2020/07/14/Queue/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
