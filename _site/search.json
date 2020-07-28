@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "우선탐색",
+      "url"        : "/blog/2020/07/28/DFS,BFS/",
+      "date"       : "2020-07-28 00:00:00 +0900",
+      "shortdate"  : "July 28, 2020"
+    } ,
+  
+    {
       "title"      : "#include_ algorithm",
       "url"        : "/blog/2020/07/27/Algorithm/",
       "date"       : "2020-07-27 00:00:00 +0900",
@@ -66,6 +73,13 @@
     {
       "title"      : "#include_ queue",
       "url"        : "/blog/2020/07/14/Queue/",
+      "date"       : "2020-07-14 00:00:00 +0900",
+      "shortdate"  : "July 14, 2020"
+    } ,
+  
+    {
+      "title"      : "#include_ heap",
+      "url"        : "/blog/2020/07/14/Heap/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
