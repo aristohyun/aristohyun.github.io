@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "#include algorithm"
-description: "알고리즘에서 자주 쓰는 함수들"
+title: "#include_ algorithm"
+description: "C++ STL"
 categories: [C++]
 tags: [STL, algorithm]
 redirect_from:
@@ -26,7 +26,7 @@ redirect_from:
 
 ####  #include
 `#include <algirithm>`
-
+> 알고리즘에서 자주 쓰는 함수들    
 
 ### sort    
 <span class="margin">vector 와 deque만 가능</span>   
