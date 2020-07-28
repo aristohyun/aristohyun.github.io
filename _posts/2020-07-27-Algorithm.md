@@ -50,11 +50,12 @@ partial_sort(start, middle, end);
 partial_sort(vec.begin(), vec.begin()+10, vec.end());
 ~~~
 
-### find
+### find    
+> 가장 먼저 찾은 k값의 itr return, itr-vec.begin() 하면 index값    
+> 못찾으면 return vec.end();
 
 ~~~ c++
-//못찾으면 return vec.end();
-find(vec.begin(), vec.end(), k);  //가장 먼저 찾은 k값의 itr return, itr-vec.begin() 하면 index값
+find(vec.begin(), vec.end(), k);
 find_if(vec.begin(), vec.end(), [](int i) { return i % 3 == 2; });  //람다함수를 이용해 find_if 사용
 
 //find는 처음 찾으면 끝나기 때문에
@@ -71,8 +72,8 @@ while(true){
 
 ### any_of, all_of
 
-> any_of : 어떤 요소라도 만족하면 true  //OR
-> all_of : 모든 요소가 만족하면 true      //AND
+> any_of : 어떤 요소라도 만족하면 true  //OR    
+> all_of : 모든 요소가 만족하면 true    //AND    
 
 ~~~ c++
 any_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
@@ -82,9 +83,9 @@ all_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
 ### remove
 > remove함수는 해당 원소들을 모두 찾아서 끝으로 모은다   
 
-<span class="margin">대부분 컨테이너는 erase 함수가 포함되어 있다</span>
-<span class="margin">그러나 erase는 특정 원소를 찾아서 제거하는게 아닌 , 일정 범위를 제거 하는 형식    </span>
-<span class="margin">그래서 remove 함수로 끝에 모은 뒤에 erase로 제거한다</span>
+<span class="margin">대부분 컨테이너는 erase 함수가 포함되어 있다</span>    
+<span class="margin">그러나 erase는 특정 원소를 찾아서 제거하는게 아닌 , 일정 범위를 제거 하는 형식</span>    
+<span class="margin">그래서 remove 함수로 끝에 모은 뒤에 erase로 제거한다</span>    
 
 ~~~ c++
 //remove(vec.begin(), vec.end(), k) : 모든 k를 맨 뒤로 보낸다 그리고 그 첫번째 itr return
