@@ -52,7 +52,32 @@ partial_sort(vec.begin(), vec.begin()+10, vec.end());
 
 ### find
 
+~~~ c++
+//못찾으면 return vec.end();
+find(vec.begin(), vec.end(), k);  //가장 먼저 찾은 k값의 itr return, itr-vec.begin() 하면 index값
+find_if(vec.begin(), vec.end(), [](int i) { return i % 3 == 2; });  //람다함수를 이용해 find_if 사용
 
+//find는 처음 찾으면 끝나기 때문에
+vector<int>::iterator current = vec.begin();
+while(true){
+  current = find(current, vec.end(), 1);
+  if(current == vec.end()) break;
+  else {
+    cout << current-vec.begin() <<endl;
+    current++;
+  }
+}//등으로 사용 가능
+~~~
+
+### any_of, all_of
+
+> any_of : 어떤 요소라도 만족하면 true  //OR
+> all_of : 모든 요소가 만족하면 true      //AND
+
+~~~ c++
+any_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
+all_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
+~~~
 
 ### remove
 > remove함수는 해당 원소들을 모두 찾아서 끝으로 모은다   
@@ -62,11 +87,19 @@ partial_sort(vec.begin(), vec.begin()+10, vec.end());
 <span class="margin">그래서 remove 함수로 끝에 모은 뒤에 erase로 제거한다</span>
 
 ~~~ c++
-remove(vec.begin(), vec.end(), k) //모든 k를 맨 뒤로 보낸다 그리고 그 첫번째 itr return
+//remove(vec.begin(), vec.end(), k) : 모든 k를 맨 뒤로 보낸다 그리고 그 첫번째 itr return
 vec.erase(remove(vec.begin(), vec.end(), k), vec.end());  //그 itr부터 end까지는 k가 모여있을 테니 모두 삭제
 
-struct is_odd {
+struct is_odd { //홀수인 모든 수 
   bool operator()(const int& i) { return i % 2 == 1; }
 };
 vec.erase(remove_if(vec.begin(), vec.end(), is_odd()), vec.end()); // remove_if는 조건을 받음
+vec.erase(remove_if(vec.begin(), vec.end(), [](int i) -> bool { return i % 2 == 1; }), vec.end());
+//[](int i) -> bool { return i % 2 == 1; } : 람다 함수, lamda function, 익명 함수
+~~~
+
+### transform
+~~~ c++
+transform(vec.begin(), vec.end(), vec.begin(), [](int i) { return i + 1; }); //배열의 모든 수에 +1씩
+//vec.begin() 부터 vec.end()까지의 내역에 +1 씩 한 것을 vec.begin()부터 저장한다
 ~~~
