@@ -55,20 +55,11 @@ private:
 public:
     int operator()(Student a, Student b){ //비교함수자 cmp
       return a.id > b.id;
-	  }
-    Student(){
-        this->name = "name";
-        this->id = 0;
-    }
+      }
+
     Student(string _name, int _id){
         this->name = _name;
         this->id = _id;
-    }
-    string getName(){
-        return this->name;
-    }
-    int getId(){
-        return this->id;
     }
     void print(){
         cout << this->id <<" : "<< this->name<<endl;
@@ -77,10 +68,14 @@ public:
 
 int main() {
     priority_queue<Student,vector<Student>,Student> pq;
+    
     pq.push(Student("si",10));
     pq.push(Student("hyeon",13));
     pq.push(Student("park1",8));
     pq.push(Student("park2",8));
+    
+    cout << pq.size() << endl;
+    
     while(!pq.empty()){
         Student now = pq.top();
         pq.pop();
