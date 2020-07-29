@@ -7,19 +7,6 @@ tags: [알고리즘 문제해결 전략, 이론]
 redirect_from:
   - /2020/07/24/
 ---
-  <style>
-    .margin {
-      font-size:12px;
-      margin-left:12px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  </style>
 
 >  이 알고리즘이 문제를 제대로  해결하는가, 즉 알고리즘의 정확한 증명을 해야 한다
 

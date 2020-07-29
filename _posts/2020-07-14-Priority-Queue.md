@@ -3,7 +3,7 @@ layout: post
 title: "C++, Priority Queue"
 description: "STL, Standard Template Library"
 categories: [C++]
-tags: [STL, queue, priority queue, heap]
+tags: [Data Structure, STL, priority queue, heap]
 redirect_from:
   - /2020/07/14/
 ---
@@ -53,6 +53,9 @@ private:
     string name;
     int id;
 public:
+    int operator()(Student a, Student b){ //비교함수자 cmp
+      return a.id > b.id;
+	  }
     Student(){
         this->name = "name";
         this->id = 0;
@@ -61,48 +64,28 @@ public:
         this->name = _name;
         this->id = _id;
     }
-    int operator()(Student a, Student b){
-		return a.id > b.id;
-	  }
-
     string getName(){
         return this->name;
     }
     int getId(){
         return this->id;
     }
-
     void print(){
         cout << this->id <<" : "<< this->name<<endl;
     }
 };
 
 int main() {
-    
     priority_queue<Student,vector<Student>,Student> pq;
-    
     pq.push(Student("si",10));
     pq.push(Student("hyeon",13));
     pq.push(Student("park1",8));
     pq.push(Student("park2",8));
-    
     while(!pq.empty()){
         Student now = pq.top();
         pq.pop();
         now.print();
     }
-
-
     return 0;
 }
 ~~~
-
-
-
-
-
-
-----------------------
-
-
-### Heap이란

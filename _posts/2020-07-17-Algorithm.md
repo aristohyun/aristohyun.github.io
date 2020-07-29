@@ -5,7 +5,7 @@ description: "STL, Standard Template Library"
 categories: [C++]
 tags: [STL, algorithm]
 redirect_from:
-  - /2020/07/27/
+  - /2020/07/17/
 ---
 
 * Kramdown table of contents
