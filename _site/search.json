@@ -8,7 +8,7 @@
     } ,
   
     {
-      "title"      : "#include_ algorithm",
+      "title"      : "Algorithm",
       "url"        : "/blog/2020/07/27/Algorithm/",
       "date"       : "2020-07-27 00:00:00 +0900",
       "shortdate"  : "July 27, 2020"
@@ -29,57 +29,57 @@
     } ,
   
     {
-      "title"      : "#include_ list",
+      "title"      : "List",
       "url"        : "/blog/2020/07/16/List/",
       "date"       : "2020-07-16 00:00:00 +0900",
       "shortdate"  : "July 16, 2020"
     } ,
   
     {
-      "title"      : "#include_ set",
+      "title"      : "Set",
       "url"        : "/blog/2020/07/15/Set/",
       "date"       : "2020-07-15 00:00:00 +0900",
       "shortdate"  : "July 15, 2020"
     } ,
   
     {
-      "title"      : "#include_ map ",
+      "title"      : "Map ",
       "url"        : "/blog/2020/07/15/Map/",
       "date"       : "2020-07-15 00:00:00 +0900",
       "shortdate"  : "July 15, 2020"
     } ,
   
     {
-      "title"      : "#include_ vector ",
+      "title"      : "Vector",
       "url"        : "/blog/2020/07/14/Vector/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "#include_ string",
+      "title"      : "String",
       "url"        : "/blog/2020/07/14/String/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "#include_ stack",
+      "title"      : "Stack",
       "url"        : "/blog/2020/07/14/Stack/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "#include_ queue",
+      "title"      : "Queue",
       "url"        : "/blog/2020/07/14/Queue/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
   
     {
-      "title"      : "#include_ heap",
-      "url"        : "/blog/2020/07/14/Heap/",
+      "title"      : "Priority Queue",
+      "url"        : "/blog/2020/07/14/Priority-Queue/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,

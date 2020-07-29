@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-28T15:30:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">우선탐색</title><link href="http://localhost:4000/blog/2020/07/28/DFS,BFS/" rel="alternate" type="text/html" title="우선탐색" /><published>2020-07-28T00:00:00+09:00</published><updated>2020-07-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/28/DFS,BFS</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/28/DFS,BFS/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-29T11:26:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">우선탐색</title><link href="http://localhost:4000/blog/2020/07/28/DFS,BFS/" rel="alternate" type="text/html" title="우선탐색" /><published>2020-07-28T00:00:00+09:00</published><updated>2020-07-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/28/DFS,BFS</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/28/DFS,BFS/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:12px;
@@ -100,7 +100,7 @@
 &lt;h3 id=&quot;heading-prim&quot;&gt;Prim&lt;/h3&gt;
 &lt;blockquote&gt;
 
-&lt;/blockquote&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="탐색" /><category term="DFS" /><category term="BFS" /><category term="Dijkstra" /><summary type="html"></summary></entry><entry><title type="html">#include_ algorithm</title><link href="http://localhost:4000/blog/2020/07/27/Algorithm/" rel="alternate" type="text/html" title="#include_ algorithm" /><published>2020-07-27T00:00:00+09:00</published><updated>2020-07-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/27/Algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/27/Algorithm/">&lt;style&gt;
+&lt;/blockquote&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="탐색" /><category term="DFS" /><category term="BFS" /><category term="Dijkstra" /><summary type="html"></summary></entry><entry><title type="html">Algorithm</title><link href="http://localhost:4000/blog/2020/07/27/Algorithm/" rel="alternate" type="text/html" title="Algorithm" /><published>2020-07-27T00:00:00+09:00</published><updated>2020-07-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/27/Algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/27/Algorithm/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:12px;
@@ -347,7 +347,7 @@ NP : non-Polynomial time&lt;/p&gt;
 &lt;span class=&quot;margin&quot;&gt;=&amp;gt; SAT문제를 다항 시간에 풀 수 있으면 NP문제는 모두 다항 시간에 풀 수 있다&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt;==&amp;gt; 이런 문제들을 NP-Hard(NP-난해) 문제라고 함&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NP-Hard이며 NP인 문제를 NP-Complete(NP-완비)문제 라고함&lt;/code&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">#include_ list</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="#include_ list" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
+&lt;p&gt;    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NP-Hard이며 NP인 문제를 NP-Complete(NP-완비)문제 라고함&lt;/code&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">List</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="List" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -459,7 +459,7 @@ NP : non-Polynomial time&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt.unique()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;인접한 원소가 같으면 유일하게 만든다(하나빼고 모두 삭제)&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">#include_ map</title><link href="http://localhost:4000/blog/2020/07/15/Map/" rel="alternate" type="text/html" title="#include_ map " /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Map/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">Map</title><link href="http://localhost:4000/blog/2020/07/15/Map/" rel="alternate" type="text/html" title="Map " /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Map/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -572,7 +572,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">#include_ set</title><link href="http://localhost:4000/blog/2020/07/15/Set/" rel="alternate" type="text/html" title="#include_ set" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Set/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">Set</title><link href="http://localhost:4000/blog/2020/07/15/Set/" rel="alternate" type="text/html" title="Set" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Set/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -682,7 +682,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">#include_ vector</title><link href="http://localhost:4000/blog/2020/07/14/Vector/" rel="alternate" type="text/html" title="#include_ vector " /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Vector/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">Vector</title><link href="http://localhost:4000/blog/2020/07/14/Vector/" rel="alternate" type="text/html" title="Vector" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Vector/">&lt;style&gt;
     .margin{
       font-size:12px;
       margin-left:15px;
@@ -767,7 +767,7 @@ NP : non-Polynomial time&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve(n)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; n개의 원소를 저장할 공간 예약, capacity 설정 &lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">#include_ string</title><link href="http://localhost:4000/blog/2020/07/14/String/" rel="alternate" type="text/html" title="#include_ string" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/String</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/String/">&lt;style&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">String</title><link href="http://localhost:4000/blog/2020/07/14/String/" rel="alternate" type="text/html" title="String" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/String</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/String/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;
@@ -876,7 +876,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html"></summary></entry><entry><title type="html">#include_ stack</title><link href="http://localhost:4000/blog/2020/07/14/Stack/" rel="alternate" type="text/html" title="#include_ stack" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Stack/">&lt;style&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html"></summary></entry><entry><title type="html">Stack</title><link href="http://localhost:4000/blog/2020/07/14/Stack/" rel="alternate" type="text/html" title="Stack" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Stack/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:10px;

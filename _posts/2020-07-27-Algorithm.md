@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#include_ algorithm"
+title: "Algorithm"
 description: "C++ STL"
 categories: [C++]
 tags: [STL, algorithm]
