@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Priority Queue"
-description: "C++ STL"
+title: "C++, Priority Queue"
+description: "STL, Standard Template Library"
 categories: [C++]
 tags: [STL, queue, priority queue, heap]
 redirect_from:
@@ -99,8 +99,12 @@ int main() {
     pq.push(Student("park1",8));
     pq.push(Student("park2",8));
     
-    Student now = pq.top();
-    now.print();
+    while(!pq.empty()){
+        Student now = pq.top();
+        pq.pop();
+        now.print();
+    }
+
 
     return 0;
 }

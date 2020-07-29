@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Algorithm"
-description: "C++ STL"
+title: "C++, Algorithm"
+description: "STL, Standard Template Library"
 categories: [C++]
 tags: [STL, algorithm]
 redirect_from:
