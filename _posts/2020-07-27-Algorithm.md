@@ -26,7 +26,9 @@ redirect_from:
 
 ####  #include
 `#include <algirithm>`
-> 알고리즘에서 자주 쓰는 함수들    
+> 알고리즘 헤더에서 자주 쓰는 함수들    
+
+--------------------------------------------
 
 ### sort    
 <span class="margin">vector 와 deque만 가능</span>   
@@ -50,6 +52,8 @@ partial_sort(start, middle, end);
 partial_sort(vec.begin(), vec.begin()+10, vec.end());
 ~~~
 
+--------------------------------------------------
+
 ### find    
 > 가장 먼저 찾은 k값의 itr return, itr-vec.begin() 하면 index값    
 > 못찾으면 return vec.end();
@@ -70,6 +74,8 @@ while(true){
 }//등으로 사용 가능
 ~~~
 
+------------------------------------------------------------
+
 ### any_of, all_of
 
 > any_of : 어떤 요소라도 만족하면 true  //OR    
@@ -79,6 +85,8 @@ while(true){
 any_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
 all_of(vec.begin(), vec.end(), [](int i) { return i < 10; });
 ~~~
+
+--------------------------------------------------------------
 
 ### remove
 > remove함수는 해당 원소들을 모두 찾아서 끝으로 모은다   
@@ -98,6 +106,8 @@ vec.erase(remove_if(vec.begin(), vec.end(), is_odd()), vec.end()); // remove_if�
 vec.erase(remove_if(vec.begin(), vec.end(), [](int i) -> bool { return i % 2 == 1; }), vec.end());
 //[](int i) -> bool { return i % 2 == 1; } : 람다 함수, lamda function, 익명 함수
 ~~~
+
+---------------------------------------------------------
 
 ### transform
 ~~~ c++
