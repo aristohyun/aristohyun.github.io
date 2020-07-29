@@ -7,19 +7,6 @@ tags: [STL, algorithm]
 redirect_from:
   - /2020/07/27/
 ---
-  <style>
-    .margin {
-      font-size:12px;
-      margin-left:12px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  </style>
 
 * Kramdown table of contents
 {:toc .toc}

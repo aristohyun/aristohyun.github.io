@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-29T11:26:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">우선탐색</title><link href="http://localhost:4000/blog/2020/07/28/DFS,BFS/" rel="alternate" type="text/html" title="우선탐색" /><published>2020-07-28T00:00:00+09:00</published><updated>2020-07-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/28/DFS,BFS</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/28/DFS,BFS/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-07-29T11:40:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Note</title><subtitle>sihyeon</subtitle><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><entry><title type="html">우선탐색</title><link href="http://localhost:4000/blog/2020/07/28/DFS,BFS/" rel="alternate" type="text/html" title="우선탐색" /><published>2020-07-28T00:00:00+09:00</published><updated>2020-07-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/28/DFS,BFS</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/28/DFS,BFS/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:12px;
@@ -100,7 +100,7 @@
 &lt;h3 id=&quot;heading-prim&quot;&gt;Prim&lt;/h3&gt;
 &lt;blockquote&gt;
 
-&lt;/blockquote&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="탐색" /><category term="DFS" /><category term="BFS" /><category term="Dijkstra" /><summary type="html"></summary></entry><entry><title type="html">Algorithm</title><link href="http://localhost:4000/blog/2020/07/27/Algorithm/" rel="alternate" type="text/html" title="Algorithm" /><published>2020-07-27T00:00:00+09:00</published><updated>2020-07-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/27/Algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/27/Algorithm/">&lt;style&gt;
+&lt;/blockquote&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="탐색" /><category term="DFS" /><category term="BFS" /><category term="Dijkstra" /><summary type="html"></summary></entry><entry><title type="html">C++, Algorithm</title><link href="http://localhost:4000/blog/2020/07/27/Algorithm/" rel="alternate" type="text/html" title="C++, Algorithm" /><published>2020-07-27T00:00:00+09:00</published><updated>2020-07-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/27/Algorithm</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/27/Algorithm/">&lt;style&gt;
     .margin {
       font-size:12px;
       margin-left:12px;
@@ -125,8 +125,10 @@
 &lt;h4 id=&quot;heading-include&quot;&gt;#include&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;algirithm&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;알고리즘에서 자주 쓰는 함수들&lt;/p&gt;
+  &lt;p&gt;알고리즘 헤더에서 자주 쓰는 함수들&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;heading-sort&quot;&gt;sort&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&quot;margin&quot;&gt;vector 와 deque만 가능&lt;/span&gt; &lt;br /&gt;
@@ -147,6 +149,8 @@
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;partial_sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;middle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;partial_sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;heading-find&quot;&gt;find&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -169,6 +173,8 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//등으로 사용 가능&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&quot;heading-any_of-all_of&quot;&gt;any_of, all_of&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -179,6 +185,8 @@ all_of : 모든 요소가 만족하면 true    //AND&lt;/p&gt;
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;any_of&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[](&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;all_of&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[](&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;heading-remove&quot;&gt;remove&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -199,6 +207,8 @@ all_of : 모든 요소가 만족하면 true    //AND&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;erase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remove_if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[](&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;//[](int i) -&amp;gt; bool { return i % 2 == 1; } : 람다 함수, lamda function, 익명 함수&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;heading-transform&quot;&gt;transform&lt;/h3&gt;
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[](&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//배열의 모든 수에 +1씩&lt;/span&gt;
@@ -347,21 +357,7 @@ NP : non-Polynomial time&lt;/p&gt;
 &lt;span class=&quot;margin&quot;&gt;=&amp;gt; SAT문제를 다항 시간에 풀 수 있으면 NP문제는 모두 다항 시간에 풀 수 있다&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt;==&amp;gt; 이런 문제들을 NP-Hard(NP-난해) 문제라고 함&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NP-Hard이며 NP인 문제를 NP-Complete(NP-완비)문제 라고함&lt;/code&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">List</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="List" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NP-Hard이며 NP인 문제를 NP-Complete(NP-완비)문제 라고함&lt;/code&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="알고리즘 문제해결 전략" /><category term="이론" /><summary type="html">컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.</summary></entry><entry><title type="html">C++, List</title><link href="http://localhost:4000/blog/2020/07/16/List/" rel="alternate" type="text/html" title="C++, List" /><published>2020-07-16T00:00:00+09:00</published><updated>2020-07-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/16/List</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/16/List/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -459,21 +455,7 @@ NP : non-Polynomial time&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt.unique()&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt;인접한 원소가 같으면 유일하게 만든다(하나빼고 모두 삭제)&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">Map</title><link href="http://localhost:4000/blog/2020/07/15/Map/" rel="alternate" type="text/html" title="Map " /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Map/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="list" /><summary type="html"></summary></entry><entry><title type="html">C++, Map</title><link href="http://localhost:4000/blog/2020/07/15/Map/" rel="alternate" type="text/html" title="C++, Map" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Map</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Map/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-multiset&quot; id=&quot;markdown-toc-heading-multiset&quot;&gt;multiset&lt;/a&gt;&lt;/li&gt;
@@ -572,21 +554,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">Set</title><link href="http://localhost:4000/blog/2020/07/15/Set/" rel="alternate" type="text/html" title="Set" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Set/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="map" /><summary type="html"></summary></entry><entry><title type="html">C++, Set</title><link href="http://localhost:4000/blog/2020/07/15/Set/" rel="alternate" type="text/html" title="C++, Set" /><published>2020-07-15T00:00:00+09:00</published><updated>2020-07-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/15/Set</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/15/Set/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-multiset&quot; id=&quot;markdown-toc-heading-multiset&quot;&gt;multiset&lt;/a&gt;&lt;/li&gt;
@@ -682,20 +650,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.insert(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.erase(k)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.find(k)&lt;/code&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 실행시간이 O(1)!&lt;/span&gt;  &lt;br /&gt;
 &lt;span class=&quot;margin&quot;&gt; 빠름! 굳이 정렬을 안해도 된다면 unordered를 사용하자 &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">Vector</title><link href="http://localhost:4000/blog/2020/07/14/Vector/" rel="alternate" type="text/html" title="Vector" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Vector/">&lt;style&gt;
-    .margin{
-      font-size:12px;
-      margin-left:15px;
-    }
-    .nomargin{
-      font-size:12px;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="set" /><summary type="html"></summary></entry><entry><title type="html">C++, Vector</title><link href="http://localhost:4000/blog/2020/07/14/Vector/" rel="alternate" type="text/html" title="C++, Vector" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Vector</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Vector/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버-함수&quot; id=&quot;markdown-toc-heading-멤버-함수&quot;&gt;멤버 함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -767,21 +722,7 @@ NP : non-Polynomial time&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.reserve(n)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; n개의 원소를 저장할 공간 예약, capacity 설정 &lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n)&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v.resize(n,x)&lt;/code&gt; &lt;span class=&quot;margin&quot;&gt; v의 크기를 n으로 변경, 더 커지는 공간은 기본값 / x로 초기화 &lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">String</title><link href="http://localhost:4000/blog/2020/07/14/String/" rel="alternate" type="text/html" title="String" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/String</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/String/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-8px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="vector" /><summary type="html"></summary></entry><entry><title type="html">C++, String</title><link href="http://localhost:4000/blog/2020/07/14/String/" rel="alternate" type="text/html" title="C++, String" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/String</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/String/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -876,21 +817,7 @@ NP : non-Polynomial time&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html"></summary></entry><entry><title type="html">Stack</title><link href="http://localhost:4000/blog/2020/07/14/Stack/" rel="alternate" type="text/html" title="Stack" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Stack/">&lt;style&gt;
-    .margin {
-      font-size:12px;
-      margin-left:10px;
-    }
-    .nomargin{
-      font-size:12px;
-      margin-left:0;
-    }
-    .space{
-      margin:-10px 0;
-    }
-  &lt;/style&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Sihyeon</name><email>aristohyun97@gmail.com</email></author><category term="STL" /><category term="string" /><summary type="html"></summary></entry><entry><title type="html">C++, Stack</title><link href="http://localhost:4000/blog/2020/07/14/Stack/" rel="alternate" type="text/html" title="C++, Stack" /><published>2020-07-14T00:00:00+09:00</published><updated>2020-07-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/2020/07/14/Stack</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/14/Stack/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-생성자&quot; id=&quot;markdown-toc-heading-생성자&quot;&gt;생성자&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-멤버함수&quot; id=&quot;markdown-toc-heading-멤버함수&quot;&gt;멤버함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
