@@ -1,9 +1,16 @@
 ---
 layout: post
 title: "작성중 : C++, Graph"
-description: "Data Struct"
+description: "Data Structure"
 categories: [C++]
-tags: []
+tags: [Data Structure, Graph]
 redirect_from:
   - /2020/07/29/
 ---
+
+* Kramdown table of contents
+{:toc .toc}
+
+### Graph
+
+#### 구현
