@@ -55,12 +55,10 @@ private:
 public:
     int operator()(Student a, Student b){ //비교함수자 cmp
       return a.id > b.id;
-      }
-
-    Student(string _name, int _id){
-        this->name = _name;
-        this->id = _id;
     }
+
+    Student(){this->name=""; this->id=0;}
+    Student(string _name, int _id){this->name = _name; this->id = _id;}
     void print(){
         cout << this->id <<" : "<< this->name<<endl;
     }
