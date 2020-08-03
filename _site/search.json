@@ -8,13 +8,6 @@
     } ,
   
     {
-      "title"      : "[참고 사이트]",
-      "url"        : "/blog/2020/07/30/ShortestPah/",
-      "date"       : "2020-07-30 00:00:00 +0900",
-      "shortdate"  : "July 30, 2020"
-    } ,
-  
-    {
       "title"      : "우선탐색",
       "url"        : "/blog/2020/07/30/DFS,BFS/",
       "date"       : "2020-07-30 00:00:00 +0900",
@@ -36,7 +29,7 @@
     } ,
   
     {
-      "title"      : "작성중 : C++, Heap",
+      "title"      : "C++, Heap",
       "url"        : "/blog/2020/07/28/Heap/",
       "date"       : "2020-07-28 00:00:00 +0900",
       "shortdate"  : "July 28, 2020"
@@ -66,13 +59,6 @@
     {
       "title"      : "C++, List",
       "url"        : "/blog/2020/07/16/List/",
-      "date"       : "2020-07-16 00:00:00 +0900",
-      "shortdate"  : "July 16, 2020"
-    } ,
-  
-    {
-      "title"      : "작성중 : C++, Hash",
-      "url"        : "/blog/2020/07/16/Hash/",
       "date"       : "2020-07-16 00:00:00 +0900",
       "shortdate"  : "July 16, 2020"
     } ,
@@ -138,6 +124,13 @@
       "url"        : "/blog/2020/07/13/code-highlighting/",
       "date"       : "2020-07-13 00:00:00 +0900",
       "shortdate"  : "July 13, 2020"
+    } ,
+  
+    {
+      "title"      : "[참고 사이트]",
+      "url"        : "/blog/2020/07/02/ReferTo/",
+      "date"       : "2020-07-02 00:00:00 +0900",
+      "shortdate"  : "July 02, 2020"
     } ,
   
     {

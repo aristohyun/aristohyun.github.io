@@ -5,6 +5,10 @@
 <lastmod>2020-07-01T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2020/07/02/ReferTo/</loc>
+<lastmod>2020-07-02T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/2020/07/13/code-highlighting/</loc>
 <lastmod>2020-07-13T00:00:00+09:00</lastmod>
 </url>
@@ -41,10 +45,6 @@
 <lastmod>2020-07-15T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/2020/07/16/Hash/</loc>
-<lastmod>2020-07-16T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/blog/2020/07/16/List/</loc>
 <lastmod>2020-07-16T00:00:00+09:00</lastmod>
 </url>
@@ -74,10 +74,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/2020/07/30/DFS,BFS/</loc>
-<lastmod>2020-07-30T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/2020/07/30/ShortestPah/</loc>
 <lastmod>2020-07-30T00:00:00+09:00</lastmod>
 </url>
 <url>
