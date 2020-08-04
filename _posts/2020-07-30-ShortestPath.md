@@ -28,10 +28,10 @@ redirect_from:
 > Dijkstra의 알고리즘에서는 시작 정점에서 집합 S에 있는 정점만을 거쳐서 다른 정점으로 가는 `최단 거리를 기록하는 배열`이 반드시 있어야 한다
 
 #### 핵심 알고리즘
-1. <span class="margin"> 알고리즘의 매 단계에서 집합 S 안에 있지 않은 정점 중에서 가장 distance 값이 작은 정점을 S에 추가한다. </span>    
-2. <span class="margin"> 새로운 정점 u가 S에 추가되면, S에 있지 않은 다른 정점들의 distance 값을 수정한다. </span>    
-3. <span class="margin"> 시작 기준점이 u로 바뀌었기 때문에, 새로 추가된 정점 u를 거쳐서 정점까지 가는 거리와 기존의 거리를 비교한다.  </span>    
-4. <span class="margin"> 그 후 더 작은 거리값을 기준으로 distance값을 수정한다.</span>    
+1. <span class="nomargin"> 알고리즘의 매 단계에서 집합 S 안에 있지 않은 정점 중에서 가장 distance 값이 작은 정점을 S에 추가한다. </span>    
+2. <span class="nnomargin"> 새로운 정점 u가 S에 추가되면, S에 있지 않은 다른 정점들의 distance 값을 수정한다. </span>    
+3. <span class="nomargin"> 시작 기준점이 u로 바뀌었기 때문에, 새로 추가된 정점 u를 거쳐서 정점까지 가는 거리와 기존의 거리를 비교한다.  </span>    
+4. <span class="nomargin"> 그 후 더 작은 거리값을 기준으로 distance값을 수정한다.</span>    
 
 ~~~ c++
  distance[w] = min(distance[w], distance[u] + weight[u][w]) //현재까지 w에 도달하는 가장 짧은 거리, u에서 w까지 가는 가장 거리 중 최소치
