@@ -11,7 +11,7 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}
 
-[원본 사이트](https://mattlee.tistory.com/50)
+[원본 사이트](https://mattlee.tistory.com/50){: target="_blank"}
 
 ## 최단 경로    
 > 정점 u와 정점 v를 연결하는 경로 중 간선들의 **가중치 합이 최소**가 되는 경로를 찾는 문제     
