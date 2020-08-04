@@ -5,7 +5,7 @@ description: "STL, Standard Template Library"
 categories: [C++]
 tags: [Data Structure, STL, priority queue, heap]
 redirect_from:
-  - /2020/07/14/
+  - /2020/07/27/
 ---
 * Kramdown table of contents
 {:toc .toc}

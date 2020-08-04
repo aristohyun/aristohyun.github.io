@@ -36,6 +36,13 @@
     } ,
   
     {
+      "title"      : "C++, Priority Queue",
+      "url"        : "/blog/2020/07/27/Priority-Queue/",
+      "date"       : "2020-07-27 00:00:00 +0900",
+      "shortdate"  : "July 27, 2020"
+    } ,
+  
+    {
       "title"      : "알고리즘의 정당성 증명",
       "url"        : "/blog/2020/07/24/Justification/",
       "date"       : "2020-07-24 00:00:00 +0900",
@@ -101,13 +108,6 @@
     {
       "title"      : "C++, Queue",
       "url"        : "/blog/2020/07/14/Queue/",
-      "date"       : "2020-07-14 00:00:00 +0900",
-      "shortdate"  : "July 14, 2020"
-    } ,
-  
-    {
-      "title"      : "C++, Priority Queue",
-      "url"        : "/blog/2020/07/14/Priority-Queue/",
       "date"       : "2020-07-14 00:00:00 +0900",
       "shortdate"  : "July 14, 2020"
     } ,
