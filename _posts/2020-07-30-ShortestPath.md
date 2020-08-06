@@ -27,7 +27,7 @@ redirect_from:
 > 하나의 시작 정점으로부터 모든 다른 정점까지의 최단 경로를 찾는 알고리즘    
 > Dijkstra의 알고리즘에서는 시작 정점에서 집합 S에 있는 정점만을 거쳐서 다른 정점으로 가는 `최단 거리를 기록하는 배열`이 반드시 있어야 한다
 
-#### 핵심 알고리즘
+#### 핵심 개념
 1. <span class="nomargin">알고리즘의 매 단계에서 집합 S 안에 있지 않은 정점 중에서 가장 distance 값이 작은 정점을 S에 추가한다. </span>    
 2. <span class="nomargin">새로운 정점 u가 S에 추가되면, S에 있지 않은 다른 정점들의 distance 값을 수정한다. </span>    
 3. <span class="nomargin">시작 기준점이 u로 바뀌었기 때문에, 새로 추가된 정점 u를 거쳐서 정점까지 가는 거리와 기존의 거리를 비교한다.  </span>    
@@ -35,5 +35,51 @@ redirect_from:
 
 ~~~ c++
  distance[w] = min(distance[w], distance[u] + weight[u][w]) //현재까지 w에 도달하는 가장 짧은 거리, u에서 w까지 가는 가장 거리 중 최소치
+~~~
+
+### 구현
+~~~ c++
+/*
+class Graph{
+public:
+  vector<vector<int>> edge;
+}
+*/
+#define INF 10000;
+int Dijkstra(Graph graph,int start,int end){
+  vector<int> distance(graph.edge.size(),INF);  distance[start] = 0;
+  vector<bool> visited(graph.edge.size(),false);
+
+  int now = start;
+  while(now != -1){
+    if(now == end) return distance[end];
+
+    visited[now] = true;
+    setShortestPath(distance,now,graph);  //now로부터 거리 재설정, 더 짧은 길로
+
+    now = getShortestPath(distance,now,visited);  //방문X, 가장 짧은 곳에서부터 탐색
+  }
+  //시작점으로부터 각 노드까지의 최소거리를 알 수 있음
+
+  return -1;
+}
+void setShortestPath(vector<int>& distance, int now, Graph graph){
+  for(int i=0;i<distance.size();i++)
+    distance[i] = min(distance[i],distance[now]+graph[now][i]);
+    // 지금 i까지 가는 거리 vs now + now에서 i까지 가는 거리
+}
+int getShortestPath(vector<int> distance, int now, vector<bool> visited){
+    //가장 짧은 노드 return
+  int min=-1, minDis=INF;
+  for(int i=0;i<distane.size();i++){
+    if(!visited[i] && distance[i]<minDis){
+      min = i;
+      minDis = distance[min];
+    }
+  }
+  return min;
+}
+
+
 ~~~
 
