@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "작성중 : 최단거리 알고리즘"
+title: "작성중 : 최단경로 알고리즘"
 description: "Dijkstra, Prim"
 categories: [Algorithm]
 tags: [탐색, Dijkstra, Prim]
@@ -40,12 +40,12 @@ redirect_from:
 ### 구현
 ~~~ c++
 /*
+#define INF 10000;
 class Graph{
 public:
   vector<vector<int>> edge;
 }
 */
-#define INF 10000;
 int Dijkstra(Graph graph,int start,int end){
   vector<int> distance(graph.edge.size(),INF);  distance[start] = 0;
   vector<bool> visited(graph.edge.size(),false);
@@ -60,7 +60,6 @@ int Dijkstra(Graph graph,int start,int end){
     now = getShortestPath(distance,now,visited);  //방문X, 가장 짧은 곳에서부터 탐색
   }
   //시작점으로부터 각 노드까지의 최소거리를 알 수 있음
-
   return -1;
 }
 void setShortestPath(vector<int>& distance, int now, Graph graph){
@@ -77,9 +76,66 @@ int getShortestPath(vector<int> distance, int now, vector<bool> visited){
       minDis = distance[min];
     }
   }
+
   return min;
 }
-
-
 ~~~
 
+
+## Prim
+
+### 신장트리
+> 신장트리(Spanning Tree)란, 그래프에서 일부 간선만을 연결해 만든 그래프로
+> 최소 연결 부분 그래프이다.
+
+### 최소 비용 신장 트리
+> 최소 비용 신장 트리(MST: minimum spanning tree)란, 사용된 간선들의 가중치 합이 최소인 신장트리 말한다    
+
+### Prim 알고리즘
+> Prim알고리즘은 이 MST를 만드는 알고리즘으로,    
+> 시작 정점에서부터 출발하여 신장 트리 집합을 단계적으로 확장해나가는 방법을 사용한다    
+
+### 구현
+~~~ c++
+/*
+#define INF 10000;
+class Graph{
+public:
+  vector<vector<int>> edge;
+}
+*/
+typedef tuple<int,int,int> P;   //weight, from, to
+
+Graph Prim(Graph graph){
+  Graph primGraph(graph.edge.size());
+  vector<bool> visited(graph.edge.size(),false);  visited[0]=true;
+  priority_queue<P, vector<P>, greater<P>> pq;  //우선순위큐
+    
+  pushWeight(pq,0,graph,visited); //0과 연결된 노드 push
+
+  while(!pq.empty()){
+    int weight, from, to;
+    tie(weight,from,to) = pq.top(); pq.pop(); //우선순위 큐이니 최소값이 return
+
+    if(visited[to]) continue; //방문한 곳이면 패스
+    else visited[to] = true;
+
+    primGraph.setEdge(from,to,weight);  //최소값이니 그래프에 연결해줌
+
+    pushWeight(pq,to,graph,visited); //to와 연결된 노드 push
+  }
+
+  return primGraph;
+}
+
+void pushWeight(priority_queue<P, vector<P>, greater<P>>& pq, int now ,Graph graph, vector<bool> visited){
+  for(int i=0;i<graph.edge.size();i++){
+    if(graph.edge[now][i] != INF && !visited[i]){
+      pq.push(make_tuple(graph.edge[now][i],now,i));
+    }
+  }
+}
+~~~
+
+
+## Kruskal
