@@ -48,3 +48,14 @@ redirect_from:
 * ### git
 * ### gitblog
 
+
+~~~ c++
+
+//0. now = visited
+//1. for(j=i+1;j<size()) //모든 노드 삽입
+//    pq.push(edge[i][j])
+//  
+//2. now = pq.pop();
+//3. result.push(now);
+//4. go 0
+~~~
