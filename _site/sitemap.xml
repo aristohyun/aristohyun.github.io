@@ -57,6 +57,10 @@
 <lastmod>2020-07-24T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2020/07/26/Pair-Tuple/</loc>
+<lastmod>2020-07-26T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/2020/07/27/Priority-Queue/</loc>
 <lastmod>2020-07-27T00:00:00+09:00</lastmod>
 </url>
@@ -77,8 +81,12 @@
 <lastmod>2020-07-30T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/2020/07/30/ShortestPath/</loc>
-<lastmod>2020-07-30T00:00:00+09:00</lastmod>
+<loc>http://localhost:4000/blog/2020/07/31/Dihkstra/</loc>
+<lastmod>2020-07-31T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2020/07/31/MST/</loc>
+<lastmod>2020-07-31T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/</loc>

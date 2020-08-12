@@ -1,10 +1,17 @@
 [
   
     {
-      "title"      : "작성중 : 최단거리 알고리즘",
-      "url"        : "/blog/2020/07/30/ShortestPath/",
-      "date"       : "2020-07-30 00:00:00 +0900",
-      "shortdate"  : "July 30, 2020"
+      "title"      : "최소비용 신장트리",
+      "url"        : "/blog/2020/07/31/MST/",
+      "date"       : "2020-07-31 00:00:00 +0900",
+      "shortdate"  : "July 31, 2020"
+    } ,
+  
+    {
+      "title"      : "최단경로 알고리즘",
+      "url"        : "/blog/2020/07/31/Dihkstra/",
+      "date"       : "2020-07-31 00:00:00 +0900",
+      "shortdate"  : "July 31, 2020"
     } ,
   
     {
@@ -15,7 +22,7 @@
     } ,
   
     {
-      "title"      : "작성중 : C++, Graph",
+      "title"      : "C++, Graph",
       "url"        : "/blog/2020/07/29/Graph/",
       "date"       : "2020-07-29 00:00:00 +0900",
       "shortdate"  : "July 29, 2020"
@@ -40,6 +47,13 @@
       "url"        : "/blog/2020/07/27/Priority-Queue/",
       "date"       : "2020-07-27 00:00:00 +0900",
       "shortdate"  : "July 27, 2020"
+    } ,
+  
+    {
+      "title"      : "C++, Pair, Tuple",
+      "url"        : "/blog/2020/07/26/Pair-Tuple/",
+      "date"       : "2020-07-26 00:00:00 +0900",
+      "shortdate"  : "July 26, 2020"
     } ,
   
     {
