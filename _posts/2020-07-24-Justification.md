@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "알고리즘의 정당성 증명"
+title: "작성중 : 알고리즘의 정당성 증명"
 description: "귀납법, 귀류법"
 categories: [Algorithm]
 tags: [알고리즘 문제해결 전략, 이론]
