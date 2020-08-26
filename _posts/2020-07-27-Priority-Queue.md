@@ -30,6 +30,8 @@ priority_queue<int, vector<int>, cmp> pq  //Max Heap
 priority_queue<int, vector<int>, less<int>> pq  //Max Heap, top이 최대값
 priority_queue<int, vector<int>, greater<int>> pq;  //Min Heap, top이 최소값
 
+priority_queue<int> pq(vector.begin(),vector.end());
+
 ~~~    
 ------------------------
 
