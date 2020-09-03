@@ -22,13 +22,13 @@ redirect_from:
 
 ~~~ c++    
 struct cmp{
-  bool operator()(const int& a, const int& b) const { return a > b; }
+  bool operator()(const int& a, const int& b) const { return a > b; } //오름차순
 };
 
 priority_queue<int> pq; //Max Heap
-priority_queue<int, vector<int>, cmp> pq  //Max Heap
-priority_queue<int, vector<int>, less<int>> pq  //Max Heap, top이 최대값
-priority_queue<int, vector<int>, greater<int>> pq;  //Min Heap, top이 최소값
+priority_queue<int, vector<int>, cmp> pq  //Min Heap
+priority_queue<int, vector<int>, less<int>> pq  //Max Heap, top이 최대값 , 내림차순
+priority_queue<int, vector<int>, greater<int>> pq;  //Min Heap, top이 최소값, 오름차순
 
 priority_queue<int> pq(vector.begin(),vector.end());
 
@@ -55,7 +55,7 @@ private:
     string name;
     int id;
 public:
-    int operator()(Student a, Student b){ //비교함수자 cmp
+    int operator()(Student a, Student b){ //비교함수자 cmp, 오름차순
       return a.id > b.id;
     }
 
