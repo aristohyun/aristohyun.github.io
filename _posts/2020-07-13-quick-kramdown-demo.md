@@ -20,8 +20,8 @@ redirect_from:
 
 # 일반적으로
 
-[링크](https://aristohyun.github.io "깃헙 블로그")는 `[이렇게](https://aristohyun.github.io "깃헙 블로그")` 타이틀도 띄울 수 있음
-
+[링크](https://aristohyun.github.io "깃헙 블로그")는 `[이렇게](https://aristohyun.github.io "깃헙 블로그")` 타이틀도 띄울 수 있음    
+[링크](https://aristohyun.github.io "깃헙 블로그"){: target="_blank"}는 `[이렇게](https://aristohyun.github.io "깃헙 블로그"){: target="_blank"}` 새탭에서 여는건 이렇게    
 **강조는** `**이렇게**`
 
 _기울임은_ `_이렇게_`
