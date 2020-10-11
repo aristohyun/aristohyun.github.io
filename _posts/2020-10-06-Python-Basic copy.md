@@ -12,7 +12,7 @@ redirect_from:
 {:toc .toc}
 
 ## 기본사용법
-중괄호X -> 콜론 + 들여쓰기(동일한 블럭은 동일한 수의 공백)
+<span class="margin">중괄호X -> 콜론 + 들여쓰기(동일한 블럭은 동일한 수의 공백)</span>
 
 ~~~ python
 if x > 0:
@@ -25,6 +25,59 @@ else :
     c = a - b
 ~~~
 
+### 사용자 입출력
+~~~ python
+str = input("문자열을 입력해주세요: ")
+print(str)
+~~~
+
+### 파일 입출력
+#### 입력
+~~~ python
+f = open("test.txt", 'w') # r, w, a
+for i in range(1, 11):
+    data = "%d번째 줄입니다.\n" % i
+    f.write(data)
+f.close()
+
+with open("sample.txt", "w") as f:
+    f.write("Life is too short, you need python")
+# with 블록을 벗어나는 순간 close됨
+~~~
+
+#### 출력
+> readline(), 한줄을 문자열로    
+> readlines(), 한줄씩 리스트에 저장    
+> read(), 전체 문자열을 하나의 문자열에    
+
+~~~ python
+f = open("test.txt", 'r')
+
+line = f.readline() # 첫번째 줄만 출력
+print(line)
+
+while True: # 모든 줄 출력
+    line = f.readline()
+    if not line: break
+    print(line)
+
+lines = f.readlines() # 리스트로 반환, 각 라인이 리스트에 한 줄 씩
+for line in lines:
+    print(line)
+
+data = f.read() # 페이지 전체의 내용이 하나의 문자열로
+print(data)
+
+f.close()
+~~~
+#### 추가
+~~~ python
+f = open("test.txt",'a')
+for i in range(1, 10):  # 기존 내용의 끝에서부터 추가 
+    data = "%d번째 줄입니다.\n" % i
+    f.write(data)
+f.close()
+~~~
 ## 표준 라이브러리
 ~~~ python
 import math
@@ -150,3 +203,16 @@ Usage: thingy [OPTIONS]
 >>> word[:4] + word[4:]
 'Python'
 ~~~
+
+### IF
+~~~ python
+x = 1
+if x < 0:
+  print("less than zero")
+elif x == 0:
+  print("zero")
+elif x > 0:
+  print("more than zero")
+else: print("this isnt num")
+~~~
+### FOR
