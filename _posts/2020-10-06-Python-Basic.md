@@ -11,7 +11,7 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}
 
-## 기본사용법
+# 기본사용법
 <span class="margin">중괄호X -> 콜론 + 들여쓰기(동일한 블럭은 동일한 수의 공백)</span>
 
 ~~~ python
@@ -25,14 +25,14 @@ else :
     c = a - b
 ~~~
 
-### 사용자 입출력
+## 사용자 입출력
 ~~~ python
 str = input("문자열을 입력해주세요: ")
 print(str)
 ~~~
 
-### 파일 입출력
-#### 입력
+## 파일 입출력
+### 입력
 ~~~ python
 f = open("test.txt", 'w') # r, w, a
 for i in range(1, 11):
@@ -45,7 +45,7 @@ with open("sample.txt", "w") as f:
 # with 블록을 벗어나는 순간 close됨
 ~~~
 
-#### 출력
+### 출력
 > readline(), 한줄을 문자열로    
 > readlines(), 한줄씩 리스트에 저장    
 > read(), 전체 문자열을 하나의 문자열에    
@@ -70,7 +70,7 @@ print(data)
 
 f.close()
 ~~~
-#### 추가
+### 추가
 ~~~ python
 f = open("test.txt",'a')
 for i in range(1, 10):  # 기존 내용의 끝에서부터 추가 
@@ -78,7 +78,43 @@ for i in range(1, 10):  # 기존 내용의 끝에서부터 추가
     f.write(data)
 f.close()
 ~~~
-## 표준 라이브러리
+
+# 함수
+
+## def
+
+~~~ python
+# def 함수명(매개변수):
+#  내용
+#  내용
+
+def add(a,b):
+  return a + b
+
+# 매개변수의 갯수를 정해놓지 않음
+# 매개변수를 모두 모아서 튜플로 만들기 때문
+def add(*args): 
+  result = 0
+  for i in args:
+    reslt += i
+  return result
+
+add(1,2,3,4,5,6,7,8,9,10)
+
+def func(a,b=0):  # 매개변수에 미리 값 대입. 초깃값 설정
+  return a+b, a-b # 튜플로 리턴 가능
+
+~~~
+
+## lambda
+> 보통 한줄짜리 간단한 함수를 만들 때 사용   
+
+~~~ python
+add = lambda a,b: a+b
+add(3,4)
+~~~
+
+# 표준 라이브러리
 ~~~ python
 import math
 n = math.sqrt(9,0)
@@ -95,22 +131,22 @@ print(n) # 주석은 샵하나, 띄어쓰기 하나 하는게 좋음
 [PEP 8](https://www.python.org/dev/peps/pep-0008){: target="_blank"}
 
 
-## 연산자
+# 연산자
 
-> ### 산술연산자
+> ## 산술연산자
 > `+ - * / % // ** ***`
-> ### 비교연산자
+> ## 비교연산자
 > `== != < > <= >=`
-> ### 할당연산자
+> ## 할당연산자
 > `=`, `+= -= *= /= %= //=`
-> ### 논리연산자
+> ## 논리연산자
 > `and` (&&), `or` (||), `not` (!)    
-> ### Bitwise 연산자
+> ## Bitwise 연산자
 > `&` (and), `|` (or), `^` (xor), `~` (complement), `<<` `>>` (shift)    
 > 비트단위 연산
-> ### 멤버쉽 연산자
+> ## 멤버쉽 연산자
 > `in`, `not in`    
 > 좌측 Operand가 우측 컬렉션에 속했는지 아닌지 확인, return Bool    
-> ### Identity 연산자
+> ## Identity 연산자
 > `is`, `is not`    
 > 양쪽 Operand가 동일한 Object를 가리키는지 아닌지를 체크, return Bool

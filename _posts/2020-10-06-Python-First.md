@@ -159,16 +159,64 @@ f'나의 이름은 {name}입니다. 나이는 {age}입니다.'
 <span class="margin"> `s.split()` 아무값도 넣지 않아주면 공백을 기준으로 문자열을 나누어 리스트로 저장</span>
 <span class="margin">     특정 값을 넣으면 해당 값으로 나눔</span>    
 
-# 제어문
-## IF
+## 튜플    
+> 리스트와 달리 튜플은 값의 변경이 X
+> 그 외 인덱싱, 슬라이싱, + * 의 역할은 리스트와 동일    
+
 ~~~ python
-x = 1
-if x < 0:
-  print("less than zero")
-elif x == 0:
-  print("zero")
-elif x > 0:
-  print("more than zero")
-else: print("this isnt num")
+t1 = ()
+t2 = (1,)
+t3 = (1,2,3)
+t4 = 1,2,3
+t5 = (1,2,(2,3,4))
 ~~~
-## FOR
+
+## 딕셔너리 (=map)
+> Hasp, 연관배열
+
+~~~ python
+dic = {"name":"Sihyeon","phone":"01034642694"}
+dic["birth"] = 971231   # 추가
+del dic["phone"]        # 삭제
+~~~
+
+### 딕셔너리 관련 함수
+<span class="margin">`dic.keys()` dic의 Key만을 모아서 dict_keys 객체를 돌려준다.</span>    
+<span class="margin">`dic.values()` dic의 value만을 모아서 dict_values 객체를 돌려준다.</span>    
+<span class="margin">`dic.items()` dic의 key와 value쌍을 튜플로 묶어서 dict_items 객체를 돌려준다.</span>  
+
+<span class="margin">리스트를 사용하는 것과 차이가 없지만, 리스트 고유의 append, insert, pop, remove, sort 함수는 수행할 수 없다.</span>    
+
+~~~ python
+dic = {"name":"Sihyeon","phone":"01034642694"}
+
+dic.keys()  # dict_keys(['name', 'phone'])
+for v in dic.values():
+    print(v)
+list(dic.keys())  # 이렇게 list로 바꿀 수 있음
+~~~
+
+<span class="margin">`dic.clear()` 딕셔너리 클리어</span>    
+<span class="margin">`dic.get(key)` key에 대응하는 val 반환, 없을 경우 none반환</span>    
+<span class="margin">`dic.get(key,defalt)` 로 사용하면 key에 대응하는 값이 없을 경우 defalt값이 반환됨</span> 
+
+<span class="margin">`key in dic` dic안에 key값이 있으면 return True</span> 
+
+## 집합 (=set)
+> 중복 X, 순서 X => 순서가 없기에 인덱싱X    
+> 이를 이용해 리스트의 중복값 제거로도 사용가능    
+> 인덱싱을 하려면 리스트나 튜플로 바꿔야함    
+~~~ python
+s1 = set([2,3,0])   # {2,0,3}
+s2 = set("hello")   # {'e','h','l','o}
+l = list(s1)
+t = tuple(s2)
+~~~
+<span class="margin">`s1 & s2``s1.intersection(s2)` 교집합</span> 
+<span class="margin">`s1 | s2``s1.union(s2)` 합집합</span> 
+<span class="margin">`s1 - s2``s1.difference(s2)` 차집합</span> 
+
+### 집합 관련 함수
+<span class="margin">`s.add(val)` 집합 s에 val 삽입</span> 
+<span class="margin">`s.update(list)` 집합 s에 list의 값들 추가</span> 
+<span class="margin">`s.remove(val)` s의 val값 삭제</span> 
