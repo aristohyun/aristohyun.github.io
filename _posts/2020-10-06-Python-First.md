@@ -135,7 +135,8 @@ f'나의 이름은 {박시현}입니다. 나이는 {24}입니다.'
 <span class="margin"> `s.upper() s.lower()` 문자열 s를 모두 대문자로 바꾸거나 소문자로 바꿈 </span>    
 <span class="margin"> `s.lstrip()` `s.rstrip()` `s.strip()` 왼쪽, 오른쪽, 양쪽 공백 지우기 </span>    
 <span class="margin"> `s.replace(before, after)` 문자열 s의 before을 after로 바꿈</span>    
-<span class="margin"> `s.split()` 아무값도 넣지 않아주면 공백을 기준으로 문자열을 나누어 리스트로 저장. 특정 값을 넣으면 해당 값으로 나눔</span>    
+<span class="margin"> `s.split()` 아무값도 넣지 않아주면 공백을 기준으로 문자열을 나누어 리스트로 저장</span>
+<span class="margin">     특정 값을 넣으면 해당 값으로 나눔</span>    
 
 ### IF
 ~~~ python
