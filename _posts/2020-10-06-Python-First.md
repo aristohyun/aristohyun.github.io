@@ -11,7 +11,8 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}
 
-### 리스트
+# 자료형
+## 리스트
 <span class="margin">len() 내장함수를 통해 길이 출력</span>
 <span class="margin">음수 인덱스 사용가능</span>
 <span class="margin">+로 이어 붙이기 가능</span>
@@ -25,7 +26,7 @@ print(arr[-1])  # 5
 print(len(arr)) # 5
 ~~~
 
-### 문자열
+## 문자열
 > 파이썬 문자열은 변경X. 불변!
 > 다른 문자열이 필요하면 새로 만들어야함
 > '' "" 뭘쓰던 상관x
@@ -72,7 +73,7 @@ Usage: thingy [OPTIONS]
 # 변수에서는 꼭 + 사용
 ~~~
 
-#### 문자열 인덱스
+### 문자열 인덱스
 <span class="margin">음수도 가능!</span>
 
 ~~~ python
@@ -101,7 +102,7 @@ Usage: thingy [OPTIONS]
 'Python'
 ~~~
 
-#### 문자열 포맷팅
+### 문자열 포맷팅
 ~~~ python
 "i eat %d apples." % 3      # 정수
 "i eat %f apples." % 3.5   # 유리수
@@ -126,7 +127,7 @@ f'나의 이름은 {박시현}입니다. 나이는 {24}입니다.'
 # '나의 이름은 홍길동입니다. 나이는 30입니다.'
 ~~~
 
-#### 관련 함수
+### 관련 함수
 
 <span class="margin"> `s.count(c)` 문자의 갯수 반환 </span>    
 <span class="margin"> `s.find(c)` 문자가 처음으로 나온 위치 반환, 없으면 -1 </span>    
@@ -138,7 +139,8 @@ f'나의 이름은 {박시현}입니다. 나이는 {24}입니다.'
 <span class="margin"> `s.split()` 아무값도 넣지 않아주면 공백을 기준으로 문자열을 나누어 리스트로 저장</span>
 <span class="margin">     특정 값을 넣으면 해당 값으로 나눔</span>    
 
-### IF
+# 제어문
+## IF
 ~~~ python
 x = 1
 if x < 0:
@@ -149,4 +151,4 @@ elif x > 0:
   print("more than zero")
 else: print("this isnt num")
 ~~~
-### FOR
+## FOR
