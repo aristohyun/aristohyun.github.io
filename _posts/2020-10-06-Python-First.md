@@ -14,17 +14,37 @@ redirect_from:
 # 자료형
 ## 리스트
 <span class="margin">len() 내장함수를 통해 길이 출력</span>
-<span class="margin">음수 인덱스 사용가능</span>
+<span class="margin">음수 인덱스 사용가능</span>    
 <span class="margin">+로 이어 붙이기 가능</span>
-<span class="margin">append() 메소드로 추가 가능</span>
+<span class="margin">append() 메소드로 추가 가능</span>    
 <span class="margin">리스트는 가변, 문자열은 불변</span>
+<span class="margin">`del` 요소 삭제, 슬라이싱 가능</span>
 
 ~~~ python
 arr = [1,2,3,4,5]
+
 print(arr[0])   # 1
 print(arr[-1])  # 5
 print(len(arr)) # 5
+
+del arr[0]      # [2,3,4,5]
+del arr[2:]     # [2,3]
+
+arr2 = list()   # 빈리스트
 ~~~
+
+### 리스트 내장 함수    
+<span class="margin">`list.append(val)` list에 val값을 추가  리스트 등 어떤 값이라도 추가 가능</span>    
+<span class="margin">`list.sort()`</span>    
+<span class="margin">`list.reverse()` 역순</span>    
+<span class="margin">`list.index(val)` val값을 찾아서 그 값의 위치를 반환  없으면 에러</span>   
+<span class="margin">`list.insert(idx, val)` idx에 val삽입</span>
+<span class="margin">`list.remove(val)` 가장 처음의 val값 삭제</span>
+<span class="margin">`list.pop(idx)` idx의 요소를 반환 후 삭제</span>    
+<span calss="margin"> idx를 입력하지 않으면 맨뒤 요소 반환 후 삭제.</span>    
+<span class="margin">`list.count(val)` val값이 list에 몇번 들어있는지 return</span>    
+<span class="margin">`list1.extend(list2)` list1에 list2추가</span>      
+<span class="margin">list1 += list2 와 동일</span>
 
 ## 문자열
 > 파이썬 문자열은 변경X. 불변!
@@ -123,7 +143,7 @@ Usage: thingy [OPTIONS]
 
 name = '박시현'
 age = 24
-f'나의 이름은 {박시현}입니다. 나이는 {24}입니다.'
+f'나의 이름은 {name}입니다. 나이는 {age}입니다.'
 # '나의 이름은 홍길동입니다. 나이는 30입니다.'
 ~~~
 
