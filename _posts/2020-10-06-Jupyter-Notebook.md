@@ -11,6 +11,10 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}
 
+[참고사이트](https://greeksharifa.github.io/references/2019/01/26/Jupyter-usage/){: target="_blank"}
+
+# 단축키
+
 |:---:+:---:|
 | ↑, ↓ | 셀 이동 |
 | A | 액티브 코드셀의 위에 셀 생성 |
