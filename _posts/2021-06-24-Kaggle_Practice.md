@@ -6,7 +6,7 @@ categories: [Machine Learning]
 tags: [Machine Learning, Supervised Learning, Kaggle, Python, Regression, CV]
 use_math: true
 redirect_from:
-  - /2021/06/25/
+  - /2021/06/24/
 ---
 
 * Kramdown table of contents
