@@ -1,0 +1,14 @@
+---
+layout: post
+title: "파이썬, 회귀 분석"
+description: "회귀분석과 교차검증"
+categories: [Machine Learning]
+tags: [Supervised Learning, Python, Regression, R^2]
+redirect_from:
+  - /2021/06/26/
+---
+
+* Kramdown table of contents
+{:toc .toc}
+
+$(n-1)+(n-2)+...+2+1=\frac{n(n-1)}{2}$
