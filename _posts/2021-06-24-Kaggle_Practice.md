@@ -23,7 +23,8 @@ Heat Map, Scatter Plot 등으로 변수들 간에 관계 파악
 1. Heat Map    
 2. Zoomed Heat Map    
 3. Pair Plot    
-4. Scatter Plot    
+4. Scatter Plot     
+
 ~~~ python
 corr_data = df_train[['Id', 'MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'MoSold', 'YrSold', 'SalePrice']] 
 
@@ -35,8 +36,10 @@ f , ax = plt.subplots(figsize = (14,12))
 plt.title('Correlation of Numeric Features with Sale Price',y=1,size=18) 
 sns.heatmap(corr_data.corr(),square = True, linewidths = 0.1, cmap = colormap, linecolor = "white", vmax=0.8)
 
-~~~
-![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png)    
+~~~    
+
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png){: width="150" height="150"}     
+
 ~~~ python
 *** 2. Zoomed Heat Map ***
 # 전체적으로 살펴본 것중, 연관이 강한것 위주로 다시 출력하여 확인
