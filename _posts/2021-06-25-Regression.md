@@ -19,6 +19,7 @@ redirect_from:
 > 회귀분석이란, 변수들 사이의 관계를 추정하는 분석방법으로    
 > 주어진 데이터들을 가장 잘 설명하는 관계식(회귀식), 하나의 선(회귀선)을 구하는 방법이라고 할 수 있다
 
+
 ## 회귀 분석의 4단계
 1. 이론의 가정    
 2. 회귀직선 그리기 : 최소제곱법, $R^2$    
@@ -52,21 +53,22 @@ $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$
 **$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$**    
   
 SST = Total Sum of Squares, 관측값 - 평균값     
-**$$  \sum\limits_{i=1}^{n}(y_i - \bar{y})^2  $$**    
+**$\sum\limits_{i=1}^{n}(y_i - \bar{y})^2$**    
     
 SSR = Residual Sum of Squares, 추정값 - 평균값   
-**$$  \sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2  $$**    
+**$\sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2$**    
     
 SSE = Explained Sum of Squares, 관측값 - 추정값(잔차의 합)    
-**$$  \sum\limits_{i=1}^{n}(y_i - \hat{y})^2  $$**    
+**$\sum\limits_{i=1}^{n}(y_i - \hat{y})^2$**    
     
-$$y_i$$ : 관측값
-$$\bar{y}$$ : 관측값의 평균값
-$$\hat{y}$$ : 추정값 (회귀식의 값)
+$y_i$ : 관측값
+$\bar{y}$ : 관측값의 평균값
+$\hat{y}$ : 추정값 (회귀식의 값)
 
 
+### 가설 검정 : 모수 추정
 
-### 가설검정
+
 
 ### 평균값에 대한 예측
 
