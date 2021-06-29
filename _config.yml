@@ -13,6 +13,11 @@ plugins:
   - jekyll-sitemap
 
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 kramdown:
   auto_id_prefix: 'heading-'
   smart_quotes: ["apos", "apos", "quot", "quot"]
@@ -63,3 +68,4 @@ paths:
   blog: /blog/
   categories: /blog/categories/
   tags: /blog/tags/
+  
