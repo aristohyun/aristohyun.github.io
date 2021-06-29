@@ -3,7 +3,7 @@ layout: post
 title: "기계학습, 회귀 분석 Regression"
 description: "Regression, 회귀분석"
 categories: [Machine Learning]
-tags: [Supervised Learning, Python, Regression, R^2]
+tags: [Machine Learning, Supervised Learning, Regression, R^2]
 use_math: true
 redirect_from:
   - /2021/06/25/
