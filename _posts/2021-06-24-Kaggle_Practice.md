@@ -38,7 +38,7 @@ sns.heatmap(corr_data.corr(),square = True, linewidths = 0.1, cmap = colormap, l
     
 ~~~     
     
-![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png){: width="300" height="300"}     
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png){: width="500" height="500"}     
      
 ~~~ python
 *** 2. Zoomed Heat Map ***
@@ -51,7 +51,7 @@ f, ax = plt.subplots(figsize = (12,10))
 sns.heatmap(cm, vmax=.8, linewidths=0.1,square=True,annot=True,cmap=colormap, linecolor="white",xticklabels = cols.values ,annot_kws = {'size':14},yticklabels = cols.values)
 ~~~    
 
-![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png){: width="150" height="150"}    
+![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png){: width="500" height="500"}    
     
 ~~~ python
 *** 3. Pair Plot ***
@@ -62,7 +62,7 @@ sns.pairplot(df_train[columns],size = 2 ,kind ='scatter',diag_kind='kde')
 plt.show()
 ~~~     
 
-![Pair Plot](https://aristohyun.github.io/assets/images/WhatImade/pairplot.png){: width="300" height="300"}     
+![Pair Plot](https://aristohyun.github.io/assets/images/WhatImade/pairplot.png){: width="500" height="500"}     
 
 ~~~ python
 *** 4. Scatter Plot & Line Plot ***
@@ -94,7 +94,7 @@ sns.regplot(x='YearRemodAdd', y='SalePrice', data=YearRemodAdd_scatter_plot, sca
 YearRemodAdd_scatter_plot.plot.scatter('YearRemodAdd','SalePrice')
 ~~~     
 
-![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png){: width="300" height="300"}          
+![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png){: width="500" height="500"}          
      
      
 ### 범주형 변수    
@@ -121,7 +121,7 @@ plt.tight_layout()
 plt.show()
 ~~~     
 
-![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png){: {: width="300" height="300"}          
+![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png){: {: width="500" height="500"}          
 
 # 2. 데이터 분류 및 처리     
     
@@ -156,9 +156,9 @@ print("Kurtosis: %f" % df_train['SalePrice_Log'].kurt())
 df_train.drop('SalePrice', axis= 1, inplace=True)
 ~~~
      
-![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png){: width="300" height="300"}     
+![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png){: width="500" height="500"}     
 
-![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png){: width="300" height="300"}     
+![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png){: width="500" height="500"}     
 
 
 ### 이상치 제거      
@@ -319,7 +319,7 @@ sns.heatmap(new_col_HM.corr(), linewidths = 0.1, vmax = 1.0, square = True, cmap
 
 ~~~
     
-![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap2.png){: width="300" height="300"}     
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap2.png){: width="500" height="500"}     
      
 ~~~ python    
 # 범주형 변수로 박스플롯등으로 그려서 확인했을 때에는 상관이 있는것 처럼 보였지만
@@ -382,7 +382,7 @@ plt.show()
 regressor.score(X_vld,y_vld)
 ~~~
      
-![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png){: width="300" height="300"}     
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png){: width="500" height="500"}     
  
 
 ~~~ python    
