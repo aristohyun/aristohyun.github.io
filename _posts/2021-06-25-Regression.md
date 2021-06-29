@@ -48,14 +48,22 @@ $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$
 > 이때 내가 찾은 선형식이 이 데이터를 정말 잘 표현하는지 확인할 때 $R^2$를 계산한다    
 > $R^2$는 독립변수가 종속변수를 얼마만큼 설명해주는지를 가리키는 지표이며    
 > 0에 가까울수록 설명력이 낮으며, 1에 가까울수록 설명력이 높다    
+  
+**$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$**    
+  
+SST = Total Sum of Squares, 관측값 - 평균값     
+**$$  \sum\limits_{i=1}^{n}(y_i - \bar{y})^2  $$**    
+    
+SSR = Residual Sum of Squares, 추정값 - 평균값   
+**$$  \sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2  $$**    
+    
+SSE = Explained Sum of Squares, 관측값 - 추정값(잔차의 합)    
+**$$  \sum\limits_{i=1}^{n}(y_i - \hat{y})^2  $$**    
+    
+$$y_i$$ : 관측값
+$$\bar{y}$$ : 관측값의 평균값
+$$\hat{y}$$ : 추정값 (회귀식의 값)
 
-$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$     
-SST = Total Sum of Squares    
-$\sum_{i=1}^{n}(y_i - \bar{y})^2$    
-SSR = Residual Sum of Squares  
-$\sum_{i=1}^{n}(\hat{y}_i - \bar{y})^2$    
-SSE = Explained Sum of Squares
-$\sum_{i=1}^{n}(y_i - \hat{y})^2$    
 
 
 ### 가설검정
