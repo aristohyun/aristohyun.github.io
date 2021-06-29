@@ -36,7 +36,7 @@ plt.title('Correlation of Numeric Features with Sale Price',y=1,size=18)
 sns.heatmap(corr_data.corr(),square = True, linewidths = 0.1, cmap = colormap, linecolor = "white", vmax=0.8)
 
 ~~~
-![Heat Map]()    
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png)    
 ~~~ python
 *** 2. Zoomed Heat Map ***
 # 전체적으로 살펴본 것중, 연관이 강한것 위주로 다시 출력하여 확인
@@ -47,7 +47,7 @@ cm = np.corrcoef(df_train[cols].values.T)
 f, ax = plt.subplots(figsize = (12,10))
 sns.heatmap(cm, vmax=.8, linewidths=0.1,square=True,annot=True,cmap=colormap, linecolor="white",xticklabels = cols.values ,annot_kws = {'size':14},yticklabels = cols.values)
 ~~~
-![Zoomed Heat Map]()    
+![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png)    
 ~~~ python
 *** 3. Pair Plot ***
 # 그중에서도 연관이 강한것들로 산점도를 그려봄
@@ -56,7 +56,7 @@ columns = ['SalePrice','OverallQual','TotalBsmtSF','GrLivArea','GarageCars','Ful
 sns.pairplot(df_train[columns],size = 2 ,kind ='scatter',diag_kind='kde') 
 plt.show()
 ~~~
-![Pair Plot]()    
+![Pair Plot](https://aristohyun.github.io/assets/images/WhatImade/pairplot.png)    
 ~~~ python
 *** 4. Scatter Plot & Line Plot ***
 # 위 산점도를 바탕으로 Scatter Plot 과 line Plot(선형회귀 적합선)을 함께 출력하여 확인
@@ -86,8 +86,7 @@ YearRemodAdd_scatter_plot = pd.concat([df_train['SalePrice'],df_train['YearRemod
 sns.regplot(x='YearRemodAdd', y='SalePrice', data=YearRemodAdd_scatter_plot, scatter=True, fit_reg=True, ax=ax7)
 YearRemodAdd_scatter_plot.plot.scatter('YearRemodAdd','SalePrice')
 ~~~
-![Scatter Plot]()    
-
+![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png)    
 ### 범주형 변수    
 Box Plot등으로 변수들 간에 관계 파악     
 ~~~ python    
@@ -109,7 +108,7 @@ for r in range(0, nr_rows):
 plt.tight_layout()
 plt.show()
 ~~~
-![Box Plot]()    
+![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png)    
 # 2. 데이터 분류 및     
 ~~~ python    
 # 수치형 변수중 연관이 강한것과 약한것 분류
@@ -138,8 +137,8 @@ print("Kurtosis: %f" % df_train['SalePrice_Log'].kurt())
 # 로그로 변환한 이후에는 기존 값을 사용하지 않기에 삭제
 df_train.drop('SalePrice', axis= 1, inplace=True)
 ~~~
-![SalePrice]()
-![SalePriceLog]()
+![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png)
+![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png)
 
 ### 이상치 제거    
 **IQR** $ IQR = Q3 - Q1 $  Q3:상위 25%, Q1:하위25%    
@@ -287,7 +286,7 @@ plt.title("Correlation of New Features", y = 1.05, size = 15)
 sns.heatmap(new_col_HM.corr(), linewidths = 0.1, vmax = 1.0, square = True, cmap = colormap, linecolor = "white", annot = True, annot_kws = {"size" : 12})
 
 ~~~
-![Heat Map]()
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap2.png)
 
 ~~~ python    
 # 범주형 변수로 박스플롯등으로 그려서 확인했을 때에는 상관이 있는것 처럼 보였지만
@@ -334,7 +333,7 @@ plt.show()
 
 regressor.score(X_tr,y_tr)
 ~~~
-![pridict]()
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict1.png)
 
 ~~~ python    
 # 같은 방법으로 Train 데이터셋으로 따로 빼낸 validation도 확인
@@ -346,7 +345,7 @@ plt.ylabel('Predictions (y_hat_test)',size=18)
 plt.show()
 regressor.score(X_vld,y_vld)
 ~~~
-![pridict]()
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png)
 
 ~~~ python    
 # K-fold validaion 수행
