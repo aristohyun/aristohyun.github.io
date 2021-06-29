@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "기계학습, 교차검증"
-description: "교차검증"
+title: "기계학습, 교차검증 Cross Validation"
+description: "교차검증, Cross Validation"
 categories: [Machine Learning]
 tags: [Supervised Learning, Python, Regression, CV]
 use_math: true
