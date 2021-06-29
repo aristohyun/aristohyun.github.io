@@ -97,7 +97,7 @@ YearRemodAdd_scatter_plot.plot.scatter('YearRemodAdd','SalePrice')
 ![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png){: width="500" height="500"}          
      
      
-### 범주형 변수    
+## 범주형 변수    
 
 Box Plot등으로 변수들 간에 관계 파악      
 
@@ -122,9 +122,8 @@ plt.show()
 ~~~     
 
 ![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png){: {: width="500" height="500"}          
-
-# 2. 데이터 분류 및 처리     
-    
+     
+### 데이터 분류     
 ~~~ python    
 # 수치형 변수중 연관이 강한것과 약한것 분류
 num_strong_corr = ['SalePrice','OverallQual','TotalBsmtSF','GrLivArea','GarageCars', 'FullBath','YearBuilt','YearRemodAdd'] 
@@ -134,6 +133,8 @@ num_weak_corr = ['MSSubClass', 'LotFrontage', 'LotArea', 'OverallCond', 'MasVnrA
 catg_strong_corr = ['MSZoning', 'Neighborhood', 'Condition2', 'MasVnrType', 'ExterQual', 'BsmtQual','CentralAir', 'Electrical', 'KitchenQual', 'SaleType'] 
 catg_weak_corr = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Condition1', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'ExterCond', 'Foundation', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'SaleCondition' ]
 ~~~
+
+# 2. 데이터 처리     
 
 ## 수치형 변수     
 
@@ -162,7 +163,7 @@ df_train.drop('SalePrice', axis= 1, inplace=True)
 
 
 ### 이상치 제거      
-**IQR** $ IQR = Q3 - Q1 $  Q3:상위 25%, Q1:하위25%        
+$ IQR = Q3 - Q1 $   ( Q3:상위 25%, Q1:하위25% )          
 상위25 ~ 하위25 를 기준으로 이보다 더 밖에 있는 값들은 이상치라고 판단할 수 있음       
      
 ~~~ python
