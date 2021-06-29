@@ -395,7 +395,6 @@ regressor.score(X_vld,y_vld)
 # K-fold validaion 수행
 
 from sklearn.model_selection import cross_val_score 
-
 accuracies = cross_val_score(estimator = regressor, X = X_tr, y = y_tr, cv = 10)
 
 # 학습 정확도 확인
@@ -403,6 +402,7 @@ print(accuracies.mean()) # 0.8203834733226796
 print(accuracies.std())  # 0.1182535686269993
 ~~~
 
+## Result : Predict Test data set
 ~~~ python    
 # 학습시킨 회귀모델에 테스트 값을 넣어서 결과 출력
 pred_xgb = regressor.predict(X_test) 
