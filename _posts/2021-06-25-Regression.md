@@ -39,7 +39,8 @@ redirect_from:
 
 ### 회귀직선 그리기
 
-기본적으로 단일 선형 회귀식은 다음과 같다    
+! [단순 선형회귀](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F997E924F5CDBC1A6283C93)
+기본적으로 단순 선형 회귀식은 다음과 같다    
 $Y = b_{0} + b_{1}X$       
 
 독립변인이 늘어나면 다음과 같아진다 (다중 선형 회귀식)    
