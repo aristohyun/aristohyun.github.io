@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "기계학습, 회귀 분석"
-description: "회귀분석과 교차검증"
+title: "기계학습, 회귀 분석 Regression"
+description: "Regression, 회귀분석"
 categories: [Machine Learning]
 tags: [Supervised Learning, Python, Regression, R^2]
 use_math: true
