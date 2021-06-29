@@ -97,7 +97,7 @@ YearRemodAdd_scatter_plot.plot.scatter('YearRemodAdd','SalePrice')
 ![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png){: width="500" height="500"}          
      
      
-## 범주형 변수    
+### 범주형 변수    
 
 Box Plot등으로 변수들 간에 관계 파악      
 
@@ -123,7 +123,7 @@ plt.show()
 
 ![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png){: {: width="500" height="500"}          
      
-### 데이터 분류     
+## 데이터 분류     
 ~~~ python    
 # 수치형 변수중 연관이 강한것과 약한것 분류
 num_strong_corr = ['SalePrice','OverallQual','TotalBsmtSF','GrLivArea','GarageCars', 'FullBath','YearBuilt','YearRemodAdd'] 
@@ -339,6 +339,8 @@ df_test.drop(['MSZoning', 'Neighborhood' , 'Condition2', 'MasVnrType', 'ExterQua
     
 # 3. 학습       
 
+## Validation : train_test_split     
+
 ~~~ python     
 from sklearn.model_selection import train_test_split
 from sklearn import metrics 
@@ -350,15 +352,17 @@ X_train = df_train.drop("SalePrice_Log", axis = 1).values
 target_label = df_train["SalePrice_Log"].values 
 X_test = df_test.values 
 X_tr, X_vld, y_tr, y_vld = train_test_split(X_train, target_label, test_size = 0.2, random_state = 2000)
+~~~ 
+     
+## 회귀 분석 : LinearRegression    
 
+~~~ python  
 # 선형 회귀 분석 실시
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_tr, y_tr)
 
-~~~ 
-     
-~~~ python    
+  
 # Train 데이터셋으로 학습
 y_hat = regressor.predict(X_tr) 
 
@@ -385,6 +389,7 @@ regressor.score(X_vld,y_vld)
      
 ![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png){: width="500" height="500"}     
  
+## K - fold CV : cross_val_score    
 
 ~~~ python    
 # K-fold validaion 수행
