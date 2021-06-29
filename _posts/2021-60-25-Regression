@@ -1,0 +1,13 @@
+---
+layout: post
+title: "파이썬, 회귀 분석"
+description: "회귀분석과 교차검증"
+categories: [Machine Learning]
+tags: [Supervised Learning, Python, Regression, R^2]
+redirect_from:
+  - /2021/06/26/
+---
+
+* Kramdown table of contents
+{:toc .toc}
+
