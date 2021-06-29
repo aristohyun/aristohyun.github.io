@@ -13,7 +13,7 @@ redirect_from:
 {:toc .toc}
 
 [Competition : House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques){: target="_blank"}   
-[House Prices, 참고 사이트](https://www.kaggle.com/kongnyooong/house-price-tutorial-for-korean-beginners){: target="_blank"}   
+[House Prices : 참고 사이트](https://www.kaggle.com/kongnyooong/house-price-tutorial-for-korean-beginners){: target="_blank"}   
 [House Prices : 내가 작성한 코드](https://www.kaggle.com/s1hyeon/house-price-regression/edit){: target="_blank"}   
 
 # 1. 데이터 체크 
