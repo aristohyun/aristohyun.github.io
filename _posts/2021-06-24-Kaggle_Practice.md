@@ -24,7 +24,7 @@ Heat Map, Scatter Plot 등으로 변수들 간에 관계 파악
 2. Zoomed Heat Map    
 3. Pair Plot    
 4. Scatter Plot     
-
+     
 ~~~ python
 corr_data = df_train[['Id', 'MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'MoSold', 'YrSold', 'SalePrice']] 
 
@@ -35,11 +35,11 @@ sns.set(font_scale=1.0)
 f , ax = plt.subplots(figsize = (14,12)) 
 plt.title('Correlation of Numeric Features with Sale Price',y=1,size=18) 
 sns.heatmap(corr_data.corr(),square = True, linewidths = 0.1, cmap = colormap, linecolor = "white", vmax=0.8)
-
-~~~    
-
-![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png){: width="150" height="150"}     
-
+    
+~~~     
+    
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap.png){: width="300" height="300"}     
+     
 ~~~ python
 *** 2. Zoomed Heat Map ***
 # 전체적으로 살펴본 것중, 연관이 강한것 위주로 다시 출력하여 확인
@@ -49,8 +49,10 @@ print(cols)
 cm = np.corrcoef(df_train[cols].values.T)
 f, ax = plt.subplots(figsize = (12,10))
 sns.heatmap(cm, vmax=.8, linewidths=0.1,square=True,annot=True,cmap=colormap, linecolor="white",xticklabels = cols.values ,annot_kws = {'size':14},yticklabels = cols.values)
-~~~
-![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png)    
+~~~    
+
+![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png){: width="150" height="150"}    
+    
 ~~~ python
 *** 3. Pair Plot ***
 # 그중에서도 연관이 강한것들로 산점도를 그려봄
@@ -58,8 +60,10 @@ sns.set()
 columns = ['SalePrice','OverallQual','TotalBsmtSF','GrLivArea','GarageCars','FullBath','YearBuilt','YearRemodAdd'] 
 sns.pairplot(df_train[columns],size = 2 ,kind ='scatter',diag_kind='kde') 
 plt.show()
-~~~
-![Pair Plot](https://aristohyun.github.io/assets/images/WhatImade/pairplot.png)    
+~~~     
+
+![Pair Plot](https://aristohyun.github.io/assets/images/WhatImade/pairplot.png){: width="300" height="300"}     
+
 ~~~ python
 *** 4. Scatter Plot & Line Plot ***
 # 위 산점도를 바탕으로 Scatter Plot 과 line Plot(선형회귀 적합선)을 함께 출력하여 확인
@@ -88,10 +92,15 @@ sns.regplot(x='YearBuilt',y = 'SalePrice',data = YearBuilt_scatter_plot,scatter=
 YearRemodAdd_scatter_plot = pd.concat([df_train['SalePrice'],df_train['YearRemodAdd']],axis = 1)
 sns.regplot(x='YearRemodAdd', y='SalePrice', data=YearRemodAdd_scatter_plot, scatter=True, fit_reg=True, ax=ax7)
 YearRemodAdd_scatter_plot.plot.scatter('YearRemodAdd','SalePrice')
-~~~
-![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png)    
+~~~     
+
+![Scatter Plot](https://aristohyun.github.io/assets/images/WhatImade/scatter.png){: width="300" height="300"}          
+     
+     
 ### 범주형 변수    
-Box Plot등으로 변수들 간에 관계 파악     
+
+Box Plot등으로 변수들 간에 관계 파악      
+
 ~~~ python    
 *** Box Plot ***
 # 범주형 변수를 박스플롯으로 확인
@@ -110,9 +119,12 @@ for r in range(0, nr_rows):
 
 plt.tight_layout()
 plt.show()
-~~~
-![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png)    
-# 2. 데이터 분류 및     
+~~~     
+
+![Box Plot](https://aristohyun.github.io/assets/images/WhatImade/boxplot.png){: {: width="300" height="300"}          
+
+# 2. 데이터 분류 및 처리     
+    
 ~~~ python    
 # 수치형 변수중 연관이 강한것과 약한것 분류
 num_strong_corr = ['SalePrice','OverallQual','TotalBsmtSF','GrLivArea','GarageCars', 'FullBath','YearBuilt','YearRemodAdd'] 
@@ -123,11 +135,14 @@ catg_strong_corr = ['MSZoning', 'Neighborhood', 'Condition2', 'MasVnrType', 'Ext
 catg_weak_corr = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Condition1', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'ExterCond', 'Foundation', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'SaleCondition' ]
 ~~~
 
-## 수치형 변수
-### 정규근사화
-회귀분석을 하기 위해선 잔차의 분포가 정규성을 만족해야함
-따라서 비대칭과 첨도가 관찰된 SalePrice을 하기 위해선 정규근사화 해야함
--> 값에 로그를 취하여 정규근사화
+## 수치형 변수     
+
+### 정규근사화     
+  
+회귀분석을 하기 위해선 잔차의 분포가 정규성을 만족해야함     
+따라서 비대칭과 첨도가 관찰된 SalePrice을 하기 위해선 정규근사화 해야함      
+-> 값에 로그를 취하여 정규근사화         
+
 ~~~ python    
 df_train["SalePrice_Log"] = df_train["SalePrice"].map(lambda i:np.log(i) if i>0 else 0) 
 
@@ -140,13 +155,16 @@ print("Kurtosis: %f" % df_train['SalePrice_Log'].kurt())
 # 로그로 변환한 이후에는 기존 값을 사용하지 않기에 삭제
 df_train.drop('SalePrice', axis= 1, inplace=True)
 ~~~
-![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png)
-![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png)
+     
+![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png){: width="300" height="300"}     
 
-### 이상치 제거    
-**IQR** $ IQR = Q3 - Q1 $  Q3:상위 25%, Q1:하위25%    
-상위25 ~ 하위25 를 기준으로 이보다 더 밖에 있는 값들은 이상치라고 판단할 수 있음    
+![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png){: width="300" height="300"}     
 
+
+### 이상치 제거      
+**IQR** $ IQR = Q3 - Q1 $  Q3:상위 25%, Q1:하위25%        
+상위25 ~ 하위25 를 기준으로 이보다 더 밖에 있는 값들은 이상치라고 판단할 수 있음       
+     
 ~~~ python
 def detect_outliers(df, n, features):
     outlier_indices = []
@@ -172,15 +190,19 @@ df_train.loc[Outliers_to_drop]
 df_train = df_train.drop(Outliers_to_drop, axis = 0).reset_index(drop=True) 
 ~~~    
 
-### 결측치 처리
-1. 관측이 안된게 아니라 값이 없는 경우 : 값이 없다는 의미로 None으로 변경    
+### 결측치 처리       
+
+1. 관측이 안된게 아니라 값이 없는 경우 : 값이 없다는 의미로 None으로 변경        
+
 ~~~ python    
 cols_fillna = ['PoolQC','MiscFeature','Alley','Fence','MasVnrType','FireplaceQu', 'GarageQual','GarageCond','GarageFinish','GarageType', 'Electrical', 'KitchenQual', 'SaleType', 'Functional', 'Exterior2nd', 'Exterior1st', 'BsmtExposure','BsmtCond','BsmtQual','BsmtFinType1','BsmtFinType2', 'MSZoning', 'Utilities'] 
 for col in cols_fillna: 
     df_train[col].fillna('None',inplace=True) 
     df_test[col].fillna('None',inplace=True)
 ~~~    
-2. 실제로 결측치인 경우 : 수치형 변수들이므로 평균으로 대체    
+    
+2. 실제로 결측치인 경우 : 수치형 변수들이므로 평균으로 대체       
+    
 ~~~ python    
 # 결측 데이터 확인
 total = df_train.isnull().sum().sort_values(ascending=False) 
@@ -189,10 +211,11 @@ missing_data = pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])
 # 결측 데이터 평균으로 
 df_train.fillna(df_train.mean(), inplace=True) 
 df_test.fillna(df_test.mean(), inplace=True)
-
 ~~~    
+   
+   
+### 유의하지 않은 변수 삭제        
 
-### 유의하지 않은 변수 삭제
 ~~~ python
 id_test = df_test['Id'] 
 to_drop_num = num_weak_corr 
@@ -204,11 +227,15 @@ for df in [df_train, df_test]:
     df.drop(cols_to_drop, inplace= True, axis = 1)
 ~~~
 
-## 범주형 변수
-### 수치형 변수로 변경   
-1. SalePrice의 평균으로 각 카테고리를 변경. ex) WD = 12.11 ...
-2. 변경된 카테고리가 유사한 값들 끼리 같은 그룹으로 묶음
-~~~ python    
+
+## 범주형 변수       
+
+### 수치형 변수로 변경          
+
+1. SalePrice의 평균으로 각 카테고리를 변경. ex) WD = 12.11 ...      
+2. 변경된 카테고리가 유사한 값들 끼리 같은 그룹으로 묶음          
+
+~~~ python     
 # Sale Price의 평균으로 변경
 for catg in catg_list:
     g = df_train.groupby(catg)["SalePrice_Log"].mean() 
@@ -278,7 +305,9 @@ for df in [df_train, df_test]:
     df.loc[(df['SaleType'].isin(SlTy_catg4) ), 'SlTy_num'] = 4
 ~~~
 
-### 변경된 변수들의 연관관계 파악 후 삭제
+
+### 변경된 변수들의 연관관계 파악 후 삭제      
+
 
 ~~~ python
 # 수치형으로 바꿧으니 이제 HeatMap으로 확인 가능
@@ -289,8 +318,9 @@ plt.title("Correlation of New Features", y = 1.05, size = 15)
 sns.heatmap(new_col_HM.corr(), linewidths = 0.1, vmax = 1.0, square = True, cmap = colormap, linecolor = "white", annot = True, annot_kws = {"size" : 12})
 
 ~~~
-![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap2.png)
-
+    
+![Heat Map](https://aristohyun.github.io/assets/images/WhatImade/HeatMap2.png){: width="300" height="300"}     
+     
 ~~~ python    
 # 범주형 변수로 박스플롯등으로 그려서 확인했을 때에는 상관이 있는것 처럼 보였지만
 # 수치형 변수들로 바꿔 HeatMap으로 확인해보니 
@@ -305,7 +335,9 @@ df_test.drop(['MSZoning', 'Neighborhood' , 'Condition2', 'MasVnrType', 'ExterQua
 
 ~~~
 
-# 3. 학습    
+    
+# 3. 학습       
+
 ~~~ python     
 from sklearn.model_selection import train_test_split
 from sklearn import metrics 
@@ -324,7 +356,7 @@ regressor = LinearRegression()
 regressor.fit(X_tr, y_tr)
 
 ~~~ 
-
+     
 ~~~ python    
 # Train 데이터셋으로 학습
 y_hat = regressor.predict(X_tr) 
@@ -336,8 +368,9 @@ plt.show()
 
 regressor.score(X_tr,y_tr)
 ~~~
-![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict1.png)
-
+     
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict1.png){: width="300" height="300"}     
+    
 ~~~ python    
 # 같은 방법으로 Train 데이터셋으로 따로 빼낸 validation도 확인
 
@@ -348,7 +381,9 @@ plt.ylabel('Predictions (y_hat_test)',size=18)
 plt.show()
 regressor.score(X_vld,y_vld)
 ~~~
-![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png)
+     
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict2.png){: width="300" height="300"}     
+ 
 
 ~~~ python    
 # K-fold validaion 수행
