@@ -402,7 +402,7 @@ print(accuracies.mean()) # 0.8203834733226796
 print(accuracies.std())  # 0.1182535686269993
 ~~~
 
-## Result : Predict Test data set
+# 4. 결과 : Predict Test data set
 ~~~ python    
 # 학습시킨 회귀모델에 테스트 값을 넣어서 결과 출력
 pred_xgb = regressor.predict(X_test) 
