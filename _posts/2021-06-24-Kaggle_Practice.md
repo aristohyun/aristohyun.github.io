@@ -374,7 +374,7 @@ plt.show()
 regressor.score(X_tr,y_tr)
 ~~~
      
-![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict1.png){: width="300" height="300"}     
+![pridict](https://aristohyun.github.io/assets/images/WhatImade/predict1.png){: width="500" height="500"}     
     
 ~~~ python    
 # 같은 방법으로 Train 데이터셋으로 따로 빼낸 validation도 확인
