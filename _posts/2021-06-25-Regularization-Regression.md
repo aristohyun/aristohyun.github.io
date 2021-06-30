@@ -13,3 +13,18 @@ redirect_from:
 {:toc .toc}
 
 [참고 사이트](https://rk1993.tistory.com/entry/Ridge-regression%EC%99%80-Lasso-regression-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0){: target="_blank"}
+
+
+# Reqularization
+
+
+# Ridge Regression    
+> L2 Regression
+잔자제곱합(SSR) + 패널티 항(베타 값)    
+
+
+# Lasso Regression    
+> L1 Regression    
+잔자제곱합(SSR) + 패널티 절댓값 항(베타 값)    
+
+
