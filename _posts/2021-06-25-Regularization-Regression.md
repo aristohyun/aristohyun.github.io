@@ -24,12 +24,12 @@ Ridge와 Lasso에서는 여기에 계수의 크기도 최소가 되게 하여 �
 
 
 # Ridge Regression    
-> L2 Regression
-잔자제곱합(SSR) + 패널티 항(베타 값)    
+> L2 Regression    
+> 잔자제곱합(SSR) + 패널티 항(베타 값)    
 
 
 # Lasso Regression    
 > L1 Regression    
-잔자제곱합(SSR) + 패널티 절댓값 항(베타 값)    
+> 잔자제곱합(SSR) + 패널티 절댓값 항(베타 값)    
 
 
