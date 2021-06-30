@@ -9,3 +9,5 @@ redirect_from:
   - /2021/06/18/
 ---
 
+* Kramdown table of contents
+{:toc .toc}
