@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기계학습, 회귀 분석 Regression"
+title: "기계학습, 선형 회귀 Linear Regression"
 description: "Regression, 회귀분석"
 categories: [MachineLearning]
 tags: [Machine Learning, Supervised Learning, Regression, R^2]
