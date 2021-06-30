@@ -1,0 +1,13 @@
+---
+layout: post
+title: "기계학습, 정규화 회귀 Reqularizatior Regression"
+description: "Regression, 회귀분석"
+categories: [MachineLearning]
+tags: [Machine Learning, Supervised Learning, Regression, Lasso, Ridge]
+use_math: true
+redirect_from:
+  - /2021/06/25/
+---
+
+* Kramdown table of contents
+{:toc .toc}
