@@ -1,0 +1,11 @@
+---
+layout: post
+title: "기계학습, K-최근접 이웃 K-Nearest Neighbor"
+description: "K-Nearest Neighbor, KNN"
+categories: [MachineLearning]
+tags: [Machine Learning, Supervised Learning, KNN]
+use_math: true
+redirect_from:
+  - /2021/06/18/
+---
+
