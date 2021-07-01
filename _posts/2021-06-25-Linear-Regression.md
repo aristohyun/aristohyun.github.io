@@ -108,8 +108,6 @@ $ = 2 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1
 
 $ = 2 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i)(b_0 + b_1 x) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)) $     
 
-
-
 $ \because   1) ,  2)  $
 
 $ = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $    
@@ -117,4 +115,4 @@ $ = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^
 $ = 0 $    
 
 
-
+$ \therefore  SST = SSE + SSR $
