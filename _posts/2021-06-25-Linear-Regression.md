@@ -96,13 +96,13 @@ $ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} $
 
 $ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
 
-$ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2((y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
+$ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
 
-$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
+$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
 
-$ = SSE + SSR + \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
+$ = SSE + SSR + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
 
-$ \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
+$ \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
 
 $ = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} $     
 
@@ -112,6 +112,6 @@ $ = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^
 
 $ = 0 \because   1) ,  2) $    
 
-$ \therefore  \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
+$ \therefore  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
 
 $ \therefore  SST = SSE + SSR $
