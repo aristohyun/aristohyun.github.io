@@ -46,7 +46,7 @@ $Y = b_{0} + b_{1}X$
 독립변인이 늘어나면 다음과 같아진다 (다중 선형 회귀식)    
 $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$    
 
-#### 결정계수, R-Squared, $R^2$
+### 결정계수, R-Squared, $R^2$
 > 이때 내가 찾은 선형식이 이 데이터를 정말 잘 표현하는지 확인할 때 $R^2$를 계산한다    
 > $R^2$는 독립변수가 종속변수를 얼마만큼 설명해주는지를 가리키는 지표이며    
 > 0에 가까울수록 설명력이 낮으며, 1에 가까울수록 설명력이 높다    
@@ -66,3 +66,12 @@ $y_i$ : 관측값
 $\bar{y}$ : 관측값의 평균값
 $\hat{y}$ : 추정값 (회귀식의 값)
 
+#### SST = SSE + SSR 유도
+
+$$
+SST = \sum\limits_{i=1}^{n}(y_i - \bar{y})^2    
+= \sum\limits_{i=1}^{n}(y_i - \hat{y}_i + \hat{y}_i - \bar{y})^2    
+= \sum\limits_{i=1}^{n}((y_i - \hat{y}_i)^2 + 2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y}) +(\hat{y}_i - \bar{y})^2)    
+= \sum\limits_{i=1}^{n}(y_i - \hat{y}_i)^2 + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y}) + \sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2
+= SSE + SSR + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y})
+$$
