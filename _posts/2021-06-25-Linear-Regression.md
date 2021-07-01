@@ -71,26 +71,21 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
-$ \hat{y} = b_0 + b_1 x $    
+$ \;\; \hat{y} = b_0 + b_1 x $    
 
 $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x)^2$     
 
 $ b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 최소값
 
-1) $ -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
+1) $ \;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
 
-$  \therefore \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
+$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 
-= > 잔차의 합이 0이되어야 최소값이란 것을 알 수 있음    
+=> 잔차의 합이 0이되어야 최소값이란 것을 알 수 있음    
 
+2) $ \;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
 
-
-
-2) $ -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
-
-$  \therefore \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
-
-
+$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
 
 $ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} $    
 
@@ -110,8 +105,8 @@ $ = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum
 
 $ = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $    
 
-$ = 0 \;\;\;\; \because   1) , \;\;  2) $    
+$ = \;\; 0 \;\;\;\; \because \;\; 1) , \;\;  2) $    
 
-$ \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
+$ \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
 
-$ \therefore \;\; SST = SSE + SSR $
+$ \;\; \therefore \;\; SST = SSE + SSR $
