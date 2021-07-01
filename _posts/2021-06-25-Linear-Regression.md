@@ -62,17 +62,31 @@ SSE = Explained Sum of Squares, 추정값 - 평균값
 SSR = Residual Sum of Squares, 관측값 - 추정값(잔차의 합)    
 **$\sum\limits_{i=1}^{n}(y_ i - \hat{y}_ i)^2$**    
     
-$y_ i$ : 관측값
-$\bar{y}$ : 관측값의 평균값
-$\hat{y}_ i$ : 추정값 (회귀식의 값)
+$y_ i$ : 관측값  
+$\bar{y}$ : 관측값의 평균값  
+$\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
 
 #### SST = SSE + SSR 유도    
 
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
-$ \hat{y} = b_0 + b_1 x $
+
+$ \hat{y} = b_0 + b_1 x $    
+
 $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x)^2$     
-  
+
+$ b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 최소값
+
+1) $ -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
+
+$  \therefore \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
+
+= > 잔차의 합이 0이되어야 최소값이란 것을 알 수 있음    
+
+2) $ -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
+
+$  \therefore \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
+
 $ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} $    
 
 $ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
@@ -81,7 +95,19 @@ $ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2((y_ i - \hat{y}_ {i})(\hat
 
 $ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
 
-$ = SSE + SSR + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y})$    
+$ = SSE + SSR + \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
+
+$ \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i)\ hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
+
+$ = 2 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y}) $     
+
+$ = 2 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i)(b_0 + b_1 x) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)) $     
+
+$ \because 1), 2) $
+
+$ = 2 b_0 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} ((y_ i - \hat{y}_ i) x - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)) $    
+
+$ = 0 $    
 
 
 
