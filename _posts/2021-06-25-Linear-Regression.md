@@ -77,4 +77,4 @@ $= \sum\limits_{i=1}^{n}((y_i - \hat{y}_i)^2 + 2((y_i - \hat{y}_i)(\hat{y}_i - \
 
 $= \sum\limits_{i=1}^{n}(y_i - \hat{y}_i)^2 + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y}) + \sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2$    
 
-$=SSE + SSR + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y})$    
+$= SSE + SSR + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y})$    
