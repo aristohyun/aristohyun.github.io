@@ -83,7 +83,7 @@ $  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $
 
 2) $ \;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
 
-$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
+$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
 
 $ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
 
@@ -110,4 +110,4 @@ $ \;\; \therefore \;\; SST = SSE + SSR $
 
 [^1]: 해당 식을 $ b_ 0, b_ 1 $에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $에 대한 2차방정식라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
 [^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
-[^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
+[^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
