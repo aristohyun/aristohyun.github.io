@@ -54,13 +54,13 @@ $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$
 $R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST}$    
   
 SST = Total Sum of Squares, 관측값 - 평균값     
-**$ = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^2$**    
+$ = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^2$    
     
 SSE = Explained Sum of Squares, 추정값 - 평균값   
-**$ = \sum\limits_{i=1}^{n}(\hat{y}_ i - \bar{y})^2$**    
+$ = \sum\limits_{i=1}^{n}(\hat{y}_ i - \bar{y})^2$    
     
 SSR = Residual Sum of Squares, 관측값 - 추정값(잔차의 합)    
-**$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ i)^2$**    
+$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ i)^2$    
     
 $y_ i$ : 관측값  
 $\bar{y}$ : 관측값의 평균값  
