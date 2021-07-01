@@ -54,27 +54,34 @@ $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$
 **$R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST}$**    
   
 SST = Total Sum of Squares, 관측값 - 평균값     
-**$\sum\limits_{i=1}^{n}(y_i - \bar{y})^2$**    
+**$\sum\limits_{i=1}^{n}(y_ i - \bar{y})^2$**    
     
 SSE = Explained Sum of Squares, 추정값 - 평균값   
-**$\sum\limits_{i=1}^{n}(\hat{y}_i - \bar{y})^2$**    
+**$\sum\limits_{i=1}^{n}(\hat{y}_ i - \bar{y})^2$**    
     
 SSR = Residual Sum of Squares, 관측값 - 추정값(잔차의 합)    
-**$\sum\limits_{i=1}^{n}(y_i - \hat{y})^2$**    
+**$\sum\limits_{i=1}^{n}(y_ i - \hat{y}_ i)^2$**    
     
-$y_i$ : 관측값
+$y_ i$ : 관측값
 $\bar{y}$ : 관측값의 평균값
-$\hat{y}$ : 추정값 (회귀식의 값)
+$\hat{y}_ i$ : 추정값 (회귀식의 값)
 
-#### SST = SSE + SSR 유도
 
+#### SST = SSE + SSR 유도    
+
+회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
+$ \hat{y} = b_0 + b_1 x $
+$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x)^2$     
   
-$SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2}$    
+$ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} $    
 
 $ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
 
 $ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2((y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
 
-$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$    
+$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2((y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
 
 $ = SSE + SSR + \sum\limits_{i=1}^{n}2((y_i - \hat{y}_i)(\hat{y}_i - \bar{y})$    
+
+
+
