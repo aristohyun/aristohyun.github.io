@@ -87,9 +87,7 @@ $  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $
 
 $  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0  $    
 
-$ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} $    
-
-$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
+$ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
 
 $ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
 
