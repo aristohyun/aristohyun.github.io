@@ -77,11 +77,15 @@ $ \;\;\;\; SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1
 
 $ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 최소값 [^1]    
 
- 1) $\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
+ 1) $ \frac{\partial }{\partial b_ 0} SSR = $    
+
+$\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
 
 $\;\;\;\;   \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 
- 2) $\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
+ 2)  $ \frac{\partial }{\partial b_ 1} SSR = $    
+
+$\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
 
 $\;\;\;\;  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
 
