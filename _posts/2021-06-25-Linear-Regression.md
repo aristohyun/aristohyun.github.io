@@ -71,41 +71,41 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
-$ \;\; \hat{y} = b_0 + b_1 x $    
+$ \;\;\;\;\;\; \hat{y} = b_0 + b_1 x $    
 
-$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x)^2$     
+$ \;\;\;\; SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x)^2$     
 
-$ b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 최소값 [^1]    
+$ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 최소값 [^1]    
 
-1) $ \;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
+ 1) $\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $    
 
-$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
+$\;\;\;\;   \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 
-2) $ \;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
+ 2) $\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x) x  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x = 0 $    
 
-$  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
+$\;\;\;\;  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
 
-$ SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
+$\;\;\;\; SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2$    
 
-$ = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
+$\;\;\;\; = \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2)$    
 
-$ = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
+$\;\;\;\; = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2$     
 
-$ = SSE + SSR + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
+$\;\;\;\; = SSE + SSR + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
 
-$ \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
+$\;\;\;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
 
-$ = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} $     
+$\;\;\;\; = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} $     
 
-$ = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $     
+$\;\;\;\; = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $     
 
-$ = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $    
+$\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $    
 
-$ = \; 0 \;\;\; \because \; $ 1) [^2] , 2) [^3]     
+$\;\;\;\; = \; 0 \;\;\; \because \; $ 1) [^2] , 2) [^3]     
 
-$ \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
+$\;\;\;\; \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
 
-$ \;\; \therefore \;\; SST = SSE + SSR $
+$\;\;\;\;\;\; \therefore \;\; SST = SSE + SSR $
 
 
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
