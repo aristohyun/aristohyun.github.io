@@ -14,9 +14,9 @@ redirect_from:
 {:toc .toc}
 
 **참고사이트**
-> [HEROPY Tech](https://heropy.blog/2017/09/30/markdown/)
-> [G.J Choi](http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/)
-
+> [HEROPY Tech](https://heropy.blog/2017/09/30/markdown/)    
+> [G.J Choi](http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/)    
+> [잇창명](https://eatchangmyeong.github.io/syntax/#fnref:fnrepeat:1)    
 
 # 일반적으로
 
@@ -28,7 +28,7 @@ _기울임은_ `_이렇게_`
 
 **_둘다 섞어서도 됨_**  `**_이렇게_**`, `***이거도됨***`
 
-주석은[^1] `[^1]`.
+각주[^1] `[^1]`.
 
 태그 사용 가능 `<kbd>, <code>`
 
@@ -51,28 +51,6 @@ _기울임은_ `_이렇게_`
 1. 번호도 가능함
 2. 번호는 탭한다고 이중으로 안됨
 
-# 테이블
-
-* Table 1
-
-    |-----------------+------------+-----------------+----------------|
-    | Default aligned |Left aligned| Center aligned  | Right aligned  |
-    |-----------------|:-----------|:---------------:|---------------:|
-    | First body part |Second cell | Third cell      | fourth cell    |
-    | Second line     |foo         | **strong**      | baz            |
-    | Third line      |quux        | baz             | bar            |
-    | Footer row      |            |                 |                |
-    |-----------------+------------+-----------------+----------------|
-
-* Table 2
-
-    |---
-    | Default aligned | Left aligned | Center aligned | Right aligned
-    |-|:-|:-:|-:
-    | First body part | Second cell | Third cell | fourth cell
-    | Second line |foo | **strong** | baz
-    | Third line |quux | baz | bar
-    | Footer row
 
 # 수평선
 `* * * --- ---------- _ _ _`
@@ -86,9 +64,15 @@ _  _  _  _
 
 # 이미지
 
+`![이미지](https://kramdown.gettalong.org/overview.png)`
+
 <a class="post-image" href="https://kramdown.gettalong.org/overview.png">
 <img itemprop="image" data-src="https://kramdown.gettalong.org/overview.png" src="/assets/javascripts/unveil/loader.gif" alt="Kramdown Overview" />
 </a>
+
+# 수식    
+[laTeX](https://kramdown.gettalong.org/overview.png){: target="_blank"}    
+
 
 
 [^1]: This is a footnote.
