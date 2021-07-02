@@ -71,7 +71,7 @@ _  _  _  _
 </a>
 
 # 수식    
-[laTeX](https://kramdown.gettalong.org/overview.png){: target="_blank"}    
+[laTeX](https://www.codecogs.com/latex/eqneditor.php){: target="_blank"}    
 
 
 
