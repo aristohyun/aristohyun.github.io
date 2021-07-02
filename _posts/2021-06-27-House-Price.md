@@ -51,7 +51,7 @@ f, ax = plt.subplots(figsize = (12,10))
 sns.heatmap(cm, vmax=.8, linewidths=0.1,square=True,annot=True,cmap=colormap, linecolor="white",xticklabels = cols.values ,annot_kws = {'size':14},yticklabels = cols.values)
 ~~~    
 
-![Zoomed Heat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png){: width="500" height="500"}    
+![ZoomedHeat Map](https://aristohyun.github.io/assets/images/WhatImade/zoomedHeatMap.png){: width="500" height="500"}    
     
 ~~~ python
 *** 3. Pair Plot ***
@@ -139,9 +139,8 @@ catg_weak_corr = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'Lo
 ## 수치형 변수     
 
 ### 정규근사화     
-  
-회귀분석을 하기 위해선 잔차의 분포가 정규성을 만족해야함     
-따라서 비대칭과 첨도가 관찰된 SalePrice을 하기 위해선 정규근사화 해야함      
+회귀분석을 하기 위해선 잔차에 대한 분포가 정규성을 만족해야 함  
+따라서 비대칭과 첨도가 관찰된 SalePrice을 하기 위해선 정규근사화를 함      
 -> 값에 로그를 취하여 정규근사화         
 
 ~~~ python    
@@ -156,10 +155,26 @@ print("Kurtosis: %f" % df_train['SalePrice_Log'].kurt())
 # 로그로 변환한 이후에는 기존 값을 사용하지 않기에 삭제
 df_train.drop('SalePrice', axis= 1, inplace=True)
 ~~~
-     
+
 ![SalePrice](https://aristohyun.github.io/assets/images/WhatImade/saleprice.png){: width="500" height="500"}     
 
 ![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png){: width="500" height="500"}     
+
+#### Skewness 왜도[^1]    
+왜도가 양수면(Positive Skewness), 오른쪽 꼬리(왼쪽에 몰림)    
+왜도가 음수면(Negaitive Skewness), 왼쪽쪽 꼬리(오른쪽에 몰림)    
+-2 ~ +2 정도는 허용 가능
+
+꼬리에 있는 값을 모델에 제대로 학습시키기 위함    
+Skewed 되어있는 값을 그대로 학습시키면 꼬리 부분이 상대적으로 적고 멀어서 모델에 영향이 거의 없이 학습된다     
+
+만약 꼬리 부분도 노이즈가 아닌 정말 유의미한 데이터이면 꼬리 부분에 해당하는 test 데이터는 예측력이 낮아진다    
+변환을 해서 들어가게 되면 그만큼 데이터의 중간값(or 평균값)가 tail 하고 가까워져서 모델에 보다 크게 들어간다     
+그렇게 되면 꼬리 쪽에 해당하는 test 데이터가 들어와도 예측력이 높아진다.     
+
+#### Kurtosis 첨도[^1]
+첨도가 높으면(Kurtosis > 3) 아웃라이어가 많이 있다는 뜻이며,    
+첨도가 낮으면(Kurtosis < 3) 극값이 정규 분포의 값보다 작기 때문에 결과에 대한 확인을 해봐야 함     
 
 
 ### 이상치 제거      
@@ -413,3 +428,6 @@ sub_xgb['SalePrice'] = pred_xgb
 sub_xgb['SalePrice'] = np.exp(sub_xgb['SalePrice'])     
 sub_xgb.to_csv('xgb.csv',index=False)
 ~~~
+
+
+[^1] : [왜도와 첨도1](https://rucrazia.tistory.com/65){: target="_ blank"}, [왜도와 첨도2](https://m.blog.naver.com/yk60park/222100758577){: target="_ blank"}
