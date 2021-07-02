@@ -160,7 +160,7 @@ df_train.drop('SalePrice', axis= 1, inplace=True)
 
 ![SalePriceLog](https://aristohyun.github.io/assets/images/WhatImade/salepricelog.png){: width="500" height="500"}     
 
-#### Skewness 왜도[^1]    
+#### Skewness 왜도 [^1]    
 왜도가 양수면(Positive Skewness), 오른쪽 꼬리(왼쪽에 몰림)    
 왜도가 음수면(Negaitive Skewness), 왼쪽쪽 꼬리(오른쪽에 몰림)    
 -2 ~ +2 정도는 허용 가능
@@ -172,7 +172,7 @@ Skewed 되어있는 값을 그대로 학습시키면 꼬리 부분이 상대적�
 변환을 해서 들어가게 되면 그만큼 데이터의 중간값(or 평균값)가 tail 하고 가까워져서 모델에 보다 크게 들어간다     
 그렇게 되면 꼬리 쪽에 해당하는 test 데이터가 들어와도 예측력이 높아진다.     
 
-#### Kurtosis 첨도[^1]
+#### Kurtosis 첨도 [^1]
 첨도가 높으면(Kurtosis > 3) 아웃라이어가 많이 있다는 뜻이며,    
 첨도가 낮으면(Kurtosis < 3) 극값이 정규 분포의 값보다 작기 때문에 결과에 대한 확인을 해봐야 함     
 
