@@ -5,7 +5,7 @@ description: "A quick post to some kramdown features."
 categories: [DevEnviroment]
 tags: [gitblog]
 redirect_from:
-  - /2020/07/13/
+  - /2020/05/01/
 ---
 
 > This is [kramdown](https://kramdown.gettalong.org/) formatting test page for [Simple Texture](https://github.com/yizeng/jekyll-theme-simple-texture) theme.
