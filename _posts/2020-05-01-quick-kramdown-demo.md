@@ -13,8 +13,6 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}
 
-**수식, 테이블 생성 사이트**
-[Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
 
 **참고사이트**
 > [HEROPY Tech](https://heropy.blog/2017/09/30/markdown/)    
@@ -72,6 +70,11 @@ _  _  _  _
 <a class="post-image" href="https://kramdown.gettalong.org/overview.png">
 <img itemprop="image" data-src="https://kramdown.gettalong.org/overview.png" src="/assets/javascripts/unveil/loader.gif" alt="Kramdown Overview" />
 </a>
+
+
+# 테이블
+
+[Table Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
 
 # 수식    
 [laTeX](https://www.codecogs.com/latex/eqneditor.php){: target="_blank"}    
