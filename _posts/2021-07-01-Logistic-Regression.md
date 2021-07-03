@@ -33,7 +33,7 @@ Odds를 Odds로 나누어 비교가 가능
 case2 대비 case1의 확률이 4배(≒4.0015) 더 높음
 
 ## 로지스틱 함수    
->  $ y = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} = \frac{e^{b_ 0 + b_ 1 x}{e^{b_ 0 + b_ 1 x} + 1} $    
+>  $ y = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} = \frac{e^{b_ 0 + b_ 1 x}}{e^{b_ 0 + b_ 1 x} + 1} $    
 
 ![image](https://user-images.githubusercontent.com/32366711/124351211-fa8e3a80-dc33-11eb-8652-a461b344542a.png)
 
@@ -51,9 +51,9 @@ $ P = \pi(X = x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)} $
 ![image](https://user-images.githubusercontent.com/32366711/124350721-50adae80-dc31-11eb-9036-34748a965a23.png)
 
 $ Odds = \frac{P}{1-P} $    
-$ ln(Odds) = ln(\frac{\pi(X = x)}{1 - \pi(X = x)}) = ln(\frac{\frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}{1 - \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}) $    
+$ ln(Odds) = ln(\frac{\pi(X = x)}{1 - \pi(X = x)}) = ln(\frac{\frac{1} {1 + e^{-(b_ 0 + b_ 1 x)}} } {1 - \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}}}) $    
 $ = b_ 0 + b_ 1 x $    
-$ \therfore \; ln(Odds) = b_ 0 + b_ 1 x $     
+$ \therefore \; ln(Odds) = b_ 0 + b_ 1 x $     
 
 따라서 이제 일반 회귀식으로 로짓값을 예측할 수 있음    
 만약 회귀식의 값이 1이 나왔다면, Odds의 값은 e      
