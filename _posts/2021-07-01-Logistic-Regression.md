@@ -33,8 +33,9 @@ redirect_from:
 > Odds를 Odds로 나누어 비교가 가능 
 > : case2 대비 case1의 확률이 4배(≒4.0015) 더 높음
 
-## 로지스틱 회귀식    
+## 로지스틱 함수    
 >  $ y = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}}  $
+![image](https://user-images.githubusercontent.com/32366711/124351211-fa8e3a80-dc33-11eb-8652-a461b344542a.png)
 
 만약, 결과값이 사망/생존과 같이 이분법적인 방법으로 구분되는 경우    
 선형회귀등으로 하면 적합하지 못한 모델이 됨    
@@ -45,15 +46,20 @@ redirect_from:
 그렇기에 로짓변환을 통해 로지스틱 회귀 사용     
 
 ### Logit Transform, 로짓 변환    
-
+P : 어떤 사건이 일어날 확률
 $ P = \pi(X = x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)} $    
 ![image](https://user-images.githubusercontent.com/32366711/124350721-50adae80-dc31-11eb-9036-34748a965a23.png)
 
 $ Odds = \frac{P}{1-P} $    
 $ ln(Odds) = ln(\frac{\pi(X = x)}{1 - \pi(X = x)}) = ln(\frac{\frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}{1 - \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}) $    
 $ = b_ 0 + b_ 1 x $
-$ \therfore \; log(Odds) = b_ 0 + b_ 1 x $    
+$ \therfore \; ln(Odds) = b_ 0 + b_ 1 x $    
+
+따라서 이제 일반 회귀식으로 로짓값을 예측할 수 있음
+만약 회귀식의 값이 1이 나왔다면, Odds의 값은 e
+Odds = P/1-P = e, (e+1)P = e, P = e/(e+1), P가 발생할 확률은 약 0.73
 
 
 # 참고 사이트
 [KorShort](https://blog.naver.com/tjqdl2013/220835520162){: target="_ blank"}
+[Classic!](https://icefree.tistory.com/entry/%EA%B8%B0%EC%B4%88-%ED%86%B5%EA%B3%84-Odds-Ratio){: target="_ blank"}
