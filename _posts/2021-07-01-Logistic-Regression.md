@@ -47,7 +47,7 @@ case2 대비 case1의 확률이 4배(≒4.0015) 더 높음
 
 ### Logit Transform, 로짓 변환    
 P = 어떤 사건이 일어날 확률    
-$ P = \pi(X = x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)} $    
+$ P = \pi(X = x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} $    
 ![image](https://user-images.githubusercontent.com/32366711/124350721-50adae80-dc31-11eb-9036-34748a965a23.png)
 
 $ Odds = \frac{P}{1-P} $    
