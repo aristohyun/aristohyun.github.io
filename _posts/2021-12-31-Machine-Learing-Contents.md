@@ -19,9 +19,11 @@ redirect_from:
 
 ## [KNN](https://aristohyun.github.io/blog/2021/06/18/KNN/){: target="_ blank"}    
 
-## [Regression](https://aristohyun.github.io/blog/2021/06/25/Linear-Regression/){: target="_ blank"}    
+## [Linear Regression](https://aristohyun.github.io/blog/2021/06/25/Linear-Regression/){: target="_ blank"}    
 
 ## [CV](https://aristohyun.github.io/blog/2021/06/26/Cross-Validation/){: target="_ blank"}    
+
+## [Logistic Regression](https://aristohyun.github.io/blog/2021/07/01/Logistic-Regression/){: target="_ blank"}
 
 ## [ROC Curve](https://aristohyun.github.io/blog/2021/07/02/ROC-Curve/){: target="_ blank"}    
 
