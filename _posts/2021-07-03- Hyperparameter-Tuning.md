@@ -35,15 +35,11 @@ redirect_from:
 - Random forest parameters like max_depth     
 
 ## Hyperparameter tuning      
-- try all of combinations of different parameters       
-- measure prediction performance and see how well each performs    
-- finally choose best hyperparameters    
+> 파라미터의 **모든 조합**들을 시도해서 예측 성능을 측정해 보며, 
+> 어떤게 가장 좋은 성능을 내는지 확인하는 것     
 
 ### GridSearchCV    
-> Hyperparameter 후보군들을 넣어서 어떤게 가장 성능이 좋은지 컴퓨터가 대신 해주는 클래스    
-    
-GridSearchCV takes knn and grid and makes grid search.      
-It means combination of all hyperparameters. Here it is k.    
+> Hyperparameter 후보군들을 넣어서 어떤게 가장 성능이 좋은지 계산하는 클래스    
 
 <br />
 - 앞에서는 K의 최적의 값을 찾기 위해서 반복문을 통해 값을 하나씩 확인했음    
