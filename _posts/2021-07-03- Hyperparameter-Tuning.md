@@ -40,12 +40,14 @@ redirect_from:
 - finally choose best hyperparameters    
 
 ### GridSearchCV    
-> Hyperparameter 후보군들을 넣어서 어떤게 가장 성능이 좋은지 컴퓨터가 대신 해주는 클래스
-grid: K is from 1 to 50(exclude)    
-GridSearchCV takes knn and grid and makes grid search.     
-It means combination of all hyperparameters. Here it is k.       
+> Hyperparameter 후보군들을 넣어서 어떤게 가장 성능이 좋은지 컴퓨터가 대신 해주는 클래스    
+    
+GridSearchCV takes knn and grid and makes grid search.      
+It means combination of all hyperparameters. Here it is k.    
 
-- 앞서서 K의 최적의 값을 찾기 위해서 반복문을 통해 값을 하나씩 확인했음
+<br />
+- 앞에서는 K의 최적의 값을 찾기 위해서 반복문을 통해 값을 하나씩 확인했음    
+
 ~~~ python
 # k from 1 to 25(exclude)
 for i, k in enumerate(neig):
@@ -72,7 +74,9 @@ print("Best score: {}".format(knn_cv.best_score_))
 
 ![image](https://user-images.githubusercontent.com/32366711/124358333-c11cf580-dc5a-11eb-9e96-40464ce43afa.png)    
 
-- 로지스틱회귀에서 페널티를 l1으로 할것인지 l2로 할것인지 또한 설정 가능
+<br />
+- 로지스틱회귀에서 가중치(C)와 패널티를 l1으로 할것인지 l2로 할것인지 또한 설정 가능    
+- 
 ~~~ python    
 
 # grid search cross validation with 2 hyperparameter
