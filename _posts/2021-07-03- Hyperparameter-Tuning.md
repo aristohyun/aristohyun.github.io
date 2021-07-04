@@ -51,26 +51,30 @@ It means combination of all hyperparameters. Here it is k.
 for i, k in enumerate(neig):
     knn = KNeighborsClassifier(n_neighbors=k)
     knn.fit(x_train,y_train)
-    train_accuracy.append(knn.score(x_train, y_train)))
+    train_accuracy.append(knn.score(x_train, y_train)))   
 ~~~    
 
-- 위의 방법 대신 GridSearchV로 찾는 것
+- 위의 방법 대신 GridSearchV로 찾는 것     
+
 ~~~ python    
+
 # grid search cross validation with 1 hyperparameter
 from sklearn.model_selection import GridSearchCV
 grid = {'n_neighbors': np.arange(1,50)}
 knn = KNeighborsClassifier()
 knn_cv = GridSearchCV(knn, grid, cv=3) # GridSearchCV
-knn_cv.fit(x,y)# Fit
+knn_cv.fit(x,y)# Fit    
 
-# Print hyperparameter
+# Print hyperparameter    
 print("Tuned hyperparameter k: {}".format(knn_cv.best_params_)) 
 print("Best score: {}".format(knn_cv.best_score_))
 ~~~    
+
 ![image](https://user-images.githubusercontent.com/32366711/124358333-c11cf580-dc5a-11eb-9e96-40464ce43afa.png)    
 
 - 로지스틱회귀에서 페널티를 l1으로 할것인지 l2로 할것인지 또한 설정 가능
-~~~ python
+~~~ python    
+
 # grid search cross validation with 2 hyperparameter
 # 1. hyperparameter is C:logistic regression regularization parameter
 # 2. penalty l1 or l2
