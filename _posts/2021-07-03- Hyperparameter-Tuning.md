@@ -76,7 +76,7 @@ print("Best score: {}".format(knn_cv.best_score_))
 
 <br />
 - 로지스틱회귀에서 가중치(C)와 패널티를 l1으로 할것인지 l2로 할것인지 또한 설정 가능    
-- 
+
 ~~~ python    
 
 # grid search cross validation with 2 hyperparameter
