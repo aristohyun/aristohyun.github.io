@@ -61,10 +61,7 @@ $ \therefore \; ln(Odds) = b_ 0 + b_ 1 x $
 > 코스트 값이 낮을수록 높은 강도의 제약조건이 설정 되는 것이며    
 > 코스트 값이 높을수록 낮은 강도의 제약조건이 설정됨    
 
-
-$ H(x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} $    
-$ cost(W) = \frac{1}{m} \sum c(H(x), y) $    
-![image](https://user-images.githubusercontent.com/32366711/124730028-ec9a2b80-df4b-11eb-9823-5ea9e65a1444.png){: width="400" height="250"}
+![image](https://user-images.githubusercontent.com/32366711/124738436-e314c180-df53-11eb-8c5c-abf04a050ee1.png){:width="400"}
 
 # 참고 사이트
 [KorShort](https://blog.naver.com/tjqdl2013/220835520162){: target="_ blank"}
