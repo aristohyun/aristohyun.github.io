@@ -58,6 +58,10 @@ $ \therefore \; ln(Odds) = b_ 0 + b_ 1 x $
 따라서 이제 일반 회귀식으로 로짓값을 예측할 수 있음      
 
 ## 코스트 함수    
+> 코스트 값이 낮을수록 높은 강도의 제약조건이 설정 되는 것이며    
+> 코스트 값이 높을수록 낮은 강도의 제약조건이 설정됨    
+
+
 $ H(x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} $    
 $ cost(W) = \frac{1}{m} \sum c(H(x), y) $    
 $ c(H(x), y) = \left \{ \begin {matrix} -log(H(x)) \;\;\;\;\; : y=1 \\  -log(1-H(x)) : y=0 \end {matrix} \right. $    
