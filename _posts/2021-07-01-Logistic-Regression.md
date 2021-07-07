@@ -61,7 +61,7 @@ $ \therefore \; ln(Odds) = b_ 0 + b_ 1 x $
 > 코스트 값이 낮을수록 높은 강도의 제약조건이 설정 되는 것이며    
 > 코스트 값이 높을수록 낮은 강도의 제약조건이 설정됨    
 
-![image](https://user-images.githubusercontent.com/32366711/124738436-e314c180-df53-11eb-8c5c-abf04a050ee1.png){:width="400"}
+![image](https://user-images.githubusercontent.com/32366711/124740151-7bf80c80-df55-11eb-8ecb-5acc5dc9fab4.png){:width="400"}
 
 # 참고 사이트
 [KorShort](https://blog.naver.com/tjqdl2013/220835520162){: target="_ blank"}
