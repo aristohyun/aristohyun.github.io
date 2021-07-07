@@ -13,9 +13,6 @@ redirect_from:
 {:toc .toc}
 
 
-[Titinic : logistic Regression](https://www.kaggle.com/mnassrib/titanic-logistic-regression-with-python){: target="_ blank"}
-
-
 # Logistic Regression     
 > 분류(Classification) 기법    
 > 일반적인 회귀 분석의 목표와 동일하게 종속 변수와 독립 변수간의 관계를     
