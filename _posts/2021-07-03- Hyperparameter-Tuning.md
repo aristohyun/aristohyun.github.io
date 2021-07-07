@@ -78,7 +78,7 @@ print("Best score: {}".format(knn_cv.best_score_))
 # 2. penalty l1 or l2
 # Hyperparameter grid
 param_grid = {'C': np.logspace(-3, 3, 7), 'penalty': ['l1', 'l2']}
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size = 0.3,random_state = 12)
+x_train, x_test, y_train, y_test = train_test_split(X_train, Y_train ,test_size = 0.3,random_state = 12)
 logreg = LogisticRegression()
 logreg_cv = GridSearchCV(logreg,param_grid,cv=3)
 logreg_cv.fit(x_train,y_train)
@@ -88,7 +88,7 @@ print("Tuned hyperparameters : {}".format(logreg_cv.best_params_))
 print("Best Accuracy: {}".format(logreg_cv.best_score_))
 ~~~    
 
-![image](https://user-images.githubusercontent.com/32366711/124358375-f295c100-dc5a-11eb-95ef-7941e3b2adc9.png)
+![image](https://user-images.githubusercontent.com/32366711/124724183-bdcd8680-df46-11eb-87a4-68f038aaa6e7.png)
 
 
 [^1]: [Machine Learning Mastery, What is the Difference Between a Parameter and a Hyperarameter?](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/){: target="_ blank"}
