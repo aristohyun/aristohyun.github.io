@@ -35,7 +35,7 @@ redirect_from:
 - Random forest parameters like max_depth     
 
 ## Hyperparameter tuning      
-> 파라미터의 **모든 조합**들을 시도해서 예측 성능을 측정해 보며, 
+> 파라미터의 모든 조합들을 시도해서 예측 성능을 측정해 보며, 
 > 어떤게 가장 좋은 성능을 내는지 확인하는 것     
 
 ### GridSearchCV    
