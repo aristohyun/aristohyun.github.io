@@ -55,20 +55,18 @@ for i, k in enumerate(neig):
 - 위의 방법 대신 GridSearchV로 찾는 것     
 
 ~~~ python    
-
-# grid search cross validation with 1 hyperparameter
 from sklearn.model_selection import GridSearchCV
 grid = {'n_neighbors': np.arange(1,50)}
 knn = KNeighborsClassifier()
 knn_cv = GridSearchCV(knn, grid, cv=3) # GridSearchCV
-knn_cv.fit(x,y)# Fit    
+knn_cv.fit(X_train,Y_train)# Fit    
 
 # Print hyperparameter    
 print("Tuned hyperparameter k: {}".format(knn_cv.best_params_)) 
 print("Best score: {}".format(knn_cv.best_score_))
 ~~~    
 
-![image](https://user-images.githubusercontent.com/32366711/124358333-c11cf580-dc5a-11eb-9e96-40464ce43afa.png)    
+![image](https://user-images.githubusercontent.com/32366711/124721688-4991e380-df44-11eb-9ad1-1ec158fe05cf.png)    
 
 <br />
 - 로지스틱회귀에서 가중치(C)와 패널티를 l1으로 할것인지 l2로 할것인지 또한 설정 가능    
