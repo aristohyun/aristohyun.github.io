@@ -64,8 +64,7 @@ $ \therefore \; ln(Odds) = b_ 0 + b_ 1 x $
 
 $ H(x) = \frac{1}{1 + e^{-(b_ 0 + b_ 1 x)}} $    
 $ cost(W) = \frac{1}{m} \sum c(H(x), y) $    
-$ c(H(x), y) = -log(H(x)) \;\;\;\;\; : y=1 $
-$ \;\;\;\;\;\;\;\;\;\; -log(1-H(x)) : y=0 $
+![image](https://user-images.githubusercontent.com/32366711/124730028-ec9a2b80-df4b-11eb-9823-5ea9e65a1444.png){: width="200" height="150"}
 
 # 참고 사이트
 [KorShort](https://blog.naver.com/tjqdl2013/220835520162){: target="_ blank"}
