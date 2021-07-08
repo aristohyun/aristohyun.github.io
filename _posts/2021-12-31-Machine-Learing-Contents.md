@@ -48,7 +48,7 @@ redirect_from:
 > 자율 학습은 통계의 밀도 추정과 깊은 연관이 있다    
 > Input 데이터를 받지만, Label(정답)은 없이 오직 Input 데이터 만으로 데이터 군집을 만들어 분류하는 학습을 함    
 
-## Kmeans Clustering
+## [Kmeans Clustering](https://aristohyun.github.io/blog/2021/07/09/KMEANS/){: target="_ blank"}    
 
 ## Evaluation of Clustering
 
