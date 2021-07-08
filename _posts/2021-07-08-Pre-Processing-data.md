@@ -6,7 +6,7 @@ categories: [MachineLearning]
 tags: [Kaggle, Machine Learning, Supervised Learning, Pre Processing Data]
 use_math: true
 redirect_from:
-  - /2021//07/08
+  - /2021/07/08/
 ---
 
 * Kramdown table of contents
