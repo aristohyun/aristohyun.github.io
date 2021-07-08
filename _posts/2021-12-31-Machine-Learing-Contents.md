@@ -21,6 +21,8 @@ redirect_from:
 $$ \sum_{i=1}^{2} x $$    
         
         
+$  \sum_{i=1}^{2} x $    
+        
 
 # Supervised Learning    
 > 지도 학습법     
