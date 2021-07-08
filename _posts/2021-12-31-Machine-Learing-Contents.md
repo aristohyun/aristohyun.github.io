@@ -10,19 +10,17 @@ redirect_from:
 ---
 
 * Kramdown table of contents
-{:toc .toc}
-
-
-
-                  
-$$ \sum_{i=1}^{2} x $$
-                            
-                       
-
+{:toc .toc}           
+                   
 
 # 7/7 과제    
 선형회귀를 확률분포로 유도하는 파라미터 찾기
-확률분포로 유도? 
+확률분포로 유도?     
+
+                  
+$$ \sum_{i=1}^{2} x $$    
+        
+        
 
 # Supervised Learning    
 > 지도 학습법     
