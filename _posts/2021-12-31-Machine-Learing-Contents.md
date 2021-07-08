@@ -17,12 +17,6 @@ redirect_from:
 선형회귀를 확률분포로 유도하는 파라미터 찾기
 확률분포로 유도?     
 
-                  
-$$ \sum_{i=1}^{2} x $$    
-        
-        
-$  \sum_{i=1}^{2} x $    
-        
 
 # Supervised Learning    
 > 지도 학습법     
@@ -44,7 +38,7 @@ $  \sum_{i=1}^{2} x $
 
 ## [Hyperparameter Tuning](https://aristohyun.github.io/blog/2021/07/03/Hyperparameter-Tuning/){: target="_ blank"}    
 
-## Pre-procesing Data
+## [Pre-procesing Data](https://aristohyun.github.io/blog/2021/07/08/Pre-Processing-data/){: target="_ blank"}    
 
 
 # Unsupervised Learning    
