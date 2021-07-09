@@ -146,7 +146,7 @@ $\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1
 
 $\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ {1i} + b_ 2 x_ {2i} \cdots b_ n x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
 
-$\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(x_ {1i}) + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
+$\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {1i} + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {ni} - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
 
 $\;\;\;\; = \; 0 \;\;\; \because \; $ 1) [^2] , 2) [^4]     
 
