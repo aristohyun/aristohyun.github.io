@@ -112,7 +112,7 @@ $\;\;\;\; \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y
 $\;\;\;\;\;\; \therefore \;\; SST = SSE + SSR $
 
 
-##### 일반화
+#### SST = SSR + SSE 일반화
 
 $ \; \hat{y} = b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n $    
 
@@ -134,9 +134,6 @@ $\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j 
 
 $\;\;\;\;  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ ki = 0  $     
 
-$\;\;\;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ 1i + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ 2i + \cdots + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ ni   $     
-$\;\;\;\;  = \;\;  \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)( \sum\limits_ {j=1}^{n} x_ ji ) = 0  $     
-
 $\;\;\;\; = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})$    
 
 $\;\;\;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) $     
@@ -147,8 +144,11 @@ $\;\;\;\; = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 0 + \sum \limits_ {j
 
 $\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
 
+$\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ 1i + b_ 2 x_ 2i \cdots b_ n x_ ni) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
 
-$\;\;\;\; = \; 0 \;\;\; \because \; $ 1) [^2] , 2) [^3]     
+$\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(x_ 1i) + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(x_ ni) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) $   
+
+$\;\;\;\; = \; 0 \;\;\; \because \; $ 1) [^2] , 2) [^4]     
 
 $\;\;\;\; \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $    
 
@@ -158,3 +158,4 @@ $\;\;\;\;\;\; \therefore \;\; SST = SSE + SSR $
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
 [^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 [^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
+[^4]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ ki = 0  $    
