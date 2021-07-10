@@ -90,9 +90,9 @@ $ \begin{align\*}
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 \end{align\*}$     
 
+
 $ \begin{align\*}
-SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} \\\ 
-&= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
+SST = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} &= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
 &= \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
 &= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
 &= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
