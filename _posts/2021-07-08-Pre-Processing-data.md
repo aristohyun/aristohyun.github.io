@@ -137,7 +137,6 @@ df_log = df.apply(lambda x: np.log(x+1))
  b=1 & \text{ if } x= 2
 \end{cases}
 @
-2
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
