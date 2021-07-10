@@ -132,13 +132,11 @@ df_log = df.apply(lambda x: np.log(x+1))
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
 
 @
-\left \{ 
-\begin{matrix} 
-x=y
-\\  
-y=k  
-\end{matrix} 
-\right. 
+\begin{cases}
+ & a \text{ if } x= 1
+ \\ 
+ & b \text{ if } x= 2
+\end{cases}
 @
 
 
