@@ -137,7 +137,7 @@ $
  b=1 & \text{ if } x= 2
 \end{cases}
 $
-
+1
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
