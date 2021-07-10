@@ -137,13 +137,18 @@ df_log = df.apply(lambda x: np.log(x+1))
  b=1 & \text{ if } x= 2
 \end{cases}
 @
-    
 
-\displaylines{x = a + b \\ y = b + c}    
+$ \displaylines{x = a + b \\
+y = b + c} $    
 
-$ \displaylines{x = a + b \\ y = b + c} $    
+@ \displaylines{x = a + b \\
+y = b + c} @     
 
-@ \displaylines{x = a + b \\ y = b + c} @     
+$ \displaylines{x = a + b <br/>
+y = b + c} $    
+
+@ \displaylines{x = a + b <br/>
+y = b + c} @     
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
