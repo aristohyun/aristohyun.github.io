@@ -72,38 +72,40 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"}
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
-@ \hat{y} = b_0 + b_1 x \\\ 
-SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 @    
+$ \hat{y} = b_0 + b_1 x $
 
-$ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]   
-@ \begin{align\*}
+$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 $
+
+$ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]    
+
+$ \begin{align\*}
 1) \;\; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) \\\ 
-&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \end{align\*} @ 
+&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \end{align\*} $ 
   
-@ \begin{align\*}
+$ \begin{align\*}
 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) x_ i  \\\ 
-&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \end{align\*} @     
+&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \end{align\*} $     
 
-@1) \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
-2) \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 @
+$ 1) \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
+2) \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $
 
-@ \begin{align\*}
+$ \begin{align\*}
 SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
 &= \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
 &= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
 &= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) 
-\end{align\*}@
+\end{align\*}$
 
-@ \begin{align\*}
+$ \begin{align\*}
 \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*}@
+&= \; 0 \end{align\*}$
 
-@\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 @
+$\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
-@\therefore \;\; SST = SSE + SSR @
+$\therefore \;\; SST = SSE + SSR $
 
 
 #### SST = SSR + SSE 일반화 
