@@ -131,13 +131,13 @@ df_log = df.apply(lambda x: np.log(x+1))
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
 
-$
+@
 \begin{cases}
  a=2 & \text{ if } x= 1 <br/>  
  b=1 & \text{ if } x= 2
 \end{cases}
-$
-1
+@
+2
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
