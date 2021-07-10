@@ -68,8 +68,10 @@ $y_ i$ : 관측값
 $\bar{y}$ : 관측값의 평균값  
 $\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
-#### SST = SSE + SSR 유도    
-[참고](https://datalabbit.tistory.com/51){:target="_ blank"}
+#### SST = SSE + SSR 유도      
+
+[참고](https://datalabbit.tistory.com/51){:target="_ blank"} <br/>   
+
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
 $ \hat{y} = b_0 + b_1 x $
@@ -80,22 +82,32 @@ $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ 
 
 $ \begin{align\*}
 1) \;\; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) \\\ 
-&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \end{align\*} \\\ 
-\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $ 
+&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \end{align\*}$ 
   
 $ \begin{align\*}
 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) x_ i  \\\ 
-&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \end{align\*} \\\ 
-\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $     
+&= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 \\\ 
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 \end{align\*}$     
 
-
+$ \begin{align\*} 
+SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
+&= \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
+&= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
+&= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
+\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
+&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
+&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
+&= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
+&= \; 0 \end{align\*}$
 
 $\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
 $\therefore \;\; SST = SSE + SSR $
 
 
-#### SST = SSR + SSE 일반화 
+#### SST = SSR + SSE 일반화     
+
 $ \begin{align\*}\hat{y} &= b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n \\\ 
 &= b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ j \end{align\*}$
 
