@@ -27,7 +27,7 @@ redirect_from:
 4. 평균값에 대한 예측, 개별값에 대한 예측    
 
 
-### 이론의 가정    
+## 이론의 가정    
 1. 두 변수 간 선형관계가 있어야한다
 2. 표본추출이 무작위하게 이루어져야 한다
 3. X의 값이 두개 이상이여야 한다
@@ -37,7 +37,7 @@ redirect_from:
 7. 정규성, Normalty : 오차들끼리는 정규분포를 이루어야 한다
 
 
-### 회귀직선 그리기
+## 회귀직선 그리기
 
 ![단순 선형회귀](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F997E924F5CDBC1A6283C93)    
 기본적으로 단순 선형 회귀식은 다음과 같다    
@@ -46,7 +46,7 @@ $Y = b_{0} + b_{1}X$
 독립변인이 늘어나면 다음과 같아진다 (다중 선형 회귀식)    
 $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$    
 
-### 결정계수, R-Squared, $R^2$    
+## 결정계수, R-Squared, $R^2$    
 
 @ R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST} @    
 
@@ -68,7 +68,7 @@ $y_ i$ : 관측값
 $\bar{y}$ : 관측값의 평균값  
 $\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
-#### SST = SSE + SSR 유도      
+### SST = SSE + SSR 유도      
 
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"} <br/>   
 
@@ -106,7 +106,7 @@ $ \begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*}$
+&= \; 0 \end{align\*}$ [^2] [^3]
 
 $\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
@@ -114,7 +114,7 @@ $\therefore \;\; SST = SSE + SSR $
 
 <br/>
 
-#### SST = SSR + SSE 일반화     
+### SST = SSR + SSE 일반화     
 
 $ \begin{align\*}\hat{y} &= b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n \\\ 
 &= b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ j \end{align\*}$
@@ -147,7 +147,7 @@ $ \begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ {1i} + b_ 2 x_ {2i} \cdots b_ n x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {1i} + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {ni} - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*} $
+&= \; 0 \end{align\*} $ [^2][^4]
 
 $ \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
