@@ -106,7 +106,7 @@ $ \begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*}$ [^2] [^3]
+&= \; 0 \end{align\*}$ [^2][^3]    
 
 $\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
@@ -147,7 +147,7 @@ $ \begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ {1i} + b_ 2 x_ {2i} \cdots b_ n x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {1i} + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {ni} - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*} $ [^2][^4]
+&= \; 0 \end{align\*} $ [^2][^4]    
 
 $ \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
