@@ -97,9 +97,9 @@ $ 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_
 <br/>
 
 $ \begin{align\*}SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} \\\ 
-&= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
-&= \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
-&= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
+&= \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
+&= \sum\limits_ {i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
+&= \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
 &= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
 \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
@@ -139,8 +139,7 @@ $ 2) \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + 
 <br/>
 
 $ SST = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
-\begin{align\*}
-\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
+\begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
 &= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
