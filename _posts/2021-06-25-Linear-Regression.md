@@ -51,7 +51,7 @@ $Y = b_{0} + b_{1}X_{1} + b_{2}X_{2} + b_{3}X_{3} ...$
 > $R^2$는 독립변수가 종속변수를 얼마만큼 설명해주는지를 가리키는 지표이며    
 > 0에 가까울수록 설명력이 낮으며, 1에 가까울수록 설명력이 높다    
   
-$ R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST} $    
+@ R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST} @       
   
 SST = Total Sum of Squares, 관측값 - 평균값     
 $ = \sum\limits_{i=1}^{n}(y_ i - \bar{y})^2$    
@@ -71,21 +71,21 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"}
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
-@ 
+@      
 \hat{y} = b_0 + b_1 x \\\    
 
 SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ )^2 \\\    
-@
+@       
 
 $ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]   
 
-@
+@      
 1) \; \frac{\partial }{\partial b_ 0} \; \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2     \\\
  
  = -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i)  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0      \\\
  
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0        \\\
-@
+@      
 
 @
 2) \; \frac{\partial }{\partial b_ 1} \; \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 =       \\\
