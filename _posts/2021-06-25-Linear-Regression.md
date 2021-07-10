@@ -128,8 +128,8 @@ $ \begin{align\*}
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 
 \end{align\*}$
 
-$ \begin{align\*}
-SST = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
+$ SST = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
+\begin{align\*}
 \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
 &= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
