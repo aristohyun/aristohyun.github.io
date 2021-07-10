@@ -69,14 +69,14 @@ $\bar{y}$ : 관측값의 평균값
 $\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
 @
-\begin{align*}
+\begin{align\*}
 a &= 1 \\\ 
  &= 2\\\ 
  &= 3\\\ 
  &= 4\\\ 
  &= 5\\\ 
  &= 6 
-\end{align*}
+\end{align\*}
 @
 
 
@@ -103,14 +103,14 @@ a &= 1 \\\
 \end{align*}@
 
 
-$\begin{align*}
+$\begin{align\*}
 a &= 1 \\\ 
  &= 2\\\ 
  &= 3\\\ 
  &= 4\\\ 
  &= 5\\\ 
  &= 6 
-\end{align*}$
+\end{align\*}$
 
 
 #### SST = SSE + SSR 유도    
@@ -121,17 +121,17 @@ a &= 1 \\\
 SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 @    
 
 $ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]   
-@ 1) \begin{align* }
+@ 1) \begin{align\*}
 \frac{\partial }{\partial b_ 0} \; \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) \\\
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0
-\end{align* } @     
+\end{align\*} @     
 
-@ 2) \begin{align \* }
+@ 2) \begin{align\*}
 \frac{\partial }{\partial b_ 1} \; \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) x_ i  \\\
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \\\
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 
-\end{align \* } @     
+\end{align\*} @     
 
 @ \begin{align\*}
 SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\
