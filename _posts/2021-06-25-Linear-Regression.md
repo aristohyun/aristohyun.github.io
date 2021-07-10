@@ -72,9 +72,9 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
 @ 
-\hat{y} = b_0 + b_1 x      \\\
+\hat{y} = b_0 + b_1 x \\\    
 
-SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ )^2      \\\
+SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ )^2 \\\    
 @
 
 $ \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]   
@@ -124,50 +124,52 @@ SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - 
 @
  
 #### SST = SSR + SSE 일반화 
- $
- \; \hat{y} = b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n      
+@
+\; \hat{y} = b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n      
  
- \;\;\; = b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ j      
+\;\;\; = b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ j      
  
- \;\;\;\; SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji} )^2      
- $
+\;\;\;\; SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji} )^2      
+@
 
- $\;\;\;\; b_ i $에 대하여 각각 미분했을 때 0이 되야 SSR이 최소값을 가짐 [^1]     
+$\;\;\;\; b_ i $에 대하여 각각 미분했을 때 0이 되야 SSR이 최소값을 가짐 [^1]     
  
- $
- 1) \;\;\;\; \frac{\partial }{\partial b_ 0} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 =      
+@
+1) \; \frac{\partial }{\partial b_ 0} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 =      
  
-\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0      
+-2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0      
  
-\;\;\;\;   \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0       
- $
- $
- 2)  \;\;\;\; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}})   
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0       
+@
+
+@
+2)  \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}})   
  
-\;\;\;\; -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji}) x_ {ki}  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0      
+ -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji}) x_ {ki}  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0      
  
-\;\;\;\;  \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0        
- $
- @
-\;\;\;\; = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})     
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0        
+@
+
+@
+SST = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y})     
  
-\;\;\;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y})       
+\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y})       
  
-\;\;\;\; = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y}       
+&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y}       
  
-\;\;\;\; = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)       
+&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)       
  
-\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
+&= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(\sum \limits_ {j=1}^{n} b_ j x_ ji) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
  
-\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ {1i} + b_ 2 x_ {2i} \cdots b_ n x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
+&= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_ 1 x_ {1i} + b_ 2 x_ {2i} \cdots b_ n x_ {ni}) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
  
-\;\;\;\; = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {1i} + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {ni} - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
+&= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + b_ 1\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {1i} + \cdots + b_ n\sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)x_ {ni} - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i)     
  
-\;\;\;\; = \; 0 \;\;\; \because \;  1) [^2] , 2) [^4]      
+&= \; 0 \;\;\; \because \;  1) [^2] , 2) [^4]      
  
-\;\;\;\; \;\; \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0      
+\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0      
  
-\;\;\;\;\;\; \therefore \;\; SST = SSE + SSR  
+\therefore \;\; SST = SSE + SSR  
 @
 
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
