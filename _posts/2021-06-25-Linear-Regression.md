@@ -88,16 +88,7 @@ $ \begin{align\*}
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \end{align\*} \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $     
 
-$ \begin{align\*}
-SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
-&= \sum\limits_{i=1}^{n}((y_ i - \hat{y}_ {i})^2 + 2(y_ i - \hat{y}_ {i})(\hat{y}_ {i} - \bar{y}) +(\hat{y}_ {i} - \bar{y})^2) \\\ 
-&= \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i})^2  +  \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ {i} - \bar{y})  +  \sum\limits_ {i=1}^{n}(\hat{y}_ {i} - \bar{y})^2 \\\ 
-&= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
-\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) &= \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\ 
-&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\ 
-&= 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\ 
-&= \; 0 \end{align\*}$
+
 
 $\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
@@ -110,15 +101,19 @@ $ \begin{align\*}\hat{y} &= b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n \\\
 
 $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji} )^2 $
 
-$\;\;\;\; b_ i $에 대하여 각각 미분했을 때 0이 되야 SSR이 최소값을 가짐 [^1]     
- 
-$ 1) \; \frac{\partial }{\partial b_ 0} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = \\\ 
--2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
-\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $
+- $\;\;\;\; b_ i $에 대하여 각각 미분했을 때 0이 되야 SSR이 최소값을 가짐 [^1]     
 
-$ 2)  \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}}) \\\
+$ \begin{align\*}
+1) \; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})  \\\ 
+= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 
+\end{align\*}$
+
+$ \begin{align\*}
+2) \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 = \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}}) \\\ 
  -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji}) x_ {ki}  = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 \\\ 
-\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 $
+\therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 
+\end{align\*}$
 
 $ \begin{align\*}
 SST = SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\ 
