@@ -68,6 +68,50 @@ $y_ i$ : 관측값
 $\bar{y}$ : 관측값의 평균값  
 $\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
+@
+\begin{align*}
+a &= 1 \\\ 
+ &= 2\\\ 
+ &= 3\\\ 
+ &= 4\\\ 
+ &= 5\\\ 
+ &= 6 
+\end{align*}
+@
+
+
+$
+\begin{align*}
+a &= 1 \\\ 
+ &= 2\\\ 
+ &= 3\\\ 
+ &= 4\\\ 
+ &= 5\\\ 
+ &= 6 
+\end{align*}
+$
+
+
+
+@\begin{align*}
+a &= 1 \\\ 
+ &= 2\\\ 
+ &= 3\\\ 
+ &= 4\\\ 
+ &= 5\\\ 
+ &= 6 
+\end{align*}@
+
+
+$\begin{align*}
+a &= 1 \\\ 
+ &= 2\\\ 
+ &= 3\\\ 
+ &= 4\\\ 
+ &= 5\\\ 
+ &= 6 
+\end{align*}$
+
 
 #### SST = SSE + SSR 유도    
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"}
@@ -96,13 +140,15 @@ SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - 
 &= SSR + SSE + \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) 
 \end{align\*}@
 
-@ \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\
+@
+\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) \\\
 = \sum\limits_{i=1}^{n}2((y_ i - \hat{y}_ i) \hat{y}_ i - (y_ i - \hat{y}_ i) \bar{y}) \\\
 = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)\hat{y}_ i - 2 \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \bar{y} \\\
 = 2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i)(b_0 + b_1 x_ i) - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\
 = 2 b_0 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) + 2 b_1 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i - 2\bar{y} \sum\limits_{i=1}^{n} (y_ i - \hat{y}_ i) \\\
 = \; 0 \;\;\; \because \;  1) [^2] , 2) [^3]  \\\
-\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 @
+\therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0
+@
 
 @\therefore \;\; SST = SSE + SSR @
 
