@@ -79,6 +79,7 @@ _  _  _  _
 # 수식    
 [laTeX](https://www.codecogs.com/latex/eqneditor.php){: target="_blank"}    
 
+![image](https://user-images.githubusercontent.com/32366711/125173354-d6b19280-e1f9-11eb-8e36-9a3fff2564fe.png)
 
 
 [^1]: This is a footnote.
