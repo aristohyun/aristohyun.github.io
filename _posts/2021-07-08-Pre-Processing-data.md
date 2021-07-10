@@ -125,32 +125,20 @@ df_log = df.apply(lambda x: np.log(x+1))
 
 - Scaling : 평균이 0, 분산이 1인 분포로 변환     
     - $ x_ i \; new = \frac{x_ i - mean(x)}{std(x)} $        
+<br/>
 
 - MinMax Scaling : 특정 범위(0~1)로 모든 데이터를 변환     
     - $ x_ i  new = \frac{x_ i - min(x)}{max(x) - min(x)} $   
+<br/>
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
-
-@
+$
 \begin{cases}
- a=2 & \text{ if } x= 1 \\
+ a=2 & \text{ if } x= 1 \\\
  b=1 & \text{ if } x= 2
 \end{cases}
-@
-
-$ \displaylines{x = a + b \\\ y = b + c} $    
-
-@ \displaylines{x = a + b \\\ y = b + c} @     
-
-
-$ \displaylines{x = a + b /// y = b + c} $    
-
-@ \displaylines{x = a + b /// y = b + c} @   
-
-
-$ \displaylines{x = a + b y = b + c} $    
-
-@ \displaylines{x = a + b y = b + c} @     
+$
+ 
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
