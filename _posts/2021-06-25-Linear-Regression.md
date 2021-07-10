@@ -81,13 +81,12 @@ $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ 
 $ \begin{align\*}
 1) \;\; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) \\\ 
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \end{align\*} \\\ 
-& \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0
-$ 
+& \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $ 
   
 $ \begin{align\*}
 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 &= -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) x_ i  \\\ 
 &= -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  \end{align\*} \\\ 
-& \; \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $     
+& \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $     
 
 $ \begin{align\*}
 SST &= \sum\limits_{i=1}^{n}(y_ i - \bar{y})^{2} = \sum\limits_{i=1}^{n}(y_ i - \hat{y}_ {i} + \hat{y}_ i - \bar{y})^2 \\\ 
