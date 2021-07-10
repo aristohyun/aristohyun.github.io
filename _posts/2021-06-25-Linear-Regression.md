@@ -68,51 +68,6 @@ $y_ i$ : 관측값
 $\bar{y}$ : 관측값의 평균값  
 $\hat{y}_ i$ : 추정값 (회귀식의 값)  
 
-@
-\begin{align\*}
-a &= 1 \\\ 
- &= 2\\\ 
- &= 3\\\ 
- &= 4\\\ 
- &= 5\\\ 
- &= 6 
-\end{align\*}
-@
-
-
-$
-\begin{align*}
-a &= 1 \\\ 
- &= 2\\\ 
- &= 3\\\ 
- &= 4\\\ 
- &= 5\\\ 
- &= 6 
-\end{align*}
-$
-
-
-
-@\begin{align*}
-a &= 1 \\\ 
- &= 2\\\ 
- &= 3\\\ 
- &= 4\\\ 
- &= 5\\\ 
- &= 6 
-\end{align*}@
-
-
-$\begin{align\*}
-a &= 1 \\\ 
- &= 2\\\ 
- &= 3\\\ 
- &= 4\\\ 
- &= 5\\\ 
- &= 6 
-\end{align\*}$
-
-
 #### SST = SSE + SSR 유도    
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"}
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
