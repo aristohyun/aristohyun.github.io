@@ -124,13 +124,16 @@ df_log = df.apply(lambda x: np.log(x+1))
 대부분의 통계 분석 방법이 정규성 가정을 기반으로 하므로, 완벽하지 않더라도 최대한 정규분포로 변환하는 노력이 필요함
 
 - Scaling : 평균이 0, 분산이 1인 분포로 변환     
-    - $ x_ i \_ new = \frac{x_ i - mean(x)}{std(x)} $        
+    - $ x_ i  new = \frac{x_ i - mean(x)}{std(x)} $        
 
 - MinMax Scaling : 특정 범위(0~1)로 모든 데이터를 변환     
-    - $ x_ i \_ new = \frac{x_ i - min(x)}{max(x) - min(x)} $   
+    - $ x_ i  new = \frac{x_ i - min(x)}{max(x) - min(x)} $   
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
+
+
     - $$ x = y $$
+
 
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
