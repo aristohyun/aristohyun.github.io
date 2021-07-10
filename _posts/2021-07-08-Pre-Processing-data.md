@@ -133,8 +133,7 @@ df_log = df.apply(lambda x: np.log(x+1))
 
 @
 \begin{cases}
- & a \text{ if } x= 1
- \\ 
+ & a \text{ if } x= 1 \\ 
  & b \text{ if } x= 2
 \end{cases}
 @
