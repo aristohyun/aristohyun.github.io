@@ -71,7 +71,6 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 [참고](https://datalabbit.tistory.com/51){:target="_ blank"}
 회귀분석에서는 SSR ( Residual Sum of Square )이 최소가 되도록 해야함    
 
-@
 @ 
 \hat{y} = b_0 + b_1 x      \\\
 
