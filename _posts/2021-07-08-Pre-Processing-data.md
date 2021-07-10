@@ -127,7 +127,7 @@ df_log = df.apply(lambda x: np.log(x+1))
     - $ x_ i \; new = \frac{x_ i - mean(x)}{std(x)} $        
 
 - MinMax Scaling : 특정 범위(0~1)로 모든 데이터를 변환     
-    - & x_ i  new = \frac{x_ i - min(x)}{max(x) - min(x)} &   
+    - $ x_ i  new = \frac{x_ i - min(x)}{max(x) - min(x)} $   
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
 
