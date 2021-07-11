@@ -3,7 +3,7 @@ layout: post
 title: "Kaggle, KMeans Clustering for Customer Data"
 description: "KMEANS, KMeans Clustering for Customer Data"
 categories: [MachineLearning]
-tags: [Kaggle, Machine Learning, Unsupervised Learning, K-MEANS, Customer Data]
+tags: [Kaggle, Machine Learning, Unsupervised Learning, Kmeans Clustering, Customer Data]
 use_math: true
 redirect_from:
   - /2021/07/12/
