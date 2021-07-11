@@ -3,7 +3,7 @@ layout: post
 title: "기계학습, Pre-Processing Data"
 description: "데이터 전처리, Pre Processing Data"
 categories: [MachineLearning]
-tags: [Kaggle, Machine Learning, Supervised Learning, Pre Processing Data]
+tags: [Machine Learning, Supervised Learning, Pre Processing Data]
 use_math: true
 redirect_from:
   - /2021/07/08/
