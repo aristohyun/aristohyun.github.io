@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "kaggle, KMeans Clustering for Customer Data"
-description: "KMEANS, k-평균 알고리즘"
+description: "KMEANS, KMeans Clustering for Customer Data"
 categories: [MachineLearning]
 tags: [Kaggle, Machine Learning, Unsupervised Learning, K-MEANS, Customer Data]
 use_math: true
