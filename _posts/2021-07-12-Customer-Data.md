@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "kaggle, KMeans Clustering for Customer Data"
+title: "Kaggle, KMeans Clustering for Customer Data"
 description: "KMEANS, KMeans Clustering for Customer Data"
 categories: [MachineLearning]
 tags: [Kaggle, Machine Learning, Unsupervised Learning, K-MEANS, Customer Data]
