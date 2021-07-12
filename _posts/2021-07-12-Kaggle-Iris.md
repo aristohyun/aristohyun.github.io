@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Kaggle, KMeans Clustering"
+title: "Kaggle, Iris Classification"
 description: "KMEANS, KMeans Clustering"
 categories: [MachineLearning]
-tags: [Kaggle, Machine Learning, Unsupervised Learning, Kmeans Clustering, Customer Dataset, Iris Dataset]
+tags: [Kaggle, Machine Learning, Unsupervised Learning, Kmeans Clustering, Iris Dataset]
 use_math: true
 redirect_from:
   - /2021/07/12/
@@ -216,16 +216,24 @@ def make_cluster(centroids):
 
 ~~~ python
 
-label, centroids = RadomPartition()
+label, centroids = RandomPartition()
 new_centroids = get_new_centroid(labels)
 new_labels = make_cluster(new_centroids)
 
-wile centroids != new_centroids:
+while centroids != new_centroids:
   centroids = new_centroids
   new_centroids = get_new_centroid(labels)
   new_labels = make_cluster(new_centroids)
 
 ~~~
+
+![image](https://user-images.githubusercontent.com/32366711/125315751-624e2f00-e372-11eb-830d-d7984e59d52d.png)
+
+![image](https://user-images.githubusercontent.com/32366711/125315891-8873cf00-e372-11eb-95d5-9a761182592f.png)
+
+![image](https://user-images.githubusercontent.com/32366711/125315912-8f024680-e372-11eb-80fd-8d9cdc4792bb.png)
+
+![image](https://user-images.githubusercontent.com/32366711/125315928-932e6400-e372-11eb-9168-8e4b4e0cf63a.png)
 
 ## 라이브러리 sklean.cluster.KMeans
 
@@ -251,7 +259,8 @@ plt.ylabel('sepal width (cm)')
 plt.show()
 ~~~
 
-![image](https://user-images.githubusercontent.com/32366711/125313524-46e22480-e370-11eb-8de9-6539939dbe7d.png)
+![image](https://user-images.githubusercontent.com/32366711/125315999-a3deda00-e372-11eb-8fe0-234ffccacbc3.png)
+
 
 ### 성능 확인
 
@@ -268,7 +277,19 @@ for i in range(len(samples)):
         species[i] = 'virginica'
 
 
-df = pd.DataFrame({'labels': python_labels, 'species': species})
+df = pd.DataFrame({'labels': RP_labels, 'species': species})
+ct = pd.crosstab(df['labels'], df['species'])
+print(ct)
+
+df = pd.DataFrame({'labels': Forgy_labels, 'species': species})
+ct = pd.crosstab(df['labels'], df['species'])
+print(ct)
+
+df = pd.DataFrame({'labels': MQ_labels, 'species': species})
+ct = pd.crosstab(df['labels'], df['species'])
+print(ct)
+
+df = pd.DataFrame({'labels': Kauf_labels, 'species': species})
 ct = pd.crosstab(df['labels'], df['species'])
 print(ct)
 
@@ -277,13 +298,8 @@ ct = pd.crosstab(df['labels'], df['species'])
 print(ct)
 ~~~
 
-# Customer Dataset
+![image](https://user-images.githubusercontent.com/32366711/125316283-f15b4700-e372-11eb-8033-24db7de3e859.png)
 
-[참고 : KMeans Clustering for Customer Data](https://www.kaggle.com/heeraldedhia/kmeans-clustering-for-customer-data){:target="_ blank"}            
-[내 코드 : KMeans Clustering for Customer Data](https://www.kaggle.com/s1hyeon/kmeans-clustering-for-customer-data/edit){:target="_ blank"}        
-
-
-# KMeans Clustering for Customer
-
+![image](https://user-images.githubusercontent.com/32366711/125316297-f5876480-e372-11eb-9023-c2e5b3c2b561.png)
 
 
