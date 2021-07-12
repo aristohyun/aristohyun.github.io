@@ -299,7 +299,7 @@ print(ct)
 ~~~
 
 
-RP       122/150 = 0.813              
+RP  &nbsp;&nbsp;&nbsp;     122/150 = 0.813              
 
 | labels \ species | setosa | versicolor | virginica |          
 |:----------------:|:------:|:------------:|:-----------:|                
@@ -308,7 +308,7 @@ RP       122/150 = 0.813
 | 2                |     50   |      0      |       1    |          
 | 정확도           |   1    |     0.76    |      0.68     |
 
-Forgy           122/150 = 0.813          
+Forgy    &nbsp;&nbsp;&nbsp;       122/150 = 0.813          
 
 | labels \ species | setosa | versicolor | virginica |          
 |:----------------:|:------:|:------------:|:-----------:|          
@@ -317,7 +317,7 @@ Forgy           122/150 = 0.813
 | 2                |     0   |      38      |       15    |          
 | 정확도           |   1    |     0.76    |      0.68     |
 
-MQ    116/150 = 0.773      
+MQ  &nbsp;&nbsp;&nbsp;  116/150 = 0.773      
 
 | labels \ species | setosa | versicolor | virginica |          
 |:----------------:|:------:|:------------:|:-----------:|            
@@ -327,7 +327,7 @@ MQ    116/150 = 0.773
 | 정확도           |   1    |     0.76    |      0.56     |
 
 
-Kauf          122/150 = 0.813        
+Kauf     &nbsp;&nbsp;&nbsp;     122/150 = 0.813        
 
 | labels \ species | setosa | versicolor | virginica |          
 |:----------------:|:------:|:------------:|:-----------:|          
@@ -337,7 +337,7 @@ Kauf          122/150 = 0.813
 | 정확도           |   1    |     0.76    |      0.68     |
 
 
-library          134/150 = 0.893          
+library   &nbsp;&nbsp;&nbsp;       134/150 = 0.893          
 
 | labels \ species | setosa | versicolor | virginica |
 |:----------------:|:------:|:------------:|:-----------:|
