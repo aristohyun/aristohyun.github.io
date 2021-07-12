@@ -298,8 +298,37 @@ ct = pd.crosstab(df['labels'], df['species'])
 print(ct)
 ~~~
 
-![image](https://user-images.githubusercontent.com/32366711/125316283-f15b4700-e372-11eb-8033-24db7de3e859.png)
+RP
+species  b'setosa'  b'versicolor'  b'virginica'
+labels                                         
+0.0              0             12            34
+1.0              0             38            15
+2.0             50              0             1
 
-![image](https://user-images.githubusercontent.com/32366711/125316297-f5876480-e372-11eb-9023-c2e5b3c2b561.png)
+Forgy
+species  b'setosa'  b'versicolor'  b'virginica'
+labels                                         
+0.0             50              0             1
+1.0              0             12            34
+2.0              0             38            15
 
+MQ
+species  b'setosa'  b'versicolor'  b'virginica'
+labels                                         
+0.0             50              6             1
+1.0              0              6            21
+2.0              0             38            28
 
+Kauf
+species  b'setosa'  b'versicolor'  b'virginica'
+labels                                         
+0.0              0             38            15
+1.0             50              0             1
+2.0              0             12            34
+
+library
+species  b'setosa'  b'versicolor'  b'virginica'
+labels                                         
+0               50              0             0
+1                0             48            14
+2                0              2            36
