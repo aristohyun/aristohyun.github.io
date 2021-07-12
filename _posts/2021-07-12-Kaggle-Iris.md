@@ -328,7 +328,7 @@ MQ
 
 Kauf          
 
-| labels \\ species | setosa | versicolor | virginica |          
+| labels \ species | setosa | versicolor | virginica |          
 |:----------------:|:------:|:------------:|:-----------:|          
 | 0                |    0    |    38        |     15      |          
 | 1                |     50   |     0       |     1      |          
@@ -337,11 +337,8 @@ Kauf
 
 library          
 
-| labels  species | setosa | versicolor | virginica |
+| labels \ species | setosa | versicolor | virginica |
 |:----------------:|:------:|:------------:|:-----------:|
 | 0                |    50    |    0        |     0      |
 | 1                |     0   |     48       |     14     |
 | 2                |     0   |      2      |       36    |
-
-
-1
