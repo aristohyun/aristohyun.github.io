@@ -13,8 +13,8 @@ redirect_from:
 {:toc .toc}           
 
 
-[KMeans Clustering for Customer Data](https://www.kaggle.com/heeraldedhia/kmeans-clustering-for-customer-data){:target="_ blank"}      
-[KMeans Clustering for Customer Data](https://www.kaggle.com/s1hyeon/kmeans-clustering-for-customer-data/edit){:target="_ blank"}    
+[참고 : KMeans Clustering for Customer Data](https://www.kaggle.com/heeraldedhia/kmeans-clustering-for-customer-data){:target="_ blank"}      
+[내 코드 : KMeans Clustering for Customer Data](https://www.kaggle.com/s1hyeon/kmeans-clustering-for-customer-data/edit){:target="_ blank"}    
 
 
 # KMeans Clustering for Customer
