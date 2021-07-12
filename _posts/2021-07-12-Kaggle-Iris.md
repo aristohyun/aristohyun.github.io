@@ -298,37 +298,37 @@ ct = pd.crosstab(df['labels'], df['species'])
 print(ct)
 ~~~
 
-RP
-species  b'setosa'  b'versicolor'  b'virginica'
-labels                                         
-0.0              0             12            34
-1.0              0             38            15
-2.0             50              0             1
+RP          
+| labels \ species | setosa | versicolor | virginica |          
+|:----------------:|:------:|------------|-----------|          
+| 0                |    0    |    12        |     34      |          
+| 1                |     0   |     38       |     15      |                    
+| 2                |     50   |      0      |       1    |          
 
-Forgy
-species  b'setosa'  b'versicolor'  b'virginica'
-labels                                         
-0.0             50              0             1
-1.0              0             12            34
-2.0              0             38            15
+Forgy          
+| labels \ species | setosa | versicolor | virginica |          
+|:----------------:|:------:|------------|-----------|          
+| 0                |    50    |    0        |     1      |          
+| 1                |     0   |     12       |     34      |          
+| 2                |     0   |      38      |       15    |          
 
-MQ
-species  b'setosa'  b'versicolor'  b'virginica'
-labels                                         
-0.0             50              6             1
-1.0              0              6            21
-2.0              0             38            28
+MQ          
+| labels \ species | setosa | versicolor | virginica |          
+|:----------------:|:------:|------------|-----------|          
+| 0                |    50    |    6        |     1      |          
+| 1                |     0   |     6       |     21      |          
+| 2                |     0   |      38      |       28    |          
+          
+Kauf          
+| labels \ species | setosa | versicolor | virginica |          
+|:----------------:|:------:|------------|-----------|          
+| 0                |    0    |    38        |     15      |          
+| 1                |     50   |     0       |     1      |          
+| 2                |     0   |      12      |       34    |          
 
-Kauf
-species  b'setosa'  b'versicolor'  b'virginica'
-labels                                         
-0.0              0             38            15
-1.0             50              0             1
-2.0              0             12            34
-
-library
-species  b'setosa'  b'versicolor'  b'virginica'
-labels                                         
-0               50              0             0
-1                0             48            14
-2                0              2            36
+library          
+| labels \ species | setosa | versicolor | virginica |          
+|:----------------:|:------:|------------|-----------|          
+| 0                |    50    |    0        |     0      |          
+| 1                |     0   |     48       |     14      |          
+| 2                |     0   |      2      |       36    |          
