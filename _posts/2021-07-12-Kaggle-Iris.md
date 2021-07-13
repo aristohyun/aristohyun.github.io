@@ -14,7 +14,7 @@ redirect_from:
 
 # Iris Dataset
 
-[ : Iris Dataset](https://www.kaggle.com/s1hyeon/iris-dataset/edit){:target="_ blank"}         
+[코드 : Iris Dataset](https://www.kaggle.com/s1hyeon/iris-dataset/edit){:target="_ blank"}         
 [참고 : Iris Dataset](https://eunsukimme.github.io/ml/2019/12/16/K-Means/){:target="_ blank"}         
 
 ## 데이터셋 설명 및 분포
