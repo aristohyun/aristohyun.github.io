@@ -13,7 +13,7 @@ redirect_from:
 {:toc .toc}      
 
 
-# 클러스터링 평가  Evaluating of Clustering
+# 클러스터링 평가
 
 ~~~ python
 df = pd.DataFrame({'labels': library_labels, 'species': species})
