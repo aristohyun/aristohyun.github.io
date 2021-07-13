@@ -76,20 +76,20 @@ $\hat{y}_ i$ : 추정값 (회귀식의 값)
 
 $ \hat{y} = b_0 + b_1 x $
 
-$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 $
+$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_0 - b_1 x_ i)^2 $
 
 <br/>
 
 $ \Rightarrow \;\;\;\; b_ 0, b_ 1 $에 대하여 미분했을 때 0이 되야 SSR이 최소값 [^1]    
 
-$ 1) \;\; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 \\\ 
+$ 1) \;\; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_0 - b_1 x_ i)^2 \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $ 
   
 <br/>
   
-$ 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 + b_1 x_ i)^2 \\\ 
+$ 2) \;\; \frac{\partial }{\partial b_ 1} \sum\limits_ {i=1}^{n}(y_ i - b_0 - b_1 x_ i)^2 \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_0 - b_1 x_ i) x_ i  \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0 $     
@@ -125,15 +125,15 @@ $ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ 
 
 $ \Rightarrow \;\;\;\; b_ i $에 대하여 각각 미분했을 때 0이 되야 SSR이 최소값을 가짐 [^1]     
 
-$ 1) \; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 \\\ 
-\;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})  \\\ 
+$ 1) \; \frac{\partial }{\partial b_ 0} \sum\limits_ {i=1}^{n}(y_ i - b_ 0 - \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2 \\\ 
+\;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 - \sum \limits_ {j=1}^{n} b_ j x_ {ji})  \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0 $
 
 <br/>
 
-$ 2) \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2  \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}}) \\\ 
-\;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji}) x_ {ki} \\\ 
+$ 2) \; \frac{\partial }{\partial b_ k} \; \sum\limits_ {i=1}^{n}(y_ i - b_ 0 - \sum \limits_ {j=1}^{n} b_ j x_ {ji})^2  \;\;\;\;\;\; (1\leq k\leq n \;,\;\; k\in \mathbb{\mathbb{N}}) \\\ 
+\;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - b_ 0 - \sum \limits_ {j=1}^{n} b_ j x_ {ji}) x_ {ki} \\\ 
 \;\; = -2 \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 \\\ 
 \therefore \;\; \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0 $
 
@@ -152,6 +152,18 @@ $ \begin{align\*}\sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}
 $ \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y}) = 0 $
 
 $ \therefore \;\; SST = SSE + SSR $
+
+### 일반화 다른 방법
+
+![image](https://user-images.githubusercontent.com/32366711/125501083-31dd1d9c-2891-499b-b14a-678a58713fdb.png)
+
+![image](https://user-images.githubusercontent.com/32366711/125501089-6c79468b-ff0b-4d87-bf9d-f73ec076e256.png)
+
+
+[계량경제학](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dhkdwnddml&logNo=220156712894)              
+[간토끼1](https://datalabbit.tistory.com/50)             
+[간토끼2](https://datalabbit.tistory.com/51)               
+
 
 
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
