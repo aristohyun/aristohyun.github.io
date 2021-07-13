@@ -32,7 +32,7 @@ redirect_from:
 $n$ : 클러스터의 개수      
 $c_ x$ : 클러스터 $x$의 중심점         
 $\sigma_ x$ : 클러스터 $x$의 데이터들과 중심점 까지의 거리의 평균값         
-$d(c_ i, C_ j)$ : 중심점 $c_ i, c_ j$간의 거리        
+$d(c_ i, c_ j)$ : 중심점 $c_ i, c_ j$간의 거리        
 
 ### Dunn index
 
