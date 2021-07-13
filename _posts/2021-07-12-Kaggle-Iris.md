@@ -183,7 +183,7 @@ def Kaufman():
 ![image](https://user-images.githubusercontent.com/32366711/125311466-64ae8a00-e36e-11eb-944e-c8126b0c6aa1.png)
 
 
-### 무게중심 재설정
+### 중심 재설정
 
 ~~~ python
 def get_new_centroid(labels):
@@ -236,6 +236,12 @@ while centroids != new_centroids:
 ![image](https://user-images.githubusercontent.com/32366711/125315928-932e6400-e372-11eb-9168-8e4b4e0cf63a.png)
 
 ## 라이브러리 sklean.cluster.KMeans
+
+> sklearn.cluster.KMeans(n_clusters=8, init={'k-means++','random'})
+
+> k-means++ : 기존 Forgy 방식을 개선. 무작위로 하나의 데이터를 선택 후, 거리비례 확률에 따라 선택. 즉 이미 지정된 중심점으로부터 최대한 먼 곳에 배치된 데이터 포인트를 그 다음 중심점으로 지정
+
+> random : Forgy 방식, 무작위 분할, RandomPartiton 방식
 
 ~~~ python
 import matplotlib.pyplot as plt
