@@ -15,15 +15,6 @@ redirect_from:
 
 # 클러스터링 평가
 
-~~~ python
-df = pd.DataFrame({'labels': library_labels, 'species': species})
-ct = pd.crosstab(df['labels'], df['species'])
-print(ct)
-~~~
-
-![image](https://user-images.githubusercontent.com/32366711/125423582-0744284d-f50b-4b6e-a476-d0632b653f5e.png)
-
-
 ## 내부 평가
 
 > 데이터 집합을 클러스터링한 결과 그 자체를 놓고 평가하는 방식         
@@ -76,6 +67,16 @@ $ -1 \leq s(i) \leq  1 $, -1에 가까울 수록 잘못 분류되었으며, 1에
 > 클러스터링 결과를 모범답안 혹은 외부 벤치마크 평가 기준 등을 이용해서 클러스터링 알고리즘의 정확도를 평가하는 것              
 > 답지와 비교하여 채점하는 방식               
 
+~~~ python
+df = pd.DataFrame({'labels': library_labels, 'species': species})
+ct = pd.crosstab(df['labels'], df['species'])
+print(ct)
+~~~
+
+![image](https://user-images.githubusercontent.com/32366711/125423582-0744284d-f50b-4b6e-a476-d0632b653f5e.png)
+
+
+
 | | 판정 | 실제 |
 |:----:|:----:|:----:|
 |TP|참|참|
@@ -85,14 +86,19 @@ $ -1 \leq s(i) \leq  1 $, -1에 가까울 수록 잘못 분류되었으며, 1에
 
 ### 랜드 측정
 
-> 정답 / 시도 의 비율         
-> 그러나 FP와 FN을 같은 비중으로 계산하기에, 이는 알고리즘을 평가하는데 좋지 않을 수 있음        
-
 $
 RI = {\frac {TP+TN}{TP+FP+FN+TN}}
 $
 
+> 정답 / 시도 의 비율         
+> 그러나 FP와 FN을 같은 비중으로 계산하기에, 이는 알고리즘을 평가하는데 좋지 않을 수 있음        
+
+
 ### F 측정
+
+$
+F_ \beta = \frac{(\beta^2 + 1) \cdot  P \cdot  R}{\beta^2 \cdot  P + R}
+$
 
 > 랜드 측정을 개선한 방식       
 > $\beta$값을 바꿔 재현율을 조정         
@@ -100,20 +106,17 @@ $
 정밀도 : $P =  {\frac {TP}{TP+FP}}$         
 재현율 : $R =  {\frac {TP}{TP+FN}}$           
 
-$
-F_ \beta = \frac{\beta^2 + 1 * P * R}{\beta^2 * P + R}
-$
-
 $\beta = 0$일 때, $F_ 0 = P$, $\beta$값이 커질수록 최종 F-measure에 애현율이 미치는 영향이 커짐
 
-### 자카드 지수
 
-> 두 데이터 집합 간의 유사도를 졍량화하는 데 사용되며 0과 1사이의 값을 가짐           
-> 1은 두 데이터 집합이 동일하며, 0은 공통된 요소를 전혀 가지지 않는 다는 것을 의미함       
-> 두 데이터 집합 간의 공통 원소들의 개수를 두어 두 데이터 집합의 합집합의 원소로 개수를 나눈 것           
+### 자카드 지수
 
 $
 J(A, B) = \frac{\left | A \cap B \right |}{\left | A \cup B \right |} = \frac{TP}{TP + FP + FN}
 $
 
+
+> 두 데이터 집합 간의 유사도를 졍량화하는 데 사용되며 0과 1사이의 값을 가짐           
+> 1은 두 데이터 집합이 동일하며, 0은 공통된 요소를 전혀 가지지 않는 다는 것을 의미함       
+> 두 데이터 집합 간의 공통 원소들의 개수를 두어 두 데이터 집합의 합집합의 원소로 개수를 나눈 것           
 
