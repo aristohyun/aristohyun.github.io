@@ -155,6 +155,11 @@ $ \therefore \;\; SST = SSE + SSR $
 
 ### 일반화 다른 방법
 
+[막힘](http://ko.stucarrot.wikidok.net/wp-c/%EA%B2%BD%EC%A0%9C%EA%B3%B5%EB%B6%80:%EA%B3%84%EB%9F%89%EA%B2%BD%EC%A0%9C/View?ci=2#wk_cTitle1164)
+
+![image](https://user-images.githubusercontent.com/32366711/125510770-466e728d-01f9-4488-b168-1b054ef19353.png)
+
+
 ![image](https://user-images.githubusercontent.com/32366711/125501083-31dd1d9c-2891-499b-b14a-678a58713fdb.png)
 
 ![image](https://user-images.githubusercontent.com/32366711/125501089-6c79468b-ff0b-4d87-bf9d-f73ec076e256.png)
