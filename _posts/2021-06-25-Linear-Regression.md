@@ -154,13 +154,6 @@ $ \therefore \;\; \sum\limits_ {i=1}^{n}2(y_ i - \hat{y}_ i)(\hat{y}_ i - \bar{y
 $ \therefore \;\; SST = SSE + SSR $
 
 
-
-
-[E(UX) = 0](https://math.stackexchange.com/questions/2599066/why-is-operatornamecovx-u-exu-0)    
-
-![image](https://user-images.githubusercontent.com/32366711/125182624-8adb0980-e24a-11eb-9e57-1c747b746ece.png)
-
-
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
 [^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 [^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
