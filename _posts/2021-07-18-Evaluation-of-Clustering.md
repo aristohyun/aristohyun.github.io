@@ -24,7 +24,7 @@ redirect_from:
 ### Davies-Bouldin index
 
 @
- DB = \frac {1}{n} \sum _ {i=1}^{n} \max _ {j\neq i} \left( {\frac {\sigma _{i}+\sigma _ {j}}{d(c_{i},c_{j})}} \right)
+ DB = \frac {1}{n} \sum _ {i=1}^{n} \max _ {j\neq i} \left( {\frac {\sigma _ {i}+\sigma _ {j}}{d(c_{i},c_{j})}} \right)
 @
 
 > 낮은 Davies-Bouldin index 값 = 높은 클러스터 내 유사도 + 낮은 클러스터 간 유사도 = 좋은 클러스터링   
