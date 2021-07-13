@@ -119,7 +119,7 @@ $\therefore \;\; SST = SSE + SSR $
 $ \begin{align\*}\hat{y} &= b_ 0 + b_ 1 x_ 1 + b_ 2 x_ 2 \cdots b_ n x_ n \\\ 
 &= b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ j \end{align\*}$
 
-$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_ 0 + \sum \limits_ {j=1}^{n} b_ j x_ {ji} )^2 $
+$ SSR = \sum\limits_ {i=1}^{n}(y_ i - \hat{y}_ i)^2 = \sum\limits_ {i=1}^{n}(y_ i - b_ 0 - \sum \limits_ {j=1}^{n} b_ j x_ {ji} )^2 $
 
 <br/>
 
