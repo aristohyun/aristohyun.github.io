@@ -67,3 +67,6 @@ redirect_from:
 ## [Titanic Practice](https://aristohyun.github.io/blog/2021/06/19/Titanic/){: target="_ blank"}    
 
 ## [House Price Practice](https://aristohyun.github.io/blog/2021/06/27/House-Price/){: target="_ blank"}    
+
+## [Iris Data Set Practice](https://aristohyun.github.io/blog/2021/07/12/Kaggle-Iris/){: target="_ blank"}    
+
