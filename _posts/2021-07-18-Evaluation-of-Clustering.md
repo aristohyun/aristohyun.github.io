@@ -53,7 +53,7 @@ $d^{\prime }(k)$ : 클러스터 k의 클러스터 내 거리(클러스터 내 �
 
 
 @
-s(i) = {\frac {b(i) - a(i)}{\max \{ a(i), b(i) \} }}
+s(i) = {\frac {b(i) - a(i)}{\max ( a(i), b(i) ) }}
 @
 
 
