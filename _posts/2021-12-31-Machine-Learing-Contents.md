@@ -51,15 +51,15 @@ redirect_from:
 
 ## [Kmeans Clustering](https://aristohyun.github.io/blog/2021/07/09/KMEANS/){: target="_ blank"}    
 
-## Evaluation of Clustering
+## [Evaluation of Clustering](https://aristohyun.github.io/blog/2021/07/18/Evaluation-of-Clustering/){: target="_ blank"}    
 
-## Standardization
+## [Standardization](https://aristohyun.github.io/blog/2021/07/19/Standardization/){: target="_ blank"}    
 
-## Hierachy
+## [Hierachy](https://aristohyun.github.io/blog/2021/07/25/Hierachy/){: target="_ blank"}    
 
-## T - SNE
+## [T - SNE](https://aristohyun.github.io/blog/2021/07/26/T-SNE/){: target="_ blank"}    
 
-## PCA
+## [PCA](https://aristohyun.github.io/blog/2021/07/31/PCA/){: target="_ blank"}    
 
 
 # kaggle practice    
