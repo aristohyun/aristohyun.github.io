@@ -17,7 +17,7 @@ redirect_from:
 선형회귀를 확률분포로 유도하는 파라미터 찾기
 확률분포로 유도?     
 
-[확률론적 선형회귀](https://datascienceschool).net/03%20machine%20learning/05.01%20%ED%99%95%EB%A5%A0%EB%A1%A0%EC%A0%81%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EB%AA%A8%ED%98%95.html#id3)
+[확률론적 선형회귀](https://datascienceschool.net/03%20machine%20learning/05.01%20%ED%99%95%EB%A5%A0%EB%A1%A0%EC%A0%81%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EB%AA%A8%ED%98%95.html#id3)
 
 # Supervised Learning    
 > 지도 학습법     
