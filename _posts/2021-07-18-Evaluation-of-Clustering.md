@@ -23,6 +23,10 @@ redirect_from:
 
 ### Davies-Bouldin index
 
+@
+ DB = \frac {1}{n} \sum _ {i=1}^{n} \max _ {j\neq i} \left( {\frac {\sigma _{i}+\sigma _ {j}}{d(c_{i},c_{j})}} \right)
+@
+
 > 낮은 Davies-Bouldin index 값 = 높은 클러스터 내 유사도 + 낮은 클러스터 간 유사도 = 좋은 클러스터링   
 
 $n$ : 클러스터의 개수      
@@ -30,11 +34,11 @@ $c_ x$ : 클러스터 $x$의 중심점
 $\sigma_ x$ : 클러스터 $x$의 데이터들과 중심점 까지의 거리의 평균값         
 $d(c_ i, C_ j)$ : 중심점 $c_ i, c_ j$간의 거리        
 
-@
- DB = \frac {1}{n} \sum _ {i=1}^{n} \max _ {j\neq i} \left( {\frac {\sigma _{i}+\sigma _ {j}}{d(c_{i},c_{j})}} \right)
-@
-
 ### Dunn index
+
+@
+D = \frac {\min _ {1\leq i<j\leq n} d(i,j) }{ \max _ {1\leq k\leq n} d^{\prime }(k)}
+@
 
 > 밀도가 높고 잘 나뉜 클러스터링 결과를 목표로 함    
 > 클러스터간 최소 거리와 클러스터간 최대 거리의 비율로 정의
@@ -44,20 +48,17 @@ $d(c_ i, C_ j)$ : 중심점 $c_ i, c_ j$간의 거리
 $d(i,j)$ : 클러스터 i, j 간의 거리(클러스터 간 유사도), 중심간의 거리 혹은 데이터간 거리의 평균 등으로 계산     
 $d^{\prime }(k)$ : 클러스터 k의 클러스터 내 거리(클러스터 내 유사도), 클러스터 내 가장 멀리 떨어진 데이터 오브젝트 간 거리 등으로 계산           
 
-@
-D = \frac {\min _ {1\leq i<j\leq n} d(i,j) }{ \max _ {1\leq k\leq n} d^{\prime }(k)}
-@
-
 
 ### 실루엣 기법
-
-$a(i)$ : 해당 데이터가 속한 클러스터 내부의 데이터들과의 부동성
-$b(i)$ : 다른 클러스터의 데이터들과의 부동성
 
 
 @
 s(i) = {\frac {b(i) - a(i)}{\max \{ a(i), b(i) \} }}
 @
+
+
+$a(i)$ : 해당 데이터가 속한 클러스터 내부의 데이터들과의 부동성
+$b(i)$ : 다른 클러스터의 데이터들과의 부동성
 
 $ -1 \leq s(i) \leq  1 $, -1에 가까울 수록 잘못 분류되었으며, 1에 가까울수록 잘 분류된 클러스터
 
@@ -86,9 +87,9 @@ print(ct)
 
 ### 랜드 측정
 
-$
+@
 RI = {\frac {TP+TN}{TP+FP+FN+TN}}
-$
+@
 
 > 정답 / 시도 의 비율         
 > 그러나 FP와 FN을 같은 비중으로 계산하기에, 이는 알고리즘을 평가하는데 좋지 않을 수 있음        
@@ -96,9 +97,9 @@ $
 
 ### F 측정
 
-$
+@
 F_ \beta = \frac{(\beta^2 + 1) \cdot  P \cdot  R}{\beta^2 \cdot  P + R}
-$
+@
 
 > 랜드 측정을 개선한 방식       
 > $\beta$값을 바꿔 재현율을 조정         
@@ -111,9 +112,9 @@ $\beta = 0$일 때, $F_ 0 = P$, $\beta$값이 커질수록 최종 F-measure에 �
 
 ### 자카드 지수
 
-$
+@
 J(A, B) = \frac{\left | A \cap B \right |}{\left | A \cup B \right |} = \frac{TP}{TP + FP + FN}
-$
+@
 
 
 > 두 데이터 집합 간의 유사도를 졍량화하는 데 사용되며 0과 1사이의 값을 가짐           
