@@ -39,7 +39,7 @@ redirect_from:
 
 ## [Hyperparameter Tuning](https://aristohyun.github.io/blog/2021/07/03/Hyperparameter-Tuning/){: target="_ blank"}    
 
-## [Pre-procesing Data](https://aristohyun.github.io/blog/2021/07/08/Pre-Processing-data/){: target="_ blank"}    
+## [Pre-procesing Data](https://aristohyun.github.io/blog/2021/07/08/Pre-Processing-Data/){: target="_ blank"}    
 
 
 # Unsupervised Learning    
@@ -53,7 +53,7 @@ redirect_from:
 
 ## [Evaluation of Clustering](https://aristohyun.github.io/blog/2021/07/18/Evaluation-of-Clustering/){: target="_ blank"}    
 
-## [Standardization](https://aristohyun.github.io/blog/2021/07/08/Pre-Processing-data/){: target="_ blank"}    
+## [Standardization](https://aristohyun.github.io/blog/2021/07/08/Pre-Processing-Data/){: target="_ blank"}    
 
 ## [Hierachy](https://aristohyun.github.io/blog/2021/07/25/Hierachy/){: target="_ blank"}    
 
