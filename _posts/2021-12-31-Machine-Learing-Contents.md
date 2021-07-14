@@ -53,8 +53,6 @@ redirect_from:
 
 ## [Evaluation of Clustering](https://aristohyun.github.io/blog/2021/07/18/Evaluation-of-Clustering/){: target="_ blank"}    
 
-## [Standardization](https://aristohyun.github.io/blog/2021/07/19/Standardization/){: target="_ blank"}    
-
 ## [Hierachy](https://aristohyun.github.io/blog/2021/07/25/Hierachy/){: target="_ blank"}    
 
 ## [T - SNE](https://aristohyun.github.io/blog/2021/07/26/T-SNE/){: target="_ blank"}    
