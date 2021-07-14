@@ -3,7 +3,7 @@ layout: post
 title: "기계학습, Pre-Processing Data"
 description: "데이터 전처리, Pre Processing Data"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, Pre Processing Data]
+tags: [Machine Learning, Supervised Learning, , Unsupervised Learning, Pre Processing Data, Standardization, Normalization, Regularization]
 use_math: true
 redirect_from:
   - /2021/07/08/
@@ -134,9 +134,10 @@ df_log = df.apply(lambda x: np.log(x+1))
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
 $
+y_ i ^ {(\lambda)} = 
 \begin{cases}
- a=2 & \text{ if } x= 1 \\\
- b=1 & \text{ if } x= 2
+ \frac{y_ i ^ {\lambda} - 1}{\lambda} & \text{ if } \lambda \neq 0  \\\ 
+ ln(y_ i)& \text{ if }  \lambda = 0
 \end{cases}
 $
  
@@ -165,3 +166,17 @@ for c in df:
 for c in df:
     df_minmax[c] = MinMaxScaler().fit_transform(df[c].reshape(-1,1).round(4))
 ~~~
+
+
+
+# 표준화, Standardization
+
+
+
+# 일반화, Normalization
+
+> 큰 값을 가지는 데이터에 가중치가 편향될 수 있음         
+> 즉 데이터의 범위(단위)를 
+
+# 정규화, Regularization
+
