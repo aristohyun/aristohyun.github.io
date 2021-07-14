@@ -181,4 +181,4 @@ for c in df:
 
 # 정규화, Regularization
 
-> 
+
