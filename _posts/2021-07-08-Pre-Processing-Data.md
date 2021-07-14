@@ -133,7 +133,7 @@ df_log = df.apply(lambda x: np.log(x+1))
 <br/>
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
-$
+    - $
 y_ i ^ {(\lambda)} = 
 \begin{cases}
  \frac{y_ i ^ {\lambda} - 1}{\lambda} & \text{ if } \lambda \neq 0  \\\ 
