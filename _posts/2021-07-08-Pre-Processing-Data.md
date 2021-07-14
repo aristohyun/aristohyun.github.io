@@ -3,7 +3,7 @@ layout: post
 title: "기계학습, Pre-Processing Data"
 description: "데이터 전처리, Pre Processing Data"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, , Unsupervised Learning, Pre Processing Data, Standardization, Normalization, Regularization]
+tags: [Machine Learning, Supervised Learning, Unsupervised Learning, Pre Processing Data, Standardization, Normalization, Regularization]
 use_math: true
 redirect_from:
   - /2021/07/08/
@@ -133,7 +133,13 @@ df_log = df.apply(lambda x: np.log(x+1))
 <br/>
 
 - Box-Cox : 여러 k 값중 가장 작은 SSR(Residual) 선택      
-
+$
+y_ i ^ {(\lambda)} = 
+\begin{cases}
+ \frac{y_ i ^ {\lambda} - 1}{\lambda} & \text{ if } \lambda \neq 0  \\\ 
+ ln(y_ i)& \text{ if }  \lambda = 0
+\end{cases}
+$
  
 - Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
      
