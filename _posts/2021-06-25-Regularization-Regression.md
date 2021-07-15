@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기계학습, 정규화 회귀 Reqularization Regression"
+title: "기계학습, Reqularization Regression"
 description: "Regression, 회귀분석"
 categories: [MachineLearning]
 tags: [Machine Learning, Supervised Learning, Regression, Lasso, Ridge]
