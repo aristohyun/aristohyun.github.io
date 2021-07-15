@@ -15,7 +15,7 @@ redirect_from:
 [집값 예측 : 회귀분석](https://www.kaggle.com/s1hyeon/house-price-regression/edit "캐글, House Price Predict"){: target="_blank"}    
 
 
-# Cross Validation    
+# 교차 검증, Cross Validation    
 
 데이터셋은 두 종류로 나눌 수 있다    
 학습을 시키기 위한 Training data와 Test data   
