@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기계학습, 교차검증 Cross Validation"
+title: "기계학습, Cross Validation"
 description: "교차검증, Cross Validation"
 categories: [MachineLearning]
 tags: [Machine Learning, Supervised Learning, CV]
