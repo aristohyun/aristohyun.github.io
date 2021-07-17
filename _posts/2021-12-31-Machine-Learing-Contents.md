@@ -12,7 +12,7 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}           
                    
-
+https://omicro03.medium.com/linear-regression-63164cd2e51
 # 7/7 과제    
 선형회귀를 확률분포로 유도하는 파라미터 찾기
 확률분포로 유도?     
