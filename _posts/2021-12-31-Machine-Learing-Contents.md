@@ -3,7 +3,7 @@ layout: post
 title: "기계학습, 목차"
 description: "MachineLearning, Contents"
 categories: [MachineLearning]
-tags: [Kaggle, Machine Learning, Supervised Learning, Unsupervised Learning, EDA, KNN, Regression, CV, ROC Curve, Hyperparameter Tuning, Pre-procesing Data, Kmeans Clustering, Standardizaion, Hierachy, T-SNE, PCA]
+tags: [Kaggle, Machine Learning, Supervised Learning, Unsupervised Learning, EDA, KNN, Regression, CV, ROC Curve, Hyperparameter Tuning, Pre Procesing Data, Kmeans Clustering, Standardizaion, Hierachy, T-SNE, PCA]
 use_math: true
 redirect_from:
   - /2021/12/31/
