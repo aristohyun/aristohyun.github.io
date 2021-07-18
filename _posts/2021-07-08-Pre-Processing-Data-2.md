@@ -60,10 +60,8 @@ $ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   $
 
 ~~~ python
 
-# 1. 데이터 수집, 로드
 data = load_breast_cancer()
 X_train, X_test, y_train, y_test = train_test_split(data.data, data.target)
-print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 
 # 표준화
 mms = MinMaxScaler()
@@ -82,6 +80,7 @@ print('테스트점수 :{:.2f}'.format(svc.score(X_test, y_test)))
 
 ~~~ python
 
+data = load_breast_cancer()
 X_train, X_test, y_train, y_test = train_test_split(data.data, data.target)
 
 pipline = Pipeline([('scaler',MinMaxScaler()), ('svm', SVC(gamma='auto')) ])
