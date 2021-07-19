@@ -80,8 +80,9 @@ $ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   $
 > GridSearch로 교차검증을 할 때에도 이 파이프라인을 넣으면, 알아서 임의로 나눈 테스트셋과 훈련셋을 파이프라인을 통해서 결과를 내게됨
 
 
-[참고 사이트](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221730873049){:target="_ blank"}
-
+[참고 사이트](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221730873049){:target="_ blank"}              
+[참고 사이트2](https://inuplace.tistory.com/515){:target="_ blank"}            
+[참고 사이트3](https://hhhh88.tistory.com/6){:target="_ blank"}            
 
 ~~~ python
 
