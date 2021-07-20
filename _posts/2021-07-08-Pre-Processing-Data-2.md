@@ -116,3 +116,25 @@ pipline.fit(X_train, y_train)
 print('테스트점수 :{:.2f}'.format(pipline.score(X_test, y_test)))
 
 ~~~
+
+
+~~~ python
+
+numeric_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='median')),
+    ('scaler', StandardScaler())])
+
+categorical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))])
+
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', numeric_transformer, ['carat', 'depth']),
+        ('cat', categorical_transformer, ["cut"])])
+        
+        
+clf = Pipeline(steps=[('preprocessor', preprocessor),("logistic", LogisticRegression())])
+clf.fit(X_train.head(1000), y_train.head(1000),)
+
+~~~
