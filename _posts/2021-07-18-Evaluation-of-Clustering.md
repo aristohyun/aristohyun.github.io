@@ -113,9 +113,7 @@ RI = {\frac {TP+TN}{TP+FP+FN+TN}}
 
 $
 RI_{setosa} = {\frac {50 + 100}{50 + 0 + 0 + 100}} =  {\frac {150}{150}} = 1 \\\ 
-
 RI_{versicolor} = {\frac {48 + 86}{50 + 14 + 2 + 100}} =  {\frac {134}{150}} = 0.893 \\\ 
-
 RI_{virginica} = {\frac {36 + 98}{36 + 2 + 14 + 98}} =  {\frac {134}{150}} = 0.893 \\\ 
 $
 
@@ -152,11 +150,8 @@ $
 $
 if \beta = 1 \\\ 
 F1 = 2 \frac{P \cdot  R}{P + R} \\\ 
-
 F1_{setosa} = 2 \frac{1 * 1}{1 + 1} = 1 \\\ 
-
 F1_{versicolor} = 0.857 \\\ 
-
 F1_{virginica} = 0.818 \\\ 
 $
 
@@ -172,10 +167,7 @@ J(A, B) = \frac{\left | A \cap B \right |}{\left | A \cup B \right |} = \frac{TP
 > 두 데이터 집합 간의 공통 원소들의 개수를 두어 두 데이터 집합의 합집합의 원소로 개수를 나눈 것           
 
 $
-
 J_{setosa} = \frac{50}{50 + 0 + 0} = 1 \\\ 
-
 J_{versicolor} = \frac{48}{48 + 14 + 2}  = 0.75 \\\ 
-
 J_{virginica} = \frac{36}{36 + 14 + 2} = 0.692 \\\ 
 $
