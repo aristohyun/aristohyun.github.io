@@ -112,9 +112,9 @@ RI = {\frac {TP+TN}{TP+FP+FN+TN}}
 > 그러나 FP와 FN을 같은 비중으로 계산하기에, 이는 알고리즘을 평가하는데 좋지 않을 수 있음        
 
 $
-RI_{setosa} = {\frac {50 + 100}{50 + 0 + 0 + 100}} =  {\frac {150}{150}} = 1 \\\ 
-RI_{versicolor} = {\frac {48 + 86}{50 + 14 + 2 + 100}} =  {\frac {134}{150}} = 0.893 \\\ 
-RI_{virginica} = {\frac {36 + 98}{36 + 2 + 14 + 98}} =  {\frac {134}{150}} = 0.893 \\\ 
+RI_ {setosa} = {\frac {50 + 100}{50 + 0 + 0 + 100}} =  {\frac {150}{150}} = 1 \\\ 
+RI_ {versicolor} = {\frac {48 + 86}{50 + 14 + 2 + 100}} =  {\frac {134}{150}} = 0.893 \\\ 
+RI_ {virginica} = {\frac {36 + 98}{36 + 2 + 14 + 98}} =  {\frac {134}{150}} = 0.893 \\\ 
 $
 
 
@@ -133,26 +133,26 @@ F_ \beta = \frac{(\beta^2 + 1) \cdot  P \cdot  R}{\beta^2 \cdot  P + R}
 $\beta = 0$일 때, $F_ 0 = P$, $\beta$값이 커질수록 최종 F-measure에 재현율이 미치는 영향이 커짐
 
 $
-P_{setosa} = {\frac {50}{50 + 0}} =  {\frac {50}{50}} \\\ 
-R_{setosa} = {\frac {50}{50 + 0}} =  {\frac {50}{50}} \\\ 
+P_ {setosa} = {\frac {50}{50 + 0}} =  {\frac {50}{50}} \\\ 
+R_ {setosa} = {\frac {50}{50 + 0}} =  {\frac {50}{50}} \\\ 
 $
 
 $
-P_{versicolor} = {\frac {48}{48 + 14}} =  {\frac {48}{62}} \\\ 
-R_{versicolor} = {\frac {48}{48 + 2}} =  {\frac {48}{50}} \\\ 
+P_ {versicolor} = {\frac {48}{48 + 14}} =  {\frac {48}{62}} \\\ 
+R_ {versicolor} = {\frac {48}{48 + 2}} =  {\frac {48}{50}} \\\ 
 $
 
 $
-P_{virginica} = {\frac {36}{36 + 2}} =  {\frac {36}{48}} \\\ 
-R_{virginica} = {\frac {36}{36 + 14}} =  {\frac {36}{50}} \\\ 
+P_ {virginica} = {\frac {36}{36 + 2}} =  {\frac {36}{48}} \\\ 
+R_ {virginica} = {\frac {36}{36 + 14}} =  {\frac {36}{50}} \\\ 
 $
 
 $
 if \beta = 1 \\\ 
 F1 = 2 \frac{P \cdot  R}{P + R} \\\ 
-F1_{setosa} = 2 \frac{1 * 1}{1 + 1} = 1 \\\ 
-F1_{versicolor} = 0.857 \\\ 
-F1_{virginica} = 0.818 \\\ 
+F1_ {setosa} = 2 \frac{1 * 1}{1 + 1} = 1 \\\ 
+F1_ {versicolor} = 0.857 \\\ 
+F1_ {virginica} = 0.818 \\\ 
 $
 
 
@@ -167,7 +167,7 @@ J(A, B) = \frac{\left | A \cap B \right |}{\left | A \cup B \right |} = \frac{TP
 > 두 데이터 집합 간의 공통 원소들의 개수를 두어 두 데이터 집합의 합집합의 원소로 개수를 나눈 것           
 
 $
-J_{setosa} = \frac{50}{50 + 0 + 0} = 1 \\\ 
-J_{versicolor} = \frac{48}{48 + 14 + 2}  = 0.75 \\\ 
-J_{virginica} = \frac{36}{36 + 14 + 2} = 0.692 \\\ 
+J_ {setosa} = \frac{50}{50 + 0 + 0} = 1 \\\ 
+J_ {versicolor} = \frac{48}{48 + 14 + 2}  = 0.75 \\\ 
+J_ {virginica} = \frac{36}{36 + 14 + 2} = 0.692 \\\ 
 $
