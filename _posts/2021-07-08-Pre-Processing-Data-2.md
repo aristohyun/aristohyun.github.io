@@ -13,14 +13,12 @@ redirect_from:
 {:toc .toc}      
 
 
-[pipeline](https://hhhh88.tistory.com/6)
-
 # 표준화, Standardization
 
+> 주어진 데이터를 표준정규분포로 변환하는 것
 > 값의 범위(scale)를 평균 0, 분산 1이 되도록 변환          
 > 머신러닝에서 scale이 큰 feature의 영향이 비대해지는 것을 방지           
-> 딥러닝에서 Local Minima에 빠질 위험 감소(학습 속도 향상)               
-> 정규분포를 표준정규분포로 변환하는 것과 같음              
+> 딥러닝에서 Local Minima에 빠질 위험 감소(학습 속도 향상)                        
 
 ## 표준 점수, Z-score    
 
@@ -50,10 +48,6 @@ $ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   $
 그러나 이상치(outlier)에 대해 취약하다는 단점이 있음                 
 
 
-# 정규화(규제), Regularization
-
-
-
 # 전처리 주의 사항
 
 > 훈련 데이터셋을 그냥 전처리를 다해버리면 교차검증을 하려고 할 때, 테스트셋이 훈련셋과 동일하게 전처리가 되어있다면           
@@ -80,14 +74,21 @@ $ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   $
 > GridSearch로 교차검증을 할 때에도 이 파이프라인을 넣으면, 알아서 임의로 나눈 테스트셋과 훈련셋을 파이프라인을 통해서 결과를 내게됨
 
 
+
+[pipeline](https://hhhh88.tistory.com/6)
+
 [참고 사이트](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221730873049){:target="_ blank"}              
 [참고 사이트2](https://inuplace.tistory.com/515){:target="_ blank"}            
 [참고 사이트3](https://hhhh88.tistory.com/6){:target="_ blank"}            
 
 ~~~ python
+# svm, suport vector machine         
+# 두 분류 사이의 여백을 최대화 하여 일반화 능력을 극대화 하는 모델      
+# 여기서 여백이란, 분류선(Decision boundary)과 가장 가까운 데이터들(suport vector)간의 거리    
 
 data = load_breast_cancer()
 X_train, X_test, y_train, y_test = train_test_split(data.data, data.target)
+
 
 # 표준화
 mms = MinMaxScaler()
@@ -116,25 +117,4 @@ pipline.fit(X_train, y_train)
 print('테스트점수 :{:.2f}'.format(pipline.score(X_test, y_test)))
 
 ~~~
-
-
-~~~ python
-
-numeric_transformer = Pipeline(steps=[
-    ('imputer', SimpleImputer(strategy='median')),
-    ('scaler', StandardScaler())])
-
-categorical_transformer = Pipeline(steps=[
-    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-    ('onehot', OneHotEncoder(handle_unknown='ignore'))])
-
-preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', numeric_transformer, ['carat', 'depth']),
-        ('cat', categorical_transformer, ["cut"])])
-        
-        
-clf = Pipeline(steps=[('preprocessor', preprocessor),("logistic", LogisticRegression())])
-clf.fit(X_train.head(1000), y_train.head(1000),)
-
-~~~
+    
