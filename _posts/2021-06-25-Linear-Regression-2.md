@@ -54,6 +54,5 @@ E \left [ \epsilon_ i ,  \epsilon_ j \right ] = 0
 Cov \left [ \epsilon \right ] = E \left [ \epsilon \epsilon^T \right ] = \sigma^2 I
 @
 
-# 최대 가능도 방법을 사용한 선형 회귀분석
+## 잔차 제곱합
 
-> 최대 가능도 방법(Maximum Likelihood Estimation)을 사용하여 가중치 벡터 𝑤 의 값을 구해보면, OLS의 직교 방정식과 같은 직교 방정식을 얻을 수 있다
