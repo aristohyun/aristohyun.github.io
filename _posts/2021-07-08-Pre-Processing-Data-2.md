@@ -22,12 +22,13 @@ redirect_from:
 
 ## 표준 점수, Z-score    
 
-$ z_ i = \frac{x_ i - mean(x)}{std(x)} $        
+@ z_ i = \frac{x_ i - mean(x)}{std(x)} @        
 
 > 데이터를 표준 정규 분포(가우시안 분포)에 해당하도록 값을 바꿔주는 과정            
 > -1 ~ 1 사이에 68%가 있고, -2 ~ 2 사이에 95%가 있고, -3 ~ 3 사이에 99%가 있음                      
 > -3 ~ 3의 범위를 벗어나면 outlier일 확률이 높음                   
 
+![image](https://user-images.githubusercontent.com/32366711/126485079-529d8966-282b-4294-ab67-230f612eaf44.png)
 
 
 # 일반화(정규화), Normalization
