@@ -34,6 +34,15 @@ $c_ x$ : 클러스터 $x$의 중심점
 $\sigma_ x$ : 클러스터 $x$의 데이터들과 중심점 까지의 거리의 평균값, 낮을수록 클러스터 내 유사도가 높음(밀집)         
 $d(c_ i, c_ j)$ : 중심점 $c_ i, c_ j$간의 거리, 멀수록 클러스터 간 유사도가 낮음        
 
+~~~ python
+from sklearn.metrics import davies_bouldin_score
+
+print(davies_bouldin_score(samples, Kauf_labels))
+# 0.77
+print(davies_bouldin_score(samples, library_labels))
+# 0.66
+~~~
+
 ### Dunn index
 
 @
@@ -48,19 +57,37 @@ D = \frac {\min _ {1\leq i<j\leq n} d(i,j) }{ \max _ {1\leq k\leq n} d^{\prime }
 $d(i,j)$ : 클러스터 i, j 간의 거리(클러스터 간 유사도), 중심간의 거리 혹은 데이터간 거리의 평균 등으로 계산     
 $d^{\prime }(k)$ : 클러스터 k의 클러스터 내 거리(클러스터 내 유사도), 클러스터 내 가장 멀리 떨어진 데이터 오브젝트 간 거리 등으로 계산           
 
+~~~ python
+
+~~~
+
 
 ### 실루엣 기법
-
 
 @
 s(i) = {\frac {b(i) - a(i)}{\max ( a(i), b(i) ) }}
 @
 
+$a(i)$ : 해당 데이터가 속한 클러스터 내부의 데이터들과의 부동성     
+$
+a(i) = \frac{1}{\left | C_ i \right | - 1} \sum_ {j\in C_ i , i\neq j}^{} {d(i,j)}
+$
 
-$a(i)$ : 해당 데이터가 속한 클러스터 내부의 데이터들과의 부동성          
 $b(i)$ : 다른 클러스터의 데이터들과의 부동성      
+$
+b(i) = min_ k \neq i \frac{1}{\left | C_ k \right |} \sum_ {j\in C_ k}^{} {d(i,j)}
+$
 
 $ -1 \leq s(i) \leq  1 $, -1에 가까울 수록 잘못 분류되었으며, 1에 가까울수록 잘 분류된 클러스터
+
+~~~ python
+from sklearn.metrics import silhouette_score
+
+print(silhouette_score(samples, Kauf_labels))
+# 0.486
+print(silhouette_score(samples, library_labels))
+# 0.552
+~~~
 
 
 ## 외부 평가
@@ -117,6 +144,14 @@ RI_ {versicolor} = {\frac {48 + 86}{50 + 14 + 2 + 100}} =  {\frac {134}{150}} = 
 RI_ {virginica} = {\frac {36 + 98}{36 + 2 + 14 + 98}} =  {\frac {134}{150}} = 0.893 \\\ 
 $
 
+~~~ python
+from sklearn.metrics import adjusted_rand_score
+
+print(adjusted_rand_score(target, Kauf_labels))
+# 0.586
+print(adjusted_rand_score(target, library_labels))
+# 0.732
+~~~
 
 ### F 측정
 
@@ -148,13 +183,21 @@ R_ {virginica} = {\frac {36}{36 + 14}} =  {\frac {36}{50}} \\\
 $
 
 $
-if \beta = 1 \\\ 
+if \;\; \beta = 1 \\\ 
 F1 = 2 \frac{P \cdot  R}{P + R} \\\ 
 F1_ {setosa} = 2 \frac{1 * 1}{1 + 1} = 1 \\\ 
-F1_ {versicolor} = 0.857 \\\ 
+F1_ {versicolor} = 0.857 \\\  
 F1_ {virginica} = 0.818 \\\ 
 $
 
+~~~ python
+from sklearn.metrics import v_measure_score
+
+print(v_measure_score(target, Kauf_labels, beta=1))
+# 0.618
+print(v_measure_score(target, library_labels, beta=1))
+# 0.758
+~~~
 
 ### 자카드 지수
 
