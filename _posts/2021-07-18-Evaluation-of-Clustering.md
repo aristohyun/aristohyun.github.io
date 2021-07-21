@@ -70,12 +70,12 @@ s(i) = {\frac {b(i) - a(i)}{\max ( a(i), b(i) ) }}
 
 $a(i)$ : 해당 데이터가 속한 클러스터 내부의 데이터들과의 부동성     
 $
-a(i) = \frac{1}{\left | C_ i \right | - 1} \sum \limits {j\in C_ i , i\neq j}^{} {d(i,j)}
+a(i) = \frac{1}{\left | C_ i \right | - 1} \sum \limits_ {j\in C_ i , i\neq j}^{} {d(i,j)}
 $
 
 $b(i)$ : 다른 클러스터의 데이터들과의 부동성      
 $
-b(i) = min_ {k \neq i} \frac{1}{\left | C_ k \right |} \sum \limits {j\in C_ k}^{} {d(i,j)}
+b(i) = min_ {k \neq i} \frac{1}{\left | C_ k \right |} \sum \limits_ {j\in C_ k}^{} {d(i,j)}
 $
 
 $ -1 \leq s(i) \leq  1 $, -1에 가까울 수록 잘못 분류되었으며, 1에 가까울수록 잘 분류된 클러스터
