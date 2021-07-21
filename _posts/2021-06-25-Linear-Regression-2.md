@@ -34,6 +34,9 @@ p(\epsilon | x) = N(0,\sigma^2)
 E \left [ \epsilon | x \right ] = 0
 @
 
+
+
+
 > 잡음의 기대값은 독립변수 x의 크기에 상관없이 항상 0이다
 
 
@@ -55,4 +58,16 @@ Cov \left [ \epsilon \right ] = E \left [ \epsilon \epsilon^T \right ] = \sigma^
 
 > 잡음들의 분산 값은 표본과 상관 없이 항상 같다
 
+
+## 최대 가능도 방법
+
+![image](https://user-images.githubusercontent.com/32366711/126483109-399b8761-b06b-46c4-af2f-84047e62e1ba.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126483121-c7bd85de-786a-4d40-9901-4c185b34031b.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126483128-963ef02e-e6ec-4bbd-abce-e0e63a61f268.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126483151-2f810a59-ee91-432d-929f-bf999cbaf2d6.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126483163-ee963d92-fb87-4ca8-b76a-7615cfe33620.png)
 
