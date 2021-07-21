@@ -43,7 +43,7 @@ redirect_from:
 
 ## Min-Max Normalization (최소-최대 정규화)
 
-$ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   $
+@ x_ {new\_i} = \frac{x_ i - min(x)}{max(x) - min(x)}   @
 
 모든 데이터 중에서 가장 작은 값을 0, 가장 큰 값을 1로 두고, 나머지 값들은 비율을 맞춰서 모두 0과 1 사이의 값으로 스케일링해주는 것             
 그러나 이상치(outlier)에 대해 취약하다는 단점이 있음                 
