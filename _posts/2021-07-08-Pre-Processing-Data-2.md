@@ -118,3 +118,150 @@ print('테스트점수 :{:.2f}'.format(pipline.score(X_test, y_test)))
 
 ~~~
     
+### Titanic data Practice
+
+~~~ python
+class Pclass(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self, before):
+        X = before.copy()
+        pclass_train_dummies = pd.get_dummies(X['Pclass'])
+
+        X.drop(['Pclass'], axis=1, inplace=True)
+
+        X = X.join(pclass_train_dummies)
+    
+        return X
+~~~
+
+~~~ python
+class Sex(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self,before):
+        X = before.copy()
+        sex_train_dummies = pd.get_dummies(X['Sex'])
+        sex_train_dummies.columns = ['Female', 'Male']
+        X.drop(['Sex'], axis=1, inplace=True)
+        X = X.join(sex_train_dummies)
+        return X
+~~~
+
+~~~ python
+class Age(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self,before):
+        X = before.copy()
+        X["Age"].fillna(X["Age"].mean() , inplace=True)
+        return X
+~~~
+
+~~~ python
+class Fare(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self,before):
+        X = before.copy()
+        X["Fare"].fillna(0, inplace=True)
+        return X
+~~~
+
+~~~ python
+class Cabin(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self,before):
+        X = before.copy()
+        X = X.drop(['Cabin'], axis=1)
+        return X
+~~~
+
+~~~ python
+class Embarked(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        pass
+    
+    def fit(self,X,y=None):
+        return self
+    
+    def transform(self,before):
+        X = before.copy()
+        X["Embarked"].fillna('S', inplace=True)
+        embarked_train_dummies = pd.get_dummies(X['Embarked'])
+        embarked_train_dummies.columns = ['S', 'C', 'Q']
+        X.drop(['Embarked'], axis=1, inplace = True)
+        X = X.join(embarked_train_dummies)
+        return X
+~~~
+
+~~~ python
+knnpipe = Pipeline([
+    ('pclass', Pclass()),
+    ('sex', Sex()),
+    ('age', Age()),
+    ('fare', Fare()),
+    ('cabin', Cabin()),
+    ('embarked', Embarked()),
+    ('knn', KNeighborsClassifier())
+])
+
+logisticpipe = Pipeline(steps=[
+    ('pclass', Pclass()),
+    ('sex', Sex()),
+    ('age', Age()),
+    ('fare', Fare()),
+    ('cabin', Cabin()),
+    ('embarked', Embarked()),
+    ('logistic', LogisticRegression())
+])
+~~~
+
+~~~ python
+from sklearn.model_selection import GridSearchCV
+
+knn_param = {'knn__n_neighbors': np.arange(1,30)}
+knn_cv = GridSearchCV(knnpipe, knn_param, cv=3).fit(x_train,y_train)# Fit  
+
+logis_param = {'logistic__C': np.logspace(-3, 3, 7), 'logistic__penalty': ['l1', 'l2']}
+logis_cv = GridSearchCV(logisticpipe, logis_param, cv=3).fit(x_train, y_train)
+
+print(knn_cv.best_score_)
+print(knn_cv.best_params_)
+print(knn_cv.score(x_train, y_train))
+print(knn_cv.score(x_test, y_test))
+
+print(logis_cv.best_score_)
+print(logis_cv.best_params_)
+print(logis_cv.score(x_train, y_train))
+print(logis_cv.score(x_test, y_test))
+
+~~~
+
+![image](https://user-images.githubusercontent.com/32366711/126462405-45b3e5b1-c27c-49fd-ba54-4f18784d7adc.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126462378-b814558e-1618-4b07-8d63-31d1480332f8.png)
+
+![image](https://user-images.githubusercontent.com/32366711/126462453-bf1a6933-c895-4518-af50-bdf602843f2b.png)
+
