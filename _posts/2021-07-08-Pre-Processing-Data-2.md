@@ -82,7 +82,7 @@ redirect_from:
 [참고 사이트](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221730873049){:target="_ blank"}              
 [참고 사이트2](https://inuplace.tistory.com/515){:target="_ blank"}            
 [참고 사이트3](https://hhhh88.tistory.com/6){:target="_ blank"}            
-
+[4](http://blog.skby.net/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-machine-learning-pipeline/){:target="_ blank"}          
 ~~~ python
 # svm, suport vector machine         
 # 두 분류 사이의 여백을 최대화 하여 일반화 능력을 극대화 하는 모델      
