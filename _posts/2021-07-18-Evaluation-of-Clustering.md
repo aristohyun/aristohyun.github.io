@@ -12,6 +12,8 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}      
 
+![image](https://user-images.githubusercontent.com/32366711/126634683-4103099a-753f-4878-b3c0-67441e7e2c53.png)
+
 
 # 클러스터링 평가
 
