@@ -61,6 +61,9 @@ Cov \left [ \epsilon \right ] = E \left [ \epsilon \epsilon^T \right ] = \sigma^
 
 ## 최대 가능도 방법
 
+> 최대가능도방법 (maximum likelihood method) 또는 최대우도법은 어떤 확률변수에서 표집한 값들을 토대로 그 확률변수의 모수를 구하는 방법        
+> 어떤 모수가 주어졌을 때, 원하는 값들이 나올 가능도를 최대로 만드는 모수를 선택하는 방법이며, 점추정 방식에 속한다         
+
 ![image](https://user-images.githubusercontent.com/32366711/126483109-399b8761-b06b-46c4-af2f-84047e62e1ba.png)
 
 ![image](https://user-images.githubusercontent.com/32366711/126483121-c7bd85de-786a-4d40-9901-4c185b34031b.png)
