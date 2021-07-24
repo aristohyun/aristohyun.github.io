@@ -153,6 +153,8 @@ print(adjusted_rand_score(target, Kauf_labels))
 # 0.586
 print(adjusted_rand_score(target, library_labels))
 # 0.732
+
+# adjusted_rand_score : (RI - Expected_RI) / (max(RI) - Expected_RI)
 ~~~
 
 ### F 측정
@@ -193,12 +195,12 @@ F1_ {virginica} = 0.818 \\\
 $
 
 ~~~ python
-from sklearn.metrics import v_measure_score
+from sklearn.metrics import f1_score
 
-print(v_measure_score(target, Kauf_labels, beta=1))
-# 0.618
-print(v_measure_score(target, library_labels, beta=1))
-# 0.758
+print(f1_score(target, Kauf_labels_temp,average='weighted'))
+# 0.812
+print(f1_score(target, library_labels,average='weighted'))
+# 0.891
 ~~~
 
 ### 자카드 지수
