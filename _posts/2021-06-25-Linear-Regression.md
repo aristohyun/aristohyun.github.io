@@ -27,7 +27,10 @@ redirect_from:
 4. 평균값에 대한 예측, 개별값에 대한 예측    
 
 
-## 이론의 가정    
+## 이론의 가정   
+
+### 회귀분석의 기본 가정
+
 1. 두 변수 간 선형관계가 있어야한다
 2. 표본추출이 무작위하게 이루어져야 한다
 3. X의 값이 두개 이상이여야 한다
@@ -35,6 +38,30 @@ redirect_from:
 5. 등분산성, Homoskedaticity : 오차들이 같은 정도로 퍼져있어야 한다
 6. 독립성, Independence : 오차항들끼리 독립적이어야 한다
 7. 정규성, Normalty : 오차들끼리는 정규분포를 이루어야 한다
+
+### 선형회귀의 기본 가정
+
+1. Linearity (선형성)
+2. Independence (독립성)
+3. Normality (정규성)
+4. Homoskedaticity (등분산성)
+
+
+### 왜 회귀분석은 정규분포를 가정하는가
+
+1. 수집된 데이터가 정규분포를 이룬다는 것은 데이터가 무선표집 되었다는 것          
+2. 잔차가 정규분포를 이룬다는 것은, 잔차의 총 합이 0이라는 것, 즉 잔차의 기대값이 0이라고 할 수 있음          
+
+[회귀분석의 표준 가정](https://hooni-playground.com/1225/)             
+[가우스 마르코프 정리](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221138157186)                
+
+가우스-마르코프 정리에서는           
+잔차의 기대값이 0이고 서로다른 두 잔차의 공분산이 0이며(두 잔차가 독립적이다면),      
+잔차가 등분산성을 만족한다면          
+OLS[^Ordinary Least Square]가 BLUE[^Best Linear Unbiased Estimator] 하며           
+이 회귀분석은 믿을만 하다는 것을 알 수 있다          
+
+즉 잔차가 정규성을 만족하지 않더라도 위의 조건만 만족한다면 OLS가 BLUE하다고 할 수 있다
 
 
 ## 회귀 직선 그리기
@@ -170,8 +197,9 @@ $ \therefore \;\; SST = SSE + SSR $
 [간토끼2](https://datalabbit.tistory.com/51)               
 
 
-
 [^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
 [^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
 [^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
 [^4]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0  $    
+[^Ordinary Least Square]: 최소 자승법       
+[^Best Linear Unbiased Estimator]: 최량 선형 불편 추정량,  Linear(선형)이며 Unbiased(편향되지 않은)인 Estimator(추정치) 중에 가장 좋은(best, 분산의 값이 가장 작은) 방법
