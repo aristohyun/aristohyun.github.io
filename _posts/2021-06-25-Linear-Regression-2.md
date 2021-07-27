@@ -12,11 +12,19 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc}      
 
+
+# 가우스-마르코프 정리
+
+![image](https://user-images.githubusercontent.com/32366711/127165472-d3be528c-9221-4f6c-8a21-1076c6be1661.png)
+
+
+
+# 확률론적 선형 회귀모형
+
 [통계적](https://velog.io/@jeromecheon/ML-4%ED%8E%B8-Linear-tasks-Regression%ED%9A%8C%EA%B7%80-1.%EC%B5%9C%EB%8C%80%EA%B0%80%EB%8A%A5%EB%8F%84-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95){:target="_ blank"}
 
 > 데이터가 확률 변수로부터 생성된 표본이라고 가정
 
-# 확률론적 선형 회귀모형
 
 ## 가정
 
