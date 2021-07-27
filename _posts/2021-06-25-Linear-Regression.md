@@ -49,14 +49,17 @@ redirect_from:
 
 ### 왜 회귀분석은 정규분포를 가정하는가
 
-1. 수집된 데이터가 정규분포를 이룬다는 것은 데이터가 무선표집 되었다는 것          
-2. 잔차가 정규분포를 이룬다는 것은, 잔차의 총 합이 0이라는 것, 즉 잔차의 기대값이 0이라고 할 수 있음          
+[선형 회귀 모형 가정을 왜 하는가](https://laoonlee.tistory.com/5) 
+
+회귀 분석은 회귀 모형을 추정한 이후 회귀 모형이 잘 맞는지 모형 검정과 계수 검정을 필요로 합니다.            
+모형 검정과 계수 검정 등의 가설검정을 하기 위해서는 분포 가정이 필요 하여, 이때 사용하기 위함            
+           
 
 [회귀분석의 표준 가정](https://hooni-playground.com/1225/)             
 [가우스 마르코프 정리](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gdpresent&logNo=221138157186)                
 
-가우스-마르코프 정리에서는           
-잔차의 기대값이 0이고 서로다른 두 잔차의 공분산이 0이며(두 잔차가 독립적이다면),      
+가우스-마르코프 정리[^GMT]에서는           
+잔차의 기대값이 0이고 서로 다른 두 잔차의 공분산이 0이며(두 잔차가 독립적이다면),      
 잔차가 등분산성을 만족한다면          
 OLS[^Ordinary Least Square]가 BLUE[^Best Linear Unbiased Estimator] 하며           
 이 회귀분석은 믿을만 하다는 것을 알 수 있다          
@@ -197,9 +200,10 @@ $ \therefore \;\; SST = SSE + SSR $
 [간토끼2](https://datalabbit.tistory.com/51)               
 
 
-[^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐       
-[^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $    
-[^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $    
-[^4]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0  $    
-[^Ordinary Least Square]: 최소 자승법       
+[^1]: 해당 식을 $ b_ 0, b_ 1 $ 에 대한 함수 식이라 생각했을 때, 기울기가 0일 때 값이 최소/최대가 되기 때문. $ ( y_ i - b_ 0 - b_ 1 x_ i )^2 $ 은 $ b_ 0, b_ 1 $ 에 대한 2차방정식이라 생각할 수 있으며, 최고차항의 계수가 양수기 때문에 기울기가 0일때 최소값을 가짐        
+[^2]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) = 0  $        
+[^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $          
+[^4]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0  $       
+[^GMT]: 가우스-마르코프 정리란,  회귀분석의 가정이 성립할 때 최소제곱추정량이 가장 작은 분산을 갖는 효율적인 추정량임을 말할 수 있다           
+[^Ordinary Least Square]: 최소 자승법        
 [^Best Linear Unbiased Estimator]: 최량 선형 불편 추정량,  Linear(선형)이며 Unbiased(편향되지 않은)인 Estimator(추정치) 중에 가장 좋은(best, 분산의 값이 가장 작은) 방법
