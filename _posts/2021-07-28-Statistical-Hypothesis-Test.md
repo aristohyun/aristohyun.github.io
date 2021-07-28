@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "기계학습, T-SNE"
+title: "가설 검정"
 description: "T-SNE, T-분산 확률근접배치"
-categories: [MachineLearning]
-tags: [Machine Learning, Unsupervised Learning, T-SNE, T - Distributed Stochastic Neighbor Embedding]
+categories: [Statistics]
+tags: [Statistics, Hypothesis Test]
 use_math: true
 redirect_from:
-  - /2021/07/26/
+  - /2021/07/28/
 ---
 
 * Kramdown table of contents
