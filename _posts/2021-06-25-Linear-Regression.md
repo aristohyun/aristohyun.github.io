@@ -206,5 +206,5 @@ $ \therefore \;\; SST = SSE + SSR $
 [^3]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ i = 0  $          
 [^4]: $ \sum\limits_ {i=1}^{n} (y_ i - \hat{y}_ i) x_ {ki} = 0  $       
 [^GMT]: 가우스-마르코프 정리란,  회귀분석의 가정이 성립할 때 최소제곱추정량이 가장 작은 분산을 갖는 효율적인 추정량임을 말할 수 있다           
-[^OrdinaryLeastSquare]: 최소 자승법        
+[^OrdinaryLeastSquare]: 최소 자승법, 오차 제곱의 합이 최소가 되게 하는 방법        
 [^BestLinearUnbiasedEstimator]: 최량 선형 불편 추정량,  Linear(선형)이며 Unbiased(편향되지 않은)인 Estimator(추정치) 중에 가장 좋은(best, 분산의 값이 가장 작은) 방법            
