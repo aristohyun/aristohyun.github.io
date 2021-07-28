@@ -62,7 +62,7 @@ redirect_from:
 가우스-마르코프 정리[^GMT]에서는           
 잔차의 기대값이 0이고 서로 다른 두 잔차의 공분산이 0이며(두 잔차가 독립적이다면),      
 잔차가 등분산성을 만족한다면          
-OLS[^Ordinary Least Square]가 BLUE[^Best Linear Unbiased Estimator] 하며           
+OLS[^OrdinaryLeastSquare]가 BLUE[^BestLinearUnbiasedEstimator] 하며           
 이 회귀분석은 믿을만 하다는 것을 알 수 있다          
 
 즉 잔차가 정규성을 만족하지 않더라도 위의 조건만 만족한다면 OLS가 BLUE하다고 할 수 있다
