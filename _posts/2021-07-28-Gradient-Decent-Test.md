@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "가설 검정"
-description: "T-SNE, T-분산 확률근접배치"
-categories: [Statistics]
+title: "기계학습, Gradient Decent"
+description: "Gradient Decent, 경사하강법"
+categories: [Me]
 tags: [Statistics, Hypothesis Test]
 use_math: true
 redirect_from:
