@@ -59,6 +59,7 @@ y_head &= sigmoid(z)
 
 Sigmoid function makes z probability. 
 
+
 ## Initializing parameters
 
 The first step is multiplying each pixels with their own weights.            
@@ -121,9 +122,17 @@ def sigmoid(z):
 
 Lets make example, I put one image as input then multiply it with their weights and add bias term so I find z. Then put z into sigmoid method so I find y_head. Up to this point we know what we did. Then e.g y_head became 0.9 that is bigger than 0.5 so our prediction is image is sign one image. Okey every thing looks like fine. But, is our prediction is correct and how do we check whether it is correct or not? The answer is with loss(error) function:
 
+y = 실제값
+y hat = 추정값(확률)
 @
 - (1 - y) log (1 - \hat y) - y log \hat y
 @
+
+y가 1일 때,
+y햇을 1이라고 예측하면 에러 값은 0. 에러가 없음
+y가 1일때 y햇을 0이라고 예측하면 에러값은 - log 0 = Infinite, 무한대로 커짐. 즉 에러가 굉장히 큼
+이 모든 에러의 값을 합친 코스트 값을 최소로 해야함
+
 
 It says that if you make wrong prediction, loss(error) becomes big. DENKLEM DUZELTME
 Example: our real image is sign one and its label is 1 (y = 1), then we make prediction y_head = 1. When we put y and y_head into loss(error) equation the result is 0. We make correct prediction therefore our loss is 0. However, if we make wrong prediction like y_head = 0, loss(error) is infinity.
