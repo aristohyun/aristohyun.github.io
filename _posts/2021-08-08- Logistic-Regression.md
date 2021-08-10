@@ -120,7 +120,7 @@ def sigmoid(z):
     return y_head
 ~~~
 
-### Loss(error) Function
+### Loss(error) Function [^loss]
 
 > 이렇게 y 추정값을 구했을 때, 이게 얼만큼 맞는지 Then e.g y_head became 0.9 that is bigger than 0.5 so our prediction is image is sign one image. Okey every thing looks like fine. But, is our prediction is correct and how do we check whether it is correct or not? The answer is with loss(error) function:
 
@@ -156,3 +156,4 @@ Lets implement forward propagation.
 
 [^sigmoid]: 시그모이드 함수, S자형 곡선 또는 시그모이드 곡선을 갖는 수학 함수. ![image](https://user-images.githubusercontent.com/32366711/128862627-1c0408c2-19b3-4cd7-9aa7-61c8901a0e4e.png){: width="300"}
  
+[^loss]: ![image](https://user-images.githubusercontent.com/32366711/128870484-9346e71e-3f94-4501-9d52-2cc5b9a82c56.png){: width="150"}
