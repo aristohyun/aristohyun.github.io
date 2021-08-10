@@ -89,6 +89,8 @@ def initialize_weights_and_bias(dimension):
 
 ## Forward Propagation
 
+뉴럴 네트워크 모델의 입력층부터 출력층까지 순서대로 변수들을 계산하고 저장하는 것을 의미함
+
 z = (w.T)x + b => 
 in this equation we know x that is pixel array, we know w (weights) and b (bias) so the rest is calculation. (T is transpose)
 Then we put z into sigmoid function that returns y_head(probability). When your mind is confused go and look at computation graph. Also equation of sigmoid function is in computation graph.
@@ -135,7 +137,7 @@ $y$ : 실제값
 $\hat y$ : 추정값(확률)         
 
 @
-- (1 - y) log (1 - \hat y) - y log \hat y
+ -(1 - y) log (1 - \hat y) - y log \hat y
 @
 
 y가 1일 때,
