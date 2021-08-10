@@ -42,7 +42,14 @@ print("X test flatten",X_test_flatten.shape)
 
 ## Computation Graph
 
+왜 계산 그래프를 쓸까?
+
+1. 데이터와 데이터 하나에 관여하는 요소들(차원)이 너무 많기에 이들의 수식 관계를 가장 잘 보여줄 수 있는 것은 컴퓨테이션 그래프
+2. 최종 계산값이 실제 값과 가장 유사하게 하기위해, 에러값을 최소로 해야함. 이 에러값을 최소로 하는 계수 값을 찾기위해 편미분등의 방법을 쓰는데, 뒤로가며 미분을 하여 더 계산에 용이하도록 할 수 있음.
+
 > Even relatively “simple” deep neural networks have hundreds of thousands of nodes and edges; it’s quite common for a neural network to have more than one million edges. Try to imagine the function expression for such a computational graph… can you do it? How much paper would you need to write it all down? This issue of scale is one of the reasons computational graphs are used. [Deep Neural Networks As Computational Graphs](https://medium.com/tebs-lab/deep-neural-networks-as-computational-graphs-867fcaa56c9)
+
+[Computational Graphs: Why](https://medium.com/neuromation-blog/neuronuggets-what-do-deep-learning-frameworks-do-exactly-6615cd55d618)
 
 ![image](https://user-images.githubusercontent.com/32366711/128638011-ccee8e52-f7f7-4f4d-83cb-54008f0ad01d.png)
 
