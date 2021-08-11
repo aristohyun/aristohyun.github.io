@@ -62,7 +62,7 @@ print("X test flatten",X_test_flatten.shape)
 \begin{align\*}
 Z &= W^T X + b \\\ 
 &= z = b + px_1w_1 + px_2w_2 + ... + px_{4096} * w_{4096} \\\ 
-y_head &= sigmoid(z) 
+y_{head} &= sigmoid(z) 
 \end{align\*}
 @
 
