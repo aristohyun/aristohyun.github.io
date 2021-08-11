@@ -15,6 +15,8 @@ redirect_from:
 
 # Logistic Regression
 
+- logistic regression is actually a very simple neural network.
+
 ~~~ python
 # Join a sequence of arrays along an row axis.
 X = np.concatenate((x_l[204:409], x_l[822:1027] ), axis=0) # from 0 to 204 is zero sign and from 205 to 410 is one sign 
@@ -44,8 +46,8 @@ print("X test flatten",X_test_flatten.shape)
 
 왜 계산 그래프를 쓸까?
 
-1. 데이터와 데이터 하나에 관여하는 요소들(차원)이 너무 많기에 이들의 수식 관계를 가장 잘 보여줄 수 있는 것은 컴퓨테이션 그래프
-2. 최종 계산값이 실제 값과 가장 유사하게 하기위해, 에러값을 최소로 해야함. 이 에러값을 최소로 하는 계수 값을 찾기위해 편미분등의 방법을 쓰는데, 뒤로가며 미분을 하여 더 계산에 용이하도록 할 수 있음.
+1. 데이터와 데이터 하나에 관여하는 요소들(차원)이 너무 많은데, 이들의 수식 관계를 가장 잘 보여줄 수 있기 때문               
+2. 순전파와 역전파에 대한 이해와 계산이 용이해짐
 
 > Even relatively “simple” deep neural networks have hundreds of thousands of nodes and edges; it’s quite common for a neural network to have more than one million edges. Try to imagine the function expression for such a computational graph… can you do it? How much paper would you need to write it all down? This issue of scale is one of the reasons computational graphs are used. [Deep Neural Networks As Computational Graphs](https://medium.com/tebs-lab/deep-neural-networks-as-computational-graphs-867fcaa56c9)
 
@@ -64,7 +66,8 @@ y_head &= sigmoid(z)
 \end{align\*}
 @
 
-Sigmoid function makes z probability. 
+
+### [순전파, 역전파](https://ko.d2l.ai/chapter_deep-learning-basics/backprop.html)
 
 
 ## Initializing parameters
@@ -92,11 +95,12 @@ def initialize_weights_and_bias(dimension):
 뉴럴 네트워크 모델의 입력층부터 출력층까지 순서대로 변수들을 계산하고 저장하는 것을 의미함
 
 z = (w.T)x + b => 
-in this equation we know x that is pixel array, we know w (weights) and b (bias) so the rest is calculation. (T is transpose)
-Then we put z into sigmoid function that returns y_head(probability). When your mind is confused go and look at computation graph. Also equation of sigmoid function is in computation graph.
-Then we calculate loss(error) function.
-Cost function is summation of all loss(error).
-Lets start with z and the write sigmoid definition(method) that takes z as input parameter and returns y_head(probability)
+in this equation we know x that is pixel array, we know w (weights) and b (bias) so the rest is calculation. (T is transpose)           
+Then we put z into sigmoid function that returns y_head(probability). When your mind is confused go and look at computation graph.            
+Also equation of sigmoid function is in computation graph.                    
+Then we calculate loss(error) function.                 
+Cost function is summation of all loss(error).                 
+Lets start with z and the write sigmoid definition(method) that takes z as input parameter and returns y_head(probability)          
 
 
 > Forward propagation steps:     
@@ -110,7 +114,7 @@ def forward_propagation(w,b,x_train,y_train):
     z = np.dot(w.T,x_train) + b
     y_head = sigmoid(z) # probabilistic 0-1
     loss = -y_train*np.log(y_head)-(1-y_train)*np.log(1-y_head)
-    cost = (np.sum(loss))/x_train.shape[1]      # x_train.shape[1]  is for scaling
+    cost = (np.sum(loss))/x_train.shape[1]      # x_train.shape[1]  is for scaling, 전체 차원의 갯수로 나눠줌. 로스의 평균
     return cost 
 ~~~
 
