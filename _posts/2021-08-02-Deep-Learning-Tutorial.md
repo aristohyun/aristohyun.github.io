@@ -37,6 +37,8 @@ redirect_from:
 
 [Neural Network](https://ebbnflow.tistory.com/119)
 
+Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.
+
 
 ## ANN
 
