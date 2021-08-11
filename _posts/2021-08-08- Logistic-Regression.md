@@ -70,15 +70,7 @@ y_head &= sigmoid(z)
 ### [순전파, 역전파](https://ko.d2l.ai/chapter_deep-learning-basics/backprop.html)
 
 
-## Initializing parameters
-
-The first step is multiplying each pixels with their own weights.            
-The question is that what is the initial value of weights?                
-
-There are some techniques that I will explain at artificial neural network but for this time initial weights are 0.01.           
-Okey, weights are 0.01 but what is the weight array shape? As you understand from computation graph of logistic regression, it is (4096,1)           
-Also initial bias is 0.            
-Lets write some code. In order to use at coming topics like artificial neural network (ANN), I make definition(method).       
+## Initializing parameters     
 
 ~~~ python
 def initialize_weights_and_bias(dimension):
@@ -93,15 +85,6 @@ def initialize_weights_and_bias(dimension):
 ## Forward Propagation
 
 뉴럴 네트워크 모델의 입력층부터 출력층까지 순서대로 변수들을 계산하고 저장하는 것을 의미함
-
-z = (w.T)x + b => 
-in this equation we know x that is pixel array, we know w (weights) and b (bias) so the rest is calculation. (T is transpose)           
-Then we put z into sigmoid function that returns y_head(probability). When your mind is confused go and look at computation graph.            
-Also equation of sigmoid function is in computation graph.                    
-Then we calculate loss(error) function.                 
-Cost function is summation of all loss(error).                 
-Lets start with z and the write sigmoid definition(method) that takes z as input parameter and returns y_head(probability)          
-
 
 > Forward propagation steps:     
 > find z = w.T * x + b         
