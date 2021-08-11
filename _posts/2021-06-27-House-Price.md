@@ -138,7 +138,7 @@ catg_weak_corr = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'Lo
 
 ## 수치형 변수     
 
-### 정규근사화     
+### 정규화     
 
 ~~~ python    
 df_train["SalePrice_Log"] = df_train["SalePrice"].map(lambda i:np.log(i) if i>0 else 0) 
