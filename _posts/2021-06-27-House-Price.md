@@ -139,9 +139,6 @@ catg_weak_corr = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'Lo
 ## 수치형 변수     
 
 ### 정규근사화     
-회귀분석을 하기 위해선 잔차에 대한 분포가 정규성을 만족해야 함  
-따라서 비대칭과 첨도가 관찰된 SalePrice을 하기 위해선 정규근사화를 함      
--> 값에 로그를 취하여 정규근사화         
 
 ~~~ python    
 df_train["SalePrice_Log"] = df_train["SalePrice"].map(lambda i:np.log(i) if i>0 else 0) 
