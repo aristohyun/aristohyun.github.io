@@ -37,6 +37,8 @@ redirect_from:
 
 [Neural Network](https://ebbnflow.tistory.com/119)
 
+[neural-networks](https://www.ibm.com/cloud/learn/neural-networks)
+
 Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.
 
 
