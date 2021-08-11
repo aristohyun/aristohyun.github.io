@@ -427,4 +427,4 @@ sub_xgb.to_csv('xgb.csv',index=False)
 ~~~
 
 
-[^1] : [왜도와 첨도1](https://rucrazia.tistory.com/65){: target="_ blank"}, [왜도와 첨도2](https://m.blog.naver.com/yk60park/222100758577){: target="_ blank"}
+[^1]: [왜도와 첨도1](https://rucrazia.tistory.com/65){: target="_ blank"}, [왜도와 첨도2](https://m.blog.naver.com/yk60park/222100758577){: target="_ blank"}
