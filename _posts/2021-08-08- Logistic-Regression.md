@@ -201,6 +201,46 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 \frac {\partial J}{\partial b} = \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b}
 @
 
+@
+\begin{align\*}
+\frac {\partial J}{\partial y_ {head}} &= \frac {\partial }{\partial y_ {head}} (-(1 - y) log (1 - y_ {head}) - y log y_ {head}) \\\ 
+&= -(y\frac {\partial }{\partial y_ {head}} log y_ {head} + (1-y)\frac {\partial }{\partial y_ {head}}log(1-y_ {head}) ) \\\ 
+\frac {\partial J}{\partial y_ {head}} &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}})
+\end{align\*}
+@
+
+@
+\begin{align\*}
+\frac {\partial y_ {head}}{\partial z} &= \frac {\partial }{\partial z} (\frac{1}{1+e^{-z}}) = \frac {\partial }{\partial z}(1+e^{-z})^{-1} \\\ 
+&= -(1+e^{-z})^{-2}\frac {\partial }{\partial z}(e^{-z}) = -(1+e^{-z})^{-2}(-e^{-2}) \\\ 
+&= \frac{e^{-z}}{(1+e^{-z})^2} \\\ 
+&= \frac{1}{1+e^{-z}} \frac{e^{-z}}{1+e^{-z}} \\\ 
+&= \frac{1}{1+e^{-z}} (1- \frac{1}{1+e^{-z}}) \\\ 
+\frac {\partial y_ {head}}{\partial z} &= y_ {head}(1-y_ {head})
+\end{align\*}
+@
+
+@
+\begin{align\*}
+z &= w^Tx+b \\\ 
+\frac {\partial z}{\partial w} &= x \\\ 
+\frac {\partial z}{\partial b} &= 1 
+\end{align\*}
+@
+
+@
+\begin{align\*}
+\frac {\partial J}{\partial w} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
+&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x
+\end{align\*}
+@
+
+@
+\begin{align\*}
+\frac {\partial J}{\partial b} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
+&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1
+\end{align\*}
+@
 
 ### Updating parameters
 
