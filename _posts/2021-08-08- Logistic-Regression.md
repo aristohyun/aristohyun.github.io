@@ -191,7 +191,7 @@ Cost function
 @
 \begin{align\*}
 z &= w^T x + b \\\ 
-y_ {head} &= 1/(1+np.exp(-z)) \\\ 
+y_ {head} &= 1/(1+exp(-z)) \\\ 
 cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y log y_ {head} )
 \end{align\*}
 @
