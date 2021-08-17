@@ -233,7 +233,7 @@ z &= w^Tx+b \\\
 @
 \begin{align\*}
 \frac {\partial J}{\partial w} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
-&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x
+&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x \\\ 
 &= -(y-y_ {head})x
 \end{align\*}
 @
@@ -243,7 +243,7 @@ z &= w^Tx+b \\\
 @
 \begin{align\*}
 \frac {\partial J}{\partial b} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
-&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1
+&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1 \\\ 
 &= -(y-y_ {head})
 \end{align\*}
 @
