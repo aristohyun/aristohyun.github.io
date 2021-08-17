@@ -114,9 +114,11 @@ def sigmoid(z):
     return y_head
 ~~~
 
+
 ### Loss(error) Function [^loss]
 
-> 이렇게 y 추정값을 구했을 때, 이게 얼만큼 맞는지 Then e.g y_head became 0.9 that is bigger than 0.5 so our prediction is image is sign one image. Okey every thing looks like fine. But, is our prediction is correct and how do we check whether it is correct or not? The answer is with loss(error) function:
+> Is our prediction is correct and how do we check whether it is correct or not?        
+> The answer is with loss(error) function:     
 
 $y$ : 실제값         
 $y_ {head}$ : 추정값(확률)         
@@ -130,12 +132,17 @@ y햇을 1이라고 예측하면 에러 값은 0. 에러가 없음
 y가 1일때 y햇을 0이라고 예측하면 에러값은 - log 0 = Infinite, 무한대로 커짐. 즉 에러가 굉장히 큼
 에러를 작게해야함 => 이 모든 에러의 값을 합친 코스트 값을 최소로 해야함
 
+
 ### Cost Function
 
-After that, the cost function is summation of loss function. Each image creates loss function. Cost function is summation of loss functions that is created by each input image.
+After that, the cost function is summation of loss function. Each image creates loss function. 
+Cost function is summation of loss functions that is created by each input image.
 Lets implement forward propagation.
 
-----------
+@
+Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} LOSS_ i
+@
+
 
 ## Optimization Algorithm with Gradient Descent
 
@@ -148,7 +155,7 @@ $\alpha $ : Learning rate[^learning_rate]
 $J$ : cost function      
 
 @
-w := w - \alpha \frac {\partial J(w,b)}{\partial (w,b)} \\\ 
+w := w - \alpha \frac {\partial J(w,b)}{\partial (w,b)} 
 @
 
 ### Backward Propagation
@@ -182,8 +189,8 @@ def forward_backward_propagation(w,b,x_train,y_train):
 
 Cost function
 @
-z = w^T x + b
-y_ {head} = 1/(1+np.exp(-z))
+z = w^T x + b \\\ 
+y_ {head} = 1/(1+np.exp(-z)) \\\ 
 cost = \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y log y_ {head} )
 @
 
@@ -238,8 +245,7 @@ def update(w, b, x_train, y_train, learning_rate,number_of_iterarion):
 
 ~~~ python
 
- # prediction
-def predict(w,b,x_test):
+def predict(w, b, x_test):
 
     # x_test is a input for forward propagation
     z = sigmoid(np.dot(w.T,x_test)+b)
