@@ -241,7 +241,7 @@ z = w^Tx+b \\\
 \frac {\partial L}{\partial w} &= \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
 &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x \\\ 
 &= (y_ {head} - y)x \\\ 
-\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (y_ {head} - y)x
+\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (y_ {head} - y)x_ i
 \end{align\*}
 
 @
