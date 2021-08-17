@@ -47,8 +47,6 @@ x_ {i+1} = x_i - \alpha \frac{d f}{d x}(x_ i)
 
 ![image](https://cdn.hackernoon.com/hn-images/1*ZmzSnV6xluGa42wtU7KYVA.gif)
 
-![image](https://im7.ezgif.com/tmp/ezgif-7-298b09a8e6b9.gif)
-
 
 #### 적절한 크기의 step size 필요
 
