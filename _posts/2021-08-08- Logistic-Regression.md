@@ -197,17 +197,17 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 @
 
 @
-\frac {\partial J}{\partial w} = \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
-\frac {\partial J}{\partial b} = \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b}
+\frac {\partial J}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b}
 @
 
 <br/>
 
 @
 \begin{align\*}
-\frac {\partial J}{\partial y_ {head}} &= \frac {\partial }{\partial y_ {head}} (-(1 - y) log (1 - y_ {head}) - y log y_ {head}) \\\ 
+\frac {\partial L}{\partial y_ {head}} &= \frac {\partial }{\partial y_ {head}} (-(1 - y) log (1 - y_ {head}) - y log y_ {head}) \\\ 
 &= -(y\frac {\partial }{\partial y_ {head}} log y_ {head} + (1-y)\frac {\partial }{\partial y_ {head}}log(1-y_ {head}) ) \\\ 
-\frac {\partial J}{\partial y_ {head}} &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}})
+\frac {\partial L}{\partial y_ {head}} &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}})
 \end{align\*}
 @
 
@@ -238,19 +238,22 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial J}{\partial w} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial L}{\partial w} &= \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
 &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x \\\ 
-&= (y_ {head} - y)x
+&= (y_ {head} - y)x \\\ 
+\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (y_ {head} - y)x
 \end{align\*}
+
 @
 
 <br/>
 
 @
 \begin{align\*}
-\frac {\partial J}{\partial b} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
+\frac {\partial L}{\partial b} &= \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
 &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1 \\\ 
-&= y_ {head} - y
+&= y_ {head} - y \\\ 
+\frac {\partial J}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( y_ {head} - y )
 \end{align\*}
 @
 
