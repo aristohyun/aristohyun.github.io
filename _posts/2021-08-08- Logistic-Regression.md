@@ -189,9 +189,11 @@ def forward_backward_propagation(w,b,x_train,y_train):
 
 Cost function
 @
-z = w^T x + b \\\ 
-y_ {head} = 1/(1+np.exp(-z)) \\\ 
-cost = \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y log y_ {head} )
+\begin{align\*}
+z &= w^T x + b \\\ 
+y_ {head} &= 1/(1+np.exp(-z)) \\\ 
+cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y log y_ {head} )
+\end{align\*}
 @
 
 @
