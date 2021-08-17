@@ -227,7 +227,7 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 <br/>
 
 @
-z &= w^Tx+b \\\ 
+z = w^Tx+b \\\ 
 \begin{align\*}
 \frac {\partial z}{\partial w} &= x \\\ 
 \frac {\partial z}{\partial b} &= 1 
