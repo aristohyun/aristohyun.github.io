@@ -200,7 +200,7 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 \frac {\partial J}{\partial w} = \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
 \frac {\partial J}{\partial b} = \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b}
 @
-
+<br/>
 @
 \begin{align\*}
 \frac {\partial J}{\partial y_ {head}} &= \frac {\partial }{\partial y_ {head}} (-(1 - y) log (1 - y_ {head}) - y log y_ {head}) \\\ 
@@ -208,7 +208,7 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 \frac {\partial J}{\partial y_ {head}} &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}})
 \end{align\*}
 @
-
+<br/>
 @
 \begin{align\*}
 \frac {\partial y_ {head}}{\partial z} &= \frac {\partial }{\partial z} (\frac{1}{1+e^{-z}}) = \frac {\partial }{\partial z}(1+e^{-z})^{-1} \\\ 
@@ -219,7 +219,7 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 \frac {\partial y_ {head}}{\partial z} &= y_ {head}(1-y_ {head})
 \end{align\*}
 @
-
+<br/>
 @
 \begin{align\*}
 z &= w^Tx+b \\\ 
@@ -228,17 +228,23 @@ z &= w^Tx+b \\\
 \end{align\*}
 @
 
+<br/>
+
 @
 \begin{align\*}
 \frac {\partial J}{\partial w} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
 &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x
+&= -(y-y_ {head})x
 \end{align\*}
 @
+
+<br/>
 
 @
 \begin{align\*}
 \frac {\partial J}{\partial b} &= \frac {\partial J}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
 &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1
+&= -(y-y_ {head})
 \end{align\*}
 @
 
