@@ -33,7 +33,7 @@ redirect_from:
 > 함수값이 작아지는 중(기울기가 음수)이라면 양의 방향으로 x를 옮기면 된다
 
 @
-x_ {i+1} = x_ i - 이동거리 \times  기울기의 부호
+x_ {i+1} = x_ i - 이동거리 \times  기울기
 @
 
 이때 이동거리는 Gradient의 크기를 이용하게 된다              
@@ -42,7 +42,7 @@ x_ {i+1} = x_ i - 이동거리 \times  기울기의 부호
 
 
 @
-x_ {i+1} = x_i - \alpha \frac{d f}{d x}(x_ i)
+x_ {i+1} = x_i - \alpha \frac{d f}{d x_}(x_ i)
 @
 
 ![image](https://cdn.hackernoon.com/hn-images/1*ZmzSnV6xluGa42wtU7KYVA.gif)
