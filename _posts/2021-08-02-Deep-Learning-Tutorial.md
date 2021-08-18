@@ -44,7 +44,7 @@ Neural networks reflect the behavior of the human brain, allowing computer progr
 
 ## ANN
 
-![image](https://user-images.githubusercontent.com/32366711/129887726-68fd2203-82ae-4f67-867a-054ad1500d43.png)
+![image](https://user-images.githubusercontent.com/32366711/129887726-68fd2203-82ae-4f67-867a-054ad1500d43.png){: width="400"}
 
 딥러닝은 인공신경망(Artificial Neural Network)를 기초로 하고 있는데요. 인공신경망이라고 불리는 ANN은 사람의 신경망 원리와 구조를 모방하여 만든 기계학습 알고리즘 입니다.
 
@@ -60,7 +60,7 @@ Neural networks reflect the behavior of the human brain, allowing computer progr
 
 ## DNN
 
-![image](https://user-images.githubusercontent.com/32366711/129886525-70eae74e-4dd3-4de8-a0e1-d167bf891a0a.png)
+![image](https://user-images.githubusercontent.com/32366711/129886525-70eae74e-4dd3-4de8-a0e1-d167bf891a0a.png){: width="400"}
 
 ANN기법의 여러문제가 해결되면서 모델 내 은닉층을 많이 늘려서 학습의 결과를 향상시키는 방법이 등장하였고 이를 DNN(Deep Neural Network)라고 합니다.           
 DNN은 은닉층을 2개이상 지닌 학습 방법을 뜻합니다. 컴퓨터가 스스로 분류레이블을 만들어 내고 공간을 왜곡하고 데이터를 구분짓는 과정을 반복하여 최적의 구번선을 도출해냅니다.          
@@ -72,7 +72,7 @@ DNN은 은닉층을 2개이상 지닌 학습 방법을 뜻합니다. 컴퓨터�
 
 ## CNN
 
-![image](https://user-images.githubusercontent.com/32366711/129886730-fdf948a1-ce08-40fe-82a7-687c08bad581.png)
+![image](https://user-images.githubusercontent.com/32366711/129886730-fdf948a1-ce08-40fe-82a7-687c08bad581.png){: width="400"}
 
 합성곱신경망 : Convolution Neural Network)
 
@@ -88,7 +88,7 @@ Convolution 과정을 거친 레이어의 사이즈를 줄여주는 과정. 단�
 
 ## RNN
 
-![image](https://user-images.githubusercontent.com/32366711/129886889-90a189d3-86fa-4893-b4c7-5d6216cb94dc.png)
+![image](https://user-images.githubusercontent.com/32366711/129886889-90a189d3-86fa-4893-b4c7-5d6216cb94dc.png){: width="400"}
 
 RNN(순환신경망 : Recurrent Neural Network)
 
