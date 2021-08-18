@@ -341,6 +341,9 @@ logistic_regression(x_train, y_train, x_test, y_test,learning_rate = 0.01, num_i
 
 ~~~
 
+![image](https://user-images.githubusercontent.com/32366711/129881158-9fcea686-a1fe-439c-ab52-62bc7bc826fd.png)
+
+
 ## Logistic Regression with Sklearn
 
 [sklearn : Logistic Regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
