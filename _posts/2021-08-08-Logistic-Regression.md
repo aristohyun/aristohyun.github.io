@@ -61,7 +61,7 @@ print("X test flatten",X_test_flatten.shape)
 @
 \begin{align\*}
 Z &= W^T X + b \\\ 
-&= z = b + px_1w_1 + px_2w_2 + ... + px_{4096} * w_{4096} \\\ 
+&= b + px_1w_1 + px_2w_2 + ... + px_{4096} * w_{4096} \\\ 
 \hat y &= sigmoid(z) 
 \end{align\*}
 @
@@ -85,10 +85,10 @@ def initialize_weights_and_bias(dimension):
 > 뉴럴 네트워크 모델의 입력층부터 출력층까지 순서대로 변수들을 계산하고 저장하는 것을 의미함
 
 Forward propagation steps:     
-find z = w.T * x + b         
-$\hat y$  = sigmoid(z)         
-loss(error) = loss(y, $\hat y$)          
-cost = sum(loss)        
+- find z = w.T * x + b         
+- $\hat y$  = sigmoid(z)         
+- loss(error) = loss(y, $\hat y$)          
+- cost = sum(loss)        
 
 ~~~ python
 def forward_propagation(w,b,x_train,y_train):
@@ -135,9 +135,7 @@ y가 1일때 y햇을 0이라고 예측하면 에러값은 - log 0 = Infinite, �
 
 ### Cost Function
 
-After that, the cost function is summation of loss function. Each image creates loss function. 
-Cost function is summation of loss functions that is created by each input image.
-Lets implement forward propagation.
+> 코스트 함수는 각각의 데이터에서 생기는 총 손실의 합이 된다       
 
 @
 Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} Loss_ i
@@ -182,9 +180,8 @@ def forward_backward_propagation(w,b,x_train,y_train):
     return cost, gradients
 ~~~
 
-#### Differential
+#### Differential : Chain Rule
 
-Cost function
 @
 \begin{align\*}
 z &= w^T x + b \\\ 
@@ -260,9 +257,9 @@ z = w^Tx+b \\\
 ### Updating parameters
 
 Up to this point we learn      
-- Initializing parameters (implemented)       
-- Finding cost with forward propagation and cost function (implemented)                
-- Updating(learning) parameters (weight and bias). Now lets implement it.           
+- 파라미터 초기화       
+- 코스트 함수 계산                
+- weight, bias 업데이트           
 
 ~~~ python
 # Updating(learning) parameters
