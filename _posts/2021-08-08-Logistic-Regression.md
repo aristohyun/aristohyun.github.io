@@ -163,8 +163,8 @@ w := w - \alpha \frac {\partial J(w,b)}{\partial (w,b)}
 > From cost to weights and bias to update them
 
 @
-\frac {\partial J}{\partial w} = \frac{1}{m} x(\hat y - y)^T \\\ 
-\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)
+\frac {\partial Cost}{\partial w} = \frac{1}{m} x(\hat y - y)^T \\\ 
+\frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)
 @
 
 ~~~ python
@@ -192,22 +192,23 @@ Cost function
 \begin{align\*}
 z &= w^T x + b \\\ 
 \hat y &= 1/(1+exp(-z)) \\\ 
-cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \hat y )
+Loss &= -(1 - y) log (1 - \hat y) - y log \hat y \\\ 
+Cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \hat y )
 \end{align\*}
 @
 
 @
-\frac {\partial J}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
-\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
+\frac {\partial Cost}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
 @
 
 <br/>
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial \hat y} &= \frac {\partial }{\partial \hat y} (-(1 - y) log (1 - \hat y) - y log \hat y) \\\ 
+\frac {\partial Loss}{\partial \hat y} &= \frac {\partial }{\partial \hat y} (-(1 - y) log (1 - \hat y) - y log \hat y) \\\ 
 &= -(y\frac {\partial }{\partial \hat y} log \hat y + (1-y)\frac {\partial }{\partial \hat y}log(1-\hat y) ) \\\ 
-\frac {\partial L}{\partial \hat y} &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y})
+\frac {\partial Loss}{\partial \hat y} &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y})
 \end{align\*}
 @
 
@@ -238,10 +239,11 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial w} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial Loss}{\partial w} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
 &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; x \\\ 
 &= (\hat y - y)x \\\ 
-\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)x_ i
+\frac {\partial Cost}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)x_ i \\\ 
+&= \frac{1}{m} x(\hat y - y)^T
 \end{align\*}
 @
 
@@ -249,10 +251,10 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial b} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b} \\\ 
+\frac {\partial Loss}{\partial b} &= \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b} \\\ 
 &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; 1 \\\ 
 &= \hat y - y \\\ 
-\frac {\partial J}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( \hat y - y )
+\frac {\partial Cost}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( \hat y - y )
 \end{align\*}
 @
 
