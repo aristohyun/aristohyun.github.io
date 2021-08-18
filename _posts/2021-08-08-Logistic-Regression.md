@@ -62,7 +62,7 @@ print("X test flatten",X_test_flatten.shape)
 \begin{align\*}
 Z &= W^T X + b \\\ 
 &= z = b + px_1w_1 + px_2w_2 + ... + px_{4096} * w_{4096} \\\ 
-y_{head} &= sigmoid(z) 
+\hat y &= sigmoid(z) 
 \end{align\*}
 @
 
@@ -86,15 +86,15 @@ def initialize_weights_and_bias(dimension):
 
 Forward propagation steps:     
 find z = w.T * x + b         
-y_head = sigmoid(z)         
-loss(error) = loss(y,y_head)          
+$\hat y$  = sigmoid(z)         
+loss(error) = loss(y, $\hat y$)          
 cost = sum(loss)        
 
 ~~~ python
 def forward_propagation(w,b,x_train,y_train):
     z = np.dot(w.T,x_train) + b
-    y_head = sigmoid(z) # probabilistic 0-1
-    loss = -y_train*np.log(y_head)-(1-y_train)*np.log(1-y_head)
+    y_hat = sigmoid(z) # probabilistic 0-1
+    loss = -y_train*np.log(y_hat)-(1-y_train)*np.log(1-y_hat)
     cost = (np.sum(loss))/x_train.shape[1]      # x_train.shape[1]  is for scaling, 전체 차원의 갯수로 나눠줌. 로스의 평균
     return cost 
 ~~~
@@ -110,8 +110,8 @@ S(x) = \frac {1}{1+e^{-x}} = \frac {e^x}{e^x + 1}
 
 ~~~ python
 def sigmoid(z):
-    y_head = 1/(1+np.exp(-z))
-    return y_head
+    y_hat = 1/(1+np.exp(-z))
+    return y_hat
 ~~~
 
 
@@ -121,10 +121,10 @@ def sigmoid(z):
 > The answer is with loss(error) function:     
 
 $y$ : 실제값         
-$y_ {head}$ : 추정값(확률)         
+$\hat y$ : 추정값(확률)         
 
 @
- -(1 - y) log (1 - y_ {head}) - y log y_ {head}
+ -(1 - y) log (1 - \hat y) - y log \hat y
 @
 
 y가 1일 때,
@@ -163,24 +163,24 @@ w := w - \alpha \frac {\partial J(w,b)}{\partial (w,b)}
 > From cost to weights and bias to update them
 
 @
-\frac {\partial J}{\partial w} = \frac{1}{m} x(y_{head} - y)^T \\\ 
-\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} (y_{head} - y)
+\frac {\partial J}{\partial w} = \frac{1}{m} x(\hat y - y)^T \\\ 
+\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)
 @
 
 ~~~ python
-# In backward propagation we will use y_head that found in forward progation
+# In backward propagation we will use y_hat that found in forward progation
 # Therefore instead of writing backward propagation method, lets combine forward propagation and backward propagation
 
 def forward_backward_propagation(w,b,x_train,y_train):
     # forward propagation
     z = np.dot(w.T,x_train) + b
-    y_head = sigmoid(z)
-    loss = -y_train*np.log(y_head)-(1-y_train)*np.log(1-y_head)
+    y_hat = sigmoid(z)
+    loss = -y_train*np.log(y_hat)-(1-y_train)*np.log(1-y_hat)
     cost = (np.sum(loss))/x_train.shape[1]      # x_train.shape[1]  is for scaling
     
     # backward propagation
-    derivative_weight = (np.dot(x_train,((y_head-y_train).T)))/x_train.shape[1]  # x_train.shape[1]  is for scaling
-    derivative_bias = np.sum(y_head-y_train)/x_train.shape[1]                    # x_train.shape[1]  is for scaling
+    derivative_weight = (np.dot(x_train,((y_hat-y_train).T)))/x_train.shape[1]  # x_train.shape[1]  is for scaling
+    derivative_bias = np.sum(y_hat-y_train)/x_train.shape[1]                    # x_train.shape[1]  is for scaling
     gradients = {"derivative_weight": derivative_weight,"derivative_bias": derivative_bias}
     return cost, gradients
 ~~~
@@ -191,23 +191,23 @@ Cost function
 @
 \begin{align\*}
 z &= w^T x + b \\\ 
-y_ {head} &= 1/(1+exp(-z)) \\\ 
-cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y log y_ {head} )
+\hat y &= 1/(1+exp(-z)) \\\ 
+cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \hat y )
 \end{align\*}
 @
 
 @
-\frac {\partial J}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
-\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b}
+\frac {\partial J}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial J}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial C}{\partial w} = \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
 @
 
 <br/>
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial y_ {head}} &= \frac {\partial }{\partial y_ {head}} (-(1 - y) log (1 - y_ {head}) - y log y_ {head}) \\\ 
-&= -(y\frac {\partial }{\partial y_ {head}} log y_ {head} + (1-y)\frac {\partial }{\partial y_ {head}}log(1-y_ {head}) ) \\\ 
-\frac {\partial L}{\partial y_ {head}} &= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}})
+\frac {\partial L}{\partial \hat y} &= \frac {\partial }{\partial \hat y} (-(1 - y) log (1 - \hat y) - y log \hat y) \\\ 
+&= -(y\frac {\partial }{\partial \hat y} log \hat y + (1-y)\frac {\partial }{\partial \hat y}log(1-\hat y) ) \\\ 
+\frac {\partial L}{\partial \hat y} &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y})
 \end{align\*}
 @
 
@@ -215,12 +215,12 @@ cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - y_ {head}) - y lo
 
 @
 \begin{align\*}
-\frac {\partial y_ {head}}{\partial z} &= \frac {\partial }{\partial z} (\frac{1}{1+e^{-z}}) = \frac {\partial }{\partial z}(1+e^{-z})^{-1} \\\ 
+\frac {\partial \hat y}{\partial z} &= \frac {\partial }{\partial z} (\frac{1}{1+e^{-z}}) = \frac {\partial }{\partial z}(1+e^{-z})^{-1} \\\ 
 &= -(1+e^{-z})^{-2}\frac {\partial }{\partial z}(e^{-z}) = -(1+e^{-z})^{-2}(-e^{-2}) \\\ 
 &= \frac{e^{-z}}{(1+e^{-z})^2} \\\ 
 &= \frac{1}{1+e^{-z}} \frac{e^{-z}}{1+e^{-z}} \\\ 
 &= \frac{1}{1+e^{-z}} (1- \frac{1}{1+e^{-z}}) \\\ 
-\frac {\partial y_ {head}}{\partial z} &= y_ {head}(1-y_ {head})
+\frac {\partial \hat y}{\partial z} &= \hat y(1-\hat y)
 \end{align\*}
 @
 
@@ -238,10 +238,10 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial w} &= \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial w} \\\ 
-&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; x \\\ 
-&= (y_ {head} - y)x \\\ 
-\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (y_ {head} - y)x_ i
+\frac {\partial L}{\partial w} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
+&= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; x \\\ 
+&= (\hat y - y)x \\\ 
+\frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)x_ i
 \end{align\*}
 
 @
@@ -250,10 +250,10 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial L}{\partial b} &= \frac {\partial L}{\partial y_ {head}} \frac {\partial y_ {head}}{\partial z} \frac {\partial z}{\partial b} \\\ 
-&= -(y \frac{1}{y_ {head}} - (1-y)\frac{1}{1-y_ {head}}) \; y_ {head}(1-y_ {head}) \; 1 \\\ 
-&= y_ {head} - y \\\ 
-\frac {\partial J}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( y_ {head} - y )
+\frac {\partial L}{\partial b} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b} \\\ 
+&= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; 1 \\\ 
+&= \hat y - y \\\ 
+\frac {\partial J}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( \hat y - y )
 \end{align\*}
 @
 
