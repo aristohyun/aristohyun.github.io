@@ -140,7 +140,7 @@ Cost function is summation of loss functions that is created by each input image
 Lets implement forward propagation.
 
 @
-Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} LOSS_ i
+Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} Loss_ i
 @
 
 
@@ -149,13 +149,10 @@ Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} LOSS_ i
 ### Gradient Desecnt
 
 > we need to decrease cost because as we know if cost is high it means that we make wrong prediction       
-> In order to decrease cost, we need to update weights and bias.        
-
-$\alpha $ : Learning rate[^learning_rate]      
-$J$ : cost function      
+> In order to decrease cost, we need to update weights and bias.           
 
 @
-w := w - \alpha \frac {\partial J(w,b)}{\partial (w,b)} 
+w := w - \alpha \frac {\partial Cost(w,b)}{\partial (w,b)} 
 @
 
 ### Backward Propagation
@@ -201,7 +198,7 @@ Cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \
 
 @
 \frac {\partial Cost}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
-\frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
+\frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
 @
 
 <br/>
@@ -219,9 +216,9 @@ Cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \
 @
 \begin{align\*}
 \frac {\partial \hat y}{\partial z} &= \frac {\partial }{\partial z} (\frac{1}{1+e^{-z}}) = \frac {\partial }{\partial z}(1+e^{-z})^{-1} \\\ 
-&= -(1+e^{-z})^{-2}\frac {\partial }{\partial z}(e^{-z}) = -(1+e^{-z})^{-2}(-e^{-2}) \\\ 
+&= -(1+e^{-z})^{-2}\frac {\partial }{\partial z}(e^{-z}) = -(1+e^{-z})^{-2}(-e^{-z}) \\\ 
 &= \frac{e^{-z}}{(1+e^{-z})^2} \\\ 
-&= \frac{1}{1+e^{-z}} \frac{e^{-z}}{1+e^{-z}} \\\ 
+&= \frac{1}{(1+e^{-z})} \frac{e^{-z}}{(1+e^{-z})} \\\ 
 &= \frac{1}{1+e^{-z}} (1- \frac{1}{1+e^{-z}}) \\\ 
 \frac {\partial \hat y}{\partial z} &= \hat y(1-\hat y)
 \end{align\*}
@@ -241,10 +238,10 @@ z = w^Tx+b \\\
 
 @
 \begin{align\*}
-\frac {\partial Loss}{\partial w} &= \frac {\partial L}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
+\frac {\partial Loss}{\partial w} &= \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
 &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; x \\\ 
 &= (\hat y - y)x \\\ 
-\frac {\partial Cost}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)x_ i \\\ 
+\frac {\partial Cost}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y_ i - y_ i)x_ i \\\ 
 &= \frac{1}{m} x(\hat y - y)^T
 \end{align\*}
 @
@@ -256,7 +253,7 @@ z = w^Tx+b \\\
 \frac {\partial Loss}{\partial b} &= \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b} \\\ 
 &= -(y \frac{1}{\hat y} - (1-y)\frac{1}{1-\hat y}) \; \hat y(1-\hat y) \; 1 \\\ 
 &= \hat y - y \\\ 
-\frac {\partial Cost}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( \hat y - y )
+\frac {\partial Cost}{\partial b} &= \frac{1}{m} \sum \limits_ {i=1}^{m} ( \hat y_ i - y_ i )
 \end{align\*}
 @
 
