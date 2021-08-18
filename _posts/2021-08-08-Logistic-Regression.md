@@ -254,12 +254,7 @@ z = w^Tx+b \\\
 \end{align\*}
 @
 
-### Updating parameters
-
-Up to this point we learn      
-- 파라미터 초기화       
-- 코스트 함수 계산                
-- weight, bias 업데이트           
+### Updating parameters     
 
 ~~~ python
 # Updating(learning) parameters
