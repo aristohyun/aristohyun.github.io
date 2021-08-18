@@ -353,8 +353,6 @@ print("train accuracy: {} ".format(logreg.fit(x_train.T, y_train.T).score(x_trai
 ~~~
 
 
-## [순전파, 역전파](https://ko.d2l.ai/chapter_deep-learning-basics/backprop.html)
-
 
 [^sigmoid]: 시그모이드 함수, S자형 곡선 또는 시그모이드 곡선을 갖는 수학 함수. ![image](https://user-images.githubusercontent.com/32366711/128862627-1c0408c2-19b3-4cd7-9aa7-61c8901a0e4e.png){: width="300"}
  
