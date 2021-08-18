@@ -243,7 +243,6 @@ z = w^Tx+b \\\
 &= (\hat y - y)x \\\ 
 \frac {\partial J}{\partial w} &= \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)x_ i
 \end{align\*}
-
 @
 
 <br/>
