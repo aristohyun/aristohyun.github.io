@@ -197,6 +197,8 @@ Cost &= \frac{1}{m} \sum \limits_ {i=1}^{m} (-(1 - y) log (1 - \hat y) - y log \
 \end{align\*}
 @
 
+<br/>
+
 @
 \frac {\partial Cost}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial w} \\\ 
 \frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial w} = \frac{1}{m} \sum \limits_ {i=1}^{m} \frac {\partial Loss}{\partial \hat y} \frac {\partial \hat y}{\partial z} \frac {\partial z}{\partial b}
