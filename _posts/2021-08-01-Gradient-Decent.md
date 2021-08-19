@@ -42,7 +42,7 @@ x_ {i+1} = x_ i - 이동거리 \times  기울기
 
 
 @
-x_ {i+1} = x_i - \alpha \frac{d f}{d x_}(x_ i)
+x_ {i+1} = x_ i - \alpha \frac{d f}{d x_ i}
 @
 
 ![image](https://cdn.hackernoon.com/hn-images/1*ZmzSnV6xluGa42wtU7KYVA.gif)
