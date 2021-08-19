@@ -163,10 +163,12 @@ w := w - \alpha \frac {\partial Cost(w,b)}{\partial (w,b)}
 @
 
 - Forward propagation        
-input training data로부터 output을 계산하고, 각 ouput neuron에서의 error를 계산한다. (input -> hidden -> output 으로 정보가 흘러가므로 ‘forward’ propagation이라 한다.)
+input training data로부터 output을 계산하고, 각 ouput neuron에서의 error를 계산한다.            
+(input -> hidden -> output 으로 정보가 흘러가므로 ‘forward’ propagation이라 한다.)             
 
 - Back propagation      
-output neuron에서 계산된 error를 각 edge들의 weight를 사용해 바로 이전 layer의 neuron들이 얼마나 error에 영향을 미쳤는지 계산한다. (output -> hidden 으로 정보가 흘러가므로 ‘back’ propagation이라 한다.)
+output neuron에서 계산된 error를 각 edge들의 weight를 사용해 바로 이전 layer의 neuron들이 얼마나 error에 영향을 미쳤는지 계산한다.         
+(output -> hidden 으로 정보가 흘러가므로 ‘back’ propagation이라 한다.)          
 
 ~~~ python
 # In backward propagation we will use y_hat that found in forward progation
