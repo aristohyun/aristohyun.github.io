@@ -51,9 +51,9 @@ Neural networks reflect the behavior of the human brain, allowing computer progr
 인간의 뇌에서 뉴런들이 어떤 신호, 자극 등을 받고, 그 자극이 어떠한 임계값(threshold)을 넘어서면 결과 신호를 전달하는 과정에서 착안한 것입니다.         
 여기서 들어온 자극, 신호는 인공신경망에서 Input Data이며 임계값은 가중치(weight), 자극에 의해 어떤 행동을 하는 것은 Output데이터에 비교하면 됩니다.         
 
-신경망은 다수의 입력 데이터를 받는 입력층(Input),        
-데이터의 출력을 담당하는 출력층(Output),       
-입력층과 출력층 사이에 존재하는 레이어들(은닉층)이 존재합니다.         
+신경망은 다수의 입력 데이터를 받는 입력층(Input)[^Dendrite],        
+데이터의 출력을 담당하는 출력층(Output)[^Axon],       
+입력층과 출력층 사이에 존재하는 레이어들(은닉층)[^Soma]이 존재합니다.         
 여기서 히든 레이어들의 갯수와 노드의 개수를 구성하는 것을 모델을 구성한다고 하는데, 이 모델을 잘 구성하여 원하는 Output값을 잘 예측하는 것이 우리가 해야할 일인 것입니다. 
 은닉층에서는 활성화함수를 사용하여 최적의 Weight와 Bias를 찾아내는 역할을 합니다. 
 
@@ -114,3 +114,6 @@ X는 이미지 배열(0 및 기호 1개)이고 Y는 레이블 배열(0 및 1)로
 
 [^deep]: 층 기반 표현 학습 layered representations learning 또는 계층적 표현 학습 hierarchical representations learning. 연속된 층으로 표현을 학습한다는 개념을 나타냅니다. 데이터로부터 모델을 만드는 데 얼마나 많은 층을 사용했는지가 그 모델의 깊이가 됩니다
 [^ps]: 실제로 205개의 샘플은 딥러닝에 매우 매우 적은 양입니다. 하지만 이것은 튜토리얼이기 때문에 크게 문제가 되지 않습니다.
+[^Dendrite]: 수상돌기, 
+[^Soma]: Neuron Cell Body, 
+[^Azon]: 축삭돌기
