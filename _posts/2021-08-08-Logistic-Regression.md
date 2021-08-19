@@ -298,6 +298,10 @@ def update(w, b, x_train, y_train, learning_rate,number_of_iterarion):
 #parameters, gradients, cost_list = update(w, b, x_train, y_train, learning_rate = 0.009,number_of_iterarion = 200)
 ~~~
 
+![image](https://user-images.githubusercontent.com/32366711/130064566-349b8a43-4cfe-41e4-b56a-a0edeb27557f.png)
+
+![image](https://user-images.githubusercontent.com/32366711/129881158-9fcea686-a1fe-439c-ab52-62bc7bc826fd.png)
+
 ### Predict
 
 ~~~ python
@@ -344,7 +348,7 @@ logistic_regression(x_train, y_train, x_test, y_test,learning_rate = 0.01, num_i
 
 ~~~
 
-![image](https://user-images.githubusercontent.com/32366711/129881158-9fcea686-a1fe-439c-ab52-62bc7bc826fd.png)
+![image](https://user-images.githubusercontent.com/32366711/130064533-23d58e4a-0e65-49d3-83c3-2105a6163e9c.png)
 
 
 ## Logistic Regression with Sklearn
@@ -357,6 +361,8 @@ logreg = linear_model.LogisticRegression(random_state = 42,max_iter= 150)
 print("test accuracy: {} ".format(logreg.fit(x_train.T, y_train.T).score(x_test.T, y_test.T)))
 print("train accuracy: {} ".format(logreg.fit(x_train.T, y_train.T).score(x_train.T, y_train.T)))
 ~~~
+
+![image](https://user-images.githubusercontent.com/32366711/130064593-8ac786b6-b328-429c-9a10-196769cd541b.png)
 
 
 
