@@ -153,7 +153,7 @@ Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} Loss_ i
 w := w - \alpha \frac {\partial Cost(w,b)}{\partial (w,b)} 
 @
 
-### Backward Propagation
+### Backward Propagation[^backward]
 
 > From cost to weights and bias to update them
 
@@ -161,6 +161,12 @@ w := w - \alpha \frac {\partial Cost(w,b)}{\partial (w,b)}
 \frac {\partial Cost}{\partial w} = \frac{1}{m} x(\hat y - y)^T \\\ 
 \frac {\partial Cost}{\partial b} = \frac{1}{m} \sum \limits_ {i=1}^{m} (\hat y - y)
 @
+
+- Forward propagation        
+input training data로부터 output을 계산하고, 각 ouput neuron에서의 error를 계산한다. (input -> hidden -> output 으로 정보가 흘러가므로 ‘forward’ propagation이라 한다.)
+
+- Back propagation      
+output neuron에서 계산된 error를 각 edge들의 weight를 사용해 바로 이전 layer의 neuron들이 얼마나 error에 영향을 미쳤는지 계산한다. (output -> hidden 으로 정보가 흘러가므로 ‘back’ propagation이라 한다.)
 
 ~~~ python
 # In backward propagation we will use y_hat that found in forward progation
@@ -180,7 +186,7 @@ def forward_backward_propagation(w,b,x_train,y_train):
     return cost, gradients
 ~~~
 
-#### Differential : Chain Rule
+#### Derivative : Chain Rule
 
 @
 \begin{align\*}
@@ -355,3 +361,5 @@ print("train accuracy: {} ".format(logreg.fit(x_train.T, y_train.T).score(x_trai
 [^sigmoid]: 시그모이드 함수, S자형 곡선 또는 시그모이드 곡선을 갖는 수학 함수. ![image](https://user-images.githubusercontent.com/32366711/128862627-1c0408c2-19b3-4cd7-9aa7-61c8901a0e4e.png){: width="300"}
  
 [^loss]: ![image](https://user-images.githubusercontent.com/32366711/128870484-9346e71e-3f94-4501-9d52-2cc5b9a82c56.png)
+
+[^backward]: [http://sanghyukchun.github.io/74/](http://sanghyukchun.github.io/74/)
