@@ -146,8 +146,8 @@ Cost = \frac{1}{m} \sum \limits_ {i=1}^{m} Loss_ i
 
 ### Gradient Desecnt
 
-> we need to decrease cost because as we know if cost is high it means that we make wrong prediction       
-> In order to decrease cost, we need to update weights and bias.           
+> 코스트가 높다는 것은 잘못된 예측을 의미하기에 코스트를 최대한 줄여야 한다            
+> 그러기위해 weights 와 bias를 업데이트하며 적절한 값을 찾는다           
 
 @
 w := w - \alpha \frac {\partial Cost(w,b)}{\partial (w,b)} 
