@@ -14,7 +14,7 @@ layout: blog
             <div class="bd article-content">
                 <div class="entry-content">
                     <div class="meta">
-<!--                         <p class="date-publish">
+                         <p class="date-publish">
                             {{ site.data.i18n[site.lang].published }}:
                              <time itemprop="datePublished" class="date-pub {% if page.last_updated == null %}updated{% endif %}"
                                 datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B' }} {{ page.date | date: '%d' }}, {{ page.date | date: '%Y' }} </time>
@@ -28,7 +28,7 @@ layout: blog
                                 ({{ site.data.i18n[site.lang].last_updated}}:
                                 <time class="date-updated updated" datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated }}</time>)
                             {% endif %}
-                        </p> -->
+                        </p> 
                         <ul class="list-category list-linear">
                             <li class="list-head">{{ site.data.i18n[site.lang].categories }}: </li>
                             {% assign categories_list = page.categories | sort %} {% include helpers/categories_list %}
