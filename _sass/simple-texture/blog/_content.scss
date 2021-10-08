@@ -142,7 +142,10 @@
         line-height: 20px;
     }
 
-    table,
+    table{
+        margin: 12px auto;
+        
+    }
     blockquote,
     figure,
     .highlighter-rouge {
