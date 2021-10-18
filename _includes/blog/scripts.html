@@ -71,7 +71,7 @@ var Footnotes = {
         div.css({
             position:'absolute',
             width:'20em',
-            background:'#F7F6EE',
+            background:'#000000',
             padding:'0em 1em 0em 1em',
             border:'solid 1px',
             'font-size':'90%',
@@ -80,7 +80,7 @@ var Footnotes = {
             '-moz-border-radius':'.5em',
             '-webkit-border-radius':'.5em',
             'border-radius':'.5em',
-            opacity:0.95
+            opacity:1
         });
         $(document.body).append(div);
         
@@ -109,7 +109,7 @@ var Footnotes = {
         clearTimeout(Footnotes.footnotetimeout);
         $('#footnotediv').stop();
         $('#footnotediv').css({
-                opacity: 0.9
+                opacity: 1
         });
     }
 }
