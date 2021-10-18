@@ -1,3 +1,62 @@
-a.footnode{
+a.footnote{
+  position:relative;
+  display:block;
+  width:30px;
+  height:50px;
+  border: 5px solid #4b4b4b;
+  background:#fff no-repeat center;
+  background-size:cover;
+  
+   border-radius:55px;
+   transition:all .4s ease-in .3s;
+  -webkit-border-radius:55px;
+  -webkit-transition:all .4s ease-in .3s;
+}
 
+a.footnote .tooltip-box{
+  position:absolute;
+  left:50%;
+  bottom:100px;
+  width:30em;
+  margin-left:-10.4em;
+  padding:.8em;
+  background:#111;
+  opacity:0;
+  
+  border-radius:15px 0px;
+  transition:all .4s ease-in .3s;
+  -webkit-border-radius:15px 0px;
+  -webkit-transition:all .4s ease-in .3s;
+}
+
+a.footnote:hover,
+a.footnote:focus{
+  opacity:1;
+  border-color:#fff;
+}
+
+a.footnote:hover .tooltip-box,
+a.footnote:focus .tooltip-box{
+  bottom:90px;
+}
+
+a.footnote a.tooltip-box:before{
+  content:'';
+  position:absolute;
+  bottom:-10px;
+  left:150px;
+  border-top: 10px solid #111;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+a.footnote .tooltip-title{
+  color:#fff;
+}
+
+a.footnote .tooltip-desc{
+  margin-bottom:0;
+  font-size: 11px;
+  text-align: justify;
+  color:#bcbcbc;
 }
