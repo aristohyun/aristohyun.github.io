@@ -78,11 +78,8 @@ _  _  _  _
 [Table Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
 
 # 수식    
-[laTeX](https://www.codecogs.com/latex/eqneditor.php){: target="_ blank"}   
+[laTeX 툴](https://www.codecogs.com/latex/eqneditor.php){: target="_ blank"}   
 
-[laTeX](https://docs.latexbase.com/symbols/){: target="_ blank"}  
-
-![image](https://user-images.githubusercontent.com/32366711/125173354-d6b19280-e1f9-11eb-8e36-9a3fff2564fe.png)
-
+[laTeX 공식문서](https://docs.latexbase.com/symbols/){: target="_ blank"}  
 
 [^1]: This is a footnote.
