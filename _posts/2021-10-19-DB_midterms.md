@@ -272,13 +272,13 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
     - $\sigma_ {\text{dept\_name="Physics"} \wedge \text{salary > 90000}} (\text{instructor}) $
     - 가 성능이 더 좋음
 
-14) $(\sigma_ \text{dept\_name="Physics"} (\text{instructor})) \join_ \text{instructor.ID = teaches.ID} \text{teaches} $
+14) $(\sigma_ \text{dept\_name="Physics"} (\text{instructor})) \Join_ \text{instructor.ID = teaches.ID} \text{teaches} $
     - instructor 테이블 중에서 dept name="Physics" 인 튜플들과 teaches 테이블들의 join 결합(ID를 기준으로) 
 
    15) Self join example   
   - instructor 테이블중에서 name="John"과 같은 dept name을 가진 테이블 검색
   - $\text{JOHN} \leftarrow \sigma_ \text{name="John"} (\text{instructor}) \\\ 
-     \text{JOHN} \join_ \text{dept\_name="Physics"} \text{instructor}
+     \text{JOHN} \Join_ \text{dept\_name="Physics"} \text{instructor}
     $
 
 # Chapter 8: Write the Relational Algebra expression for the following queries. 
