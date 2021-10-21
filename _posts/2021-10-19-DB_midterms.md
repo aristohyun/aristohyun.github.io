@@ -372,7 +372,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 22) Find the average salary of instructors in each department. // Group by 
 
 @
-{_ \text{department} \mathfrak{F} _ \txet{AVERAGE}} (\text{salary}) \text(instructors)
+{_ \text{department} \mathfrak{F} _ \txet{AVG(salary)}} \text(instructors)
 @
 
 23) Find the names and average salaries of all departments whose average salary is greater than 42000. // group-by and having
