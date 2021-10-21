@@ -202,7 +202,7 @@ redirect_from:
    2) Multi-valued attribute
     - 두줄 타원
    3) 1-to-many relationship 
-![image](https://user-images.githubusercontent.com/32366711/138294032-a3399c71-60eb-4e7b-9b50-4135ad1e53d7.png)
+![image](https://user-images.githubusercontent.com/32366711/138294327-de3bfee4-546a-416f-8073-86010ad47cae.png)
 
    4) Many-to-many relationship 
 ![image](https://user-images.githubusercontent.com/32366711/138294056-46b8da4b-8581-46d3-a746-7555b3a7b5d5.png)
@@ -218,43 +218,68 @@ redirect_from:
 
 # Chapter 8: Write the result for the following relational algebra expressions in the given relations. 
 
-   1) σ salary > 20000 (instructor)
+$\sigma$ : 해당 조건을 만족하는 튜플의 모든 속성을 출력함
 
-   2) σ dept_name=“Physics” (instructor)
+$\Pi$ : 추출, 해당 속성들만 출력함
 
-   3) ∏ID, name, salary (instructor) or 
+$\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 다르면 앞에껄 사용
 
-   4) ∏name(σ dept_name =“Physics”  (instructor))
+   1) $\sigma_ \text{ \text{salary} > 20000} (\text{instructor})$
+  - instructor테이블에서 salary가 20000 이상인 튜플 검색
 
-   5) r  ∪ s, r ∩ s, r - s 
+   2) $\sigma_ \text{ dept\_name="Physics"} (\text{instructor})$
+  - instructor테이블에서 dept_ name이 Physics 인 튜플 검색
 
-   6) ∏course_id (σ semester=“Fall”  Λ year=2017 (section))  ∪ 
-       ∏course_id (σ semester=“Spring”  Λ year=2018 (section)) 
+   3) $\Pi_ \text{ ID, name, salary } (\text{instructor}) $
+  - instructor 테이블에서 ID, name, salary만 추출해서 출력
 
-   7) ∏course_id (σ semester=“Fall”  Λ year=2017 (section)) ∩
-       ∏course_id (σ semester=“Spring”  Λ year=2018 (section)) 
+   4) $\Pi_ \text{name}(\sigma_ \text{ dept\_name ="Physics"}  (\text{instructor})) $
+- instructor 테이블에서 dept_ name이 Physics인 튜플들의 name만 출력
 
-   8) ∏course_id (σ semester=“Fall”  Λ year=2017 (section))  − 
-       ∏course_id (σ semester=“Spring”  Λ year=2018 (section))  
+   5) $r \cup s, r \cap s, r - s $
+
+   6)$ \Pi_ \text{course\_id} (\sigma \text{semester="Fall"} \wedge \text{year=2017} (\text{section}))  \cup \\\
+       \Pi_ \text{course\_id} (\sigma \text{semester="Spring"}  \wedge \text{year=2018} (\text{section})) $
+  -  section 테이블에서 semester이 Fall 이고 year이 2017인 튜플과 section 테이블의 Course id와 semester이 Spring 이고 year이 2018인 튜플의 Course id의 합집합
+
+   7)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section})) \cap \\\
+       \Pi_ \text{course\_id} (\sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}} (\text{section})) $
+  -  교집합
+
+   8)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section}))  − \\\
+       \Pi_ \text{course\_id} (\sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}} (\text{section}))$  
+  - 차집합
 
    9) instructor  X  teaches
+   - 곱집합, 모든 짝지을수있는 경우의 수 출력
 
-   10) σ instructor.id =  teaches.id  (instructor  x teaches )) 
+   10) $\sigma_ \text{instructor.id =  teaches.id}  (\text{instructor  X teaches } )) $
+  -  instructor테이플과 teaches테이블의 튜플들의 곱집합 중에서 instructor의 id와 teaches의 id가 같은 부분 검색
 
-   11) instructor ⋈_ Instructor.id = teaches.id teaches 
+   11) $instructor \join_ \text{Instructor.id = teaches.id} teaches  $
+  - instructor과 teaches 테이블의 id가 같은 부분을 join, 위의 결과와 같음
 
-   12) Physics ← σ dept_name=“Physics” (instructor)
+   12) $ \text{Physics} \leftarrow \sigma_ \text{dept\_name="Physics" (instructor)} \\\
+         \text{Music} \leftarrow \sigma_ \text{dept\_name="Music" (instructor)} \\\
+         \text{Physics} \cup \text{Music}  $
+         
+      - instructor 테이블에서 dept name이 Physics인 행렬을 검색해서 Physics라는 테이블로 저장
+      - instructor 테이블에서 dept name이 Music 행렬을 검색해서 Music라는 테이블로 저장
+      - Physics 테이블과 Music테이블의 합집합
 
-         Music ← σ dept_name=“Music” (instructor)
+   13) $\sigma_ \text{dept\_name="Physics"} (\sigma_ \text{salary > 90000} (\text{instructor})) $ 
+    - instructor 테이블의 salary > 90000 인 튜플 중에서 dept name="Physics"인 튜플
+    - $\sigma_ {\text{dept\_name="Physics" \wedge \text{salary > 90000}} (\text{instructor})) $
+    - 가 성능이 더 좋음
 
-        Physics  ∪ Music 
-
-   13) σ dept_name=“Physics” (σ salary > 90.000 (instructor))  
-
-   14) (σdept_name=“Physics” (instructor)) ⋈_ instructor.ID = teaches.ID teaches 
+   14) $(\sigma_ \text{dept\_name="Physics"} (\text{instructor})) \join_ \text{instructor.ID = teaches.ID} \text{teaches} $
+    - instructor 테이블 중에서 dept name="Physics" 인 튜플들과 teaches 테이블들의 join 결합(ID를 기준으로) 
 
    15) Self join example   
-
+  - instructor 테이블중에서 name="John"과 같은 dept name을 가진 테이블 검색
+  - $JOHN \leftarrow \sigma_ \text{name="John} (instructor) \\\
+     JOHN \join_ \text{dept\_name="Physics" instructor
+    $
 
 # Chapter 8: Write the Relational Algebra expression for the following queries. 
 
