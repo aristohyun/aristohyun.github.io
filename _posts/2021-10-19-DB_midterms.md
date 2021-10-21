@@ -238,15 +238,15 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 
 5) $r \cup s, r \cap s, r - s $
 
-6)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"} \wedge \text{year=2017}} (\text{section})) \\\ 
+6)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"} \wedge \text{year=2017}} (\text{section})) 
    \cup \Pi_ \text{course\_id} (\sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}} (\text{section})) $
   -  section 테이블에서 semester이 Fall 이고 year이 2017인 튜플과 section 테이블의 Course id와 semester이 Spring 이고 year이 2018인 튜플의 Course id의 합집합
 
-7)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section})) \\\ 
+7)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section})) 
    \cap \Pi_ \text{course\_id} (\sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}} (\text{section})) $
   -  교집합
 
-8)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section})) \\\ 
+8)$ \Pi_ \text{course\_id} (\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}} (\text{section})) 
     - \Pi_ \text{course\_id} (\sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}} (\text{section}))$  
   - 차집합
 
@@ -259,9 +259,9 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 11) $\text{instructor} \Join_ \text{Instructor.id = teaches.id} teaches  $
   - instructor과 teaches 테이블의 id가 같은 부분을 join, 위의 결과와 같음
 
-12) $ \text{Physics} \leftarrow \sigma_ \text{dept\_name="Physics" (instructor)} \\\ 
+12) @ \text{Physics} \leftarrow \sigma_ \text{dept\_name="Physics" (instructor)} \\\ 
          \text{Music} \leftarrow \sigma_ \text{dept\_name="Music" (instructor)} \\\ 
-         \text{Physics} \cup \text{Music}  $
+         \text{Physics} \cup \text{Music}  @
          
   - instructor 테이블에서 dept name이 Physics인 행렬을 검색해서 Physics라는 테이블로 저장
   - instructor 테이블에서 dept name이 Music 행렬을 검색해서 Music라는 테이블로 저장
@@ -310,25 +310,25 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 5) Find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
 @
 
 6) Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
 @
 
 7) Find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
 @
 
 8) Find all instructors in the "Physics" and "Music" department.  
 
 @
-\sigame_ {\text{dept\_name="Physics"} \vee \text{dept\_name="Music"}} (instructors)
+\sigma_ {\text{dept\_name="Physics"} \; \vee \; \text{dept\_name="Music"}} (\text{instructors})
 @
 
 9) Get only those tuples of  "instructor  X  teaches" that pertain to instructors and the courses that they taught. 
