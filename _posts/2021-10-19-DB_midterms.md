@@ -137,6 +137,7 @@ redirect_from:
 - 데이터베이스 관리자의 도구로, 모든 개체들에 대한 정의나 명세에 대한 정보가 수록되어 있는 시스템 테이블
 
 #### RELATIONS
+
 | Relation_name | No_of_columns |
 |:-------------:|:-------------:|
 | STUDENT | 4 |
@@ -310,19 +311,19 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 5) Find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{section}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{section})
 @
 
 6) Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{section}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{section})
 @
 
 7) Find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester. 
 
 @
-\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{section}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{section})
 @
 
 8) Find all instructors in the "Physics" and "Music" department.  
@@ -352,11 +353,27 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 
 19) Find courses that ran in Fall 2017 or in Spring 2018. // Union
 
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+@
+
 20) Find courses that ran in Fall 2017 and in Spring 2018. // Intersect
+
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+@
 
 21) Find courses that ran in Fall 2017 but not in Spring 2018. // Minus  
 
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
+@
+
 22) Find the average salary of instructors in each department. // Group by 
+
+@
+{_ \text{department} \mathfrak{F} _ \txet{AVERAGE}} (\text{salary}) \text(instructors)
+@
 
 23) Find the names and average salaries of all departments whose average salary is greater than 42000. // group-by and having
 
@@ -364,6 +381,17 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 # Chapter 8: Write the tuple relational calculus expressions for the queries above: 1) - 23). 
 
 # 주어진 릴레이션에 대해 정규화 문제
+
+
+- 주어진 릴레이션은 제1정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
+  - 값이 오토믹 한가
+  - ex red; white; black; 처럼 한 속성에 값이 여러개인 경우 X
+
+- 주어진 릴레이션은 제2정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
+  - 완전 함수적 종속인가?
+  - {SSN, Pnumber} -> {Pname, Plocation}에서 Pname과 Plocation은 SSN이 없이 Pnumber만으로 식별할 수 있다
+  - {SSN, Pnumber} -> {Ename}에서 Ename은 Pnumber없이 SSN만으로도 식별이 가능하다
+  - 따라서 각각 나눠서 따로 테이블을 만들어야 완전 함수적 종속이 가능해 진다
 
 - 주어진 릴레이션은 제3정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
   - 제 3 정규형은, 이행적 종속이 없어야함. 즉 삼단논법이 안되도록 쪼개야함
