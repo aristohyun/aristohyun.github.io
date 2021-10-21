@@ -283,23 +283,43 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 
 # Chapter 8: Write the Relational Algebra expression for the following queries. 
 
-   1) Select those tuples of the instructor  relation where the instructor is in the “Physics” department.
-
+   1) Select those tuples of the instructor relation where the instructor is in the "Physics" department.
+@
+\sigma_ \text{dept\_name = "Physics"} (instructor)
+@
    2) Find the instructors in Physics with a salary greater $90,000 
-
+@
+\sigma_ {\text{dept\_name = "Physics"} \wedge \text{salary>90000}} (instructor)
+@
    3) Find the names of all instructors in the Physics department. 
-
+@
+\Pi_ \text{name} (\sigma_ \text{dept\_name = "Physics"} (instructor))
+@
    4) Find the department names of all instructors, and remove duplicates. 
-
+@
+\Pi_ \text{name}(\text{instructors})
+@
    5) Find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both. 
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+@
 
    6) Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters. 
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+@
 
    7) Find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester. 
+@
+\sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}(\text{courses}) - \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}(\text{courses})
+@
+   8) Find all instructors in the "Physics" and "Music" department.  
+@
+\sigame_ {\text{dept\_name="Physics"} \vee \text{dept\_name="Music"}} (instructors)
+@
+   9) Get only those tuples of  "instructor  X  teaches" that pertain to instructors and the courses that they taught. 
 
-   8) Find all instructors in the “Physics” and “Music” department.  
 
-   9) Get only those tuples of  “instructor  X  teaches “ that pertain to instructors and the courses that they taught. 
 
    11) Find the information about courses taught by instructors in the Physics department with salary greater than 90,000. 
 
@@ -332,8 +352,12 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 
 # 주어진 릴레이션에 대해 정규화 문제
 
-   - 주어진 릴레이션은 제3정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
+- 주어진 릴레이션은 제3정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
+  - 제 3 정규형은, 이행적 종속이 없어야함. 즉 삼단논법이 안되도록 쪼개야함
+  - 그런 정보는 조인해서 하면 됨
 
-   - 주어진 릴레이션은 BCNF 정규형인가?  그렇지 않으면 이에 맞게 정규화하시오.
+- 주어진 릴레이션은 BCNF 정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
+  - A,B -> C, C-> B 면 안됨
 
-   - 주어진 릴레이션은 제4정규형인가?  그렇지 않으면 이에 맞게 정규화하시오. 
+- 주어진 릴레이션은 제4정규형인가? 그렇지 않으면 이에 맞게 정규화하시오. 
+  - 다치 종속성을 제거해야함
