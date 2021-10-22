@@ -192,29 +192,36 @@ redirect_from:
 
 # Chapter 3-5 & Chapter 9: 주어진 요구사항에서 데이터베이스 설계: 간단한 Company 데이터베이스, 수강신청시스템, ... 
 
- - E-R Diagram 또는 Class Diagram 그리기
+- E-R Diagram 또는 Class Diagram 그리기
 
- - CRC 카드(스키마 테이블) 작성하기 
+- CRC 카드(스키마 테이블) 작성하기 
 
- - E-R to CRC (relational database schema table) mapping algorithms 
+- E-R to CRC (relational database schema table) mapping algorithms 
 
-   1)  Weak entity type 
+  1)  Weak entity type 
     - 두줄 박스
-   2) Multi-valued attribute
+    
+  2) Multi-valued attribute
     - 두줄 타원
-   3) 1-to-many relationship 
+    
+  3) 1-to-many relationship 
+
 ![image](https://user-images.githubusercontent.com/32366711/138294327-de3bfee4-546a-416f-8073-86010ad47cae.png)
 
-   4) Many-to-many relationship 
+  4) Many-to-many relationship 
+
 ![image](https://user-images.githubusercontent.com/32366711/138294056-46b8da4b-8581-46d3-a746-7555b3a7b5d5.png)
 
-   5) 1-to-1 relationship  
+  5) 1-to-1 relationship  
+
 ![image](https://user-images.githubusercontent.com/32366711/138294171-c89ff5d5-bd98-4720-9022-6d03b1571a3a.png)
 
-   6) n-ary relationship
+  6) n-ary relationship
+
 ![image](https://user-images.githubusercontent.com/32366711/138294157-0d349772-2ca6-476a-bf64-1adab385e984.png)
 
- ![image](https://user-images.githubusercontent.com/32366711/138294143-1d3545df-77c5-4978-a100-10fdf2498d2e.png)
+ 
+![image](https://user-images.githubusercontent.com/32366711/138294143-1d3545df-77c5-4978-a100-10fdf2498d2e.png)
 
 
 # Chapter 8: Write the result for the following relational algebra expressions in the given relations. 
