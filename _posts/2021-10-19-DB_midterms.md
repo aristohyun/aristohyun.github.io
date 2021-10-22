@@ -369,6 +369,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 @
 \sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{courses}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{courses})
 @
+{t \| \exists t( courses(t) \wedge t.year=2017 \wedge t.semester="Fall" ) \wedge \exists t( courses(t) \wedge t.year=2018 \wedge t.semester="Spring" ) }
 
 20) Find courses that ran in Fall 2017 and in Spring 2018. // Intersect
 
