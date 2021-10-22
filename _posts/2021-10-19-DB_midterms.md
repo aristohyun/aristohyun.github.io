@@ -372,15 +372,19 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 22) Find the average salary of instructors in each department. // Group by 
 
 @
-{_ \text{department} \mathfrak{F} _ \txet{AVG(salary)}} \text(instructors)
+{_ \text{department} \mathfrak{F} _ \text{AVG(salary)}} \text{(instructors)}
 @
 
 23) Find the names and average salaries of all departments whose average salary is greater than 42000. // group-by and having
 
+@
+AVGS \leftarrow {_ \text{names} \mathfrak{F} _ \text{AVG(salary) as avg}} \text{(instructors)} \\\ 
+\sigma_ \text{avg > 42000} (\text{AVGS})
+@
 
 # Chapter 8: Write the tuple relational calculus expressions for the queries above: 1) - 23). 
 
-# 주어진 릴레이션에 대해 정규화 문제
+## 주어진 릴레이션에 대해 정규화 문제
 
 
 - 주어진 릴레이션은 제1정규형인가? 그렇지 않으면 이에 맞게 정규화하시오.
