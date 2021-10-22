@@ -290,7 +290,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \sigma_ \text{dept\_name = "Physics"} (\text{instructor})
 @
 
-{t | instructor(t) and dept\_name = "Physics"}
+{t \| instructor(t) and dept\_name = "Physics"}
 
 
 2) Find the instructors in Physics with a salary greater $90,000 
@@ -299,7 +299,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \sigma_ {\text{dept\_name = "Physics"} \wedge \text{salary>90000}} (\text{instructor})
 @
 
-{t | instructor(t) and dept\_name = "Physics" and salary>90000}
+{t \| instructor(t) and dept\_name = "Physics" and salary>90000}
 
 3) Find the names of all instructors in the Physics department. 
 
@@ -307,7 +307,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \Pi_ \text{name} (\sigma_ \text{dept\_name = "Physics"} (\text{instructor}))
 @
 
-{t.name | instructor(t) and dept\_name = "Physics"}
+{t.name \| instructor(t) and dept\_name = "Physics"}
 
 4) Find the department names of all instructors, and remove duplicates. 
 
@@ -315,7 +315,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \Pi_ \text{name}(\text{instructors})
 @
 
-{t.dept\_name | instructor(t) and dept\_name = "Physics"}
+{t.dept\_name \| instructor(t) and dept\_name = "Physics"}
 
 5) Find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both. 
 
@@ -323,7 +323,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{section}) \cup \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{section})
 @
 
-{t | section(t) and (year=2017 and semester="Fall") or (semester="Spring" and year=2018)}
+{t \| section(t) and (year=2017 and semester="Fall") or (semester="Spring" and year=2018)}
 
 6) Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters. 
 
@@ -331,7 +331,7 @@ $\cup , \cap , -$ : 속성타입이 같은 경우만 사용가능. 속성명이 
 \sigma_ {\text{semester="Fall"}  \wedge \text{year=2017}}(\text{section}) \cap \sigma_ {\text{semester="Spring"}  \wedge \text{year=2018}}(\text{section})
 @
 
-{t | section(t) and (year=2017 and semester="Fall")  (semester="Spring" and year=2018)}
+{t \| section(t) and (year=2017 and semester="Fall")  (semester="Spring" and year=2018)}
 
 7) Find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester. 
 
