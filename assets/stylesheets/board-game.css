@@ -1,0 +1,15 @@
+.title {
+  position: absolute;
+  width: 500px;
+  height: 125px;
+
+  border-radius: 10px;
+}
+
+#tfm {
+  background: url(../image/board-game/TFM_title.png);
+}
+
+#pandemic {
+  background: url(../image/board-game/TFM_title.png);
+}
