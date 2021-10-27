@@ -9,6 +9,7 @@ body{
 }
 
 .title {
+  float: left;
   position: absolute;
   width: 500px;
   height: 125px;
