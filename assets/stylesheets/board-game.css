@@ -2,6 +2,12 @@ body{
   background: url(../images/theme/noisy_texture_section0-200x200.png) repeat 0 0 #F0F0F0;
 }
 
+.links{
+  display: flex;
+  justifycontent: center;
+  align-items;
+}
+
 .title {
   position: absolute;
   width: 500px;
