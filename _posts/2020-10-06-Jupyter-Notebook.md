@@ -3,7 +3,7 @@ layout: post
 title: "Python, Jupyter Notebook 사용법"
 description: "Jupyter Notebook"
 categories: [Python]
-tags: [Jupyter]
+tags: [Python, Jupyter]
 redirect_from:
   - /2020/10/06/
 ---
