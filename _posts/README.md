@@ -1,5 +1,4 @@
-<p>
-
+~~~
 ---
 layout: post
 title: "Title"
@@ -13,5 +12,4 @@ redirect_from:
 
 * Kramdown table of contents
 {:toc .toc} 
-
-</p>
+~~~
