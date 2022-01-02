@@ -29,8 +29,17 @@ code with tildes
 # Highlighted
 ## Simple Highlight
 
+> c++ python java javascript html
+
+<div>
 ~~~ c++
-//~~~ c++
+~~~
+  
+{% highlight c++ linenos=table %}
+{% endhighlight %}
+</div>
+
+~~~ c++
 #include <iosteam>
 using namespace std;
 
@@ -38,7 +47,6 @@ int main(){
   cout << "hello world"<<endl;
   return 0;
 }
-//~~~
 ~~~
 
 {% highlight c++ linenos=table %}
