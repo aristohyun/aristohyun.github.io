@@ -77,6 +77,18 @@ _  _  _  _
 
 [Table Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
 
+# 접어두기
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
 # 수식    
 [laTeX 툴](https://www.codecogs.com/latex/eqneditor.php){: target="_ blank"}   
 
