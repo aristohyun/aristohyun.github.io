@@ -142,8 +142,9 @@ textarea {
     table-layout:fixed;
 }
 
-.stage{
- display:table-cell;
+.stage{  
+    display:table-cell;
+    float:left;
     vertical-align:middle;
 }
 
