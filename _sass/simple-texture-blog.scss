@@ -137,7 +137,14 @@ textarea {
   }
 
 .multi-stage{
-    float:left;
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.stage{
+ display:table-cell;
+    vertical-align:middle;
 }
 
 @import 'simple-texture/blog/overlay';
