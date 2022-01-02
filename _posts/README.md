@@ -54,12 +54,14 @@ redirect_from:
 
 # 다단나누기
 
+~~~
 <div class="multi-stage">
   <div class="stage" markdown=1>
   </div>
   <div class="stage" markdown=1>
   </div>
 </div>
+~~~
 
 # 코드
 ## Simple Highlight
