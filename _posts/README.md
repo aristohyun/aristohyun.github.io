@@ -52,9 +52,16 @@ redirect_from:
      * Sub bullets
 </details>
 
-# 코드
+# 다단나누기
 
-# Highlighted
+<div class="multi-stage">
+  <div class="stage" markdown=1>
+  </div>
+  <div class="stage" markdown=1>
+  </div>
+</div>
+
+# 코드
 ## Simple Highlight
 
 > c++ python java javascript html
