@@ -1,4 +1,4 @@
-<div>
+<p>
 
 ---
 layout: post
@@ -14,4 +14,4 @@ redirect_from:
 * Kramdown table of contents
 {:toc .toc} 
 
-</div>
+</p>
