@@ -70,7 +70,7 @@ var Footnotes = {
         
         div.css({
             position:'absolute',
-            width:'20em',
+            max-width:'20em',
             background:'#f1f2f6',
             padding:'0em 1em 0em 1em',
             border:'1px dashed #a4b0be',
@@ -100,10 +100,10 @@ var Footnotes = {
         Footnotes.footnotetimeout = setTimeout(function() {
             $('#footnotediv').animate({
                 opacity: 0
-            }, 60000, function() {
+            }, 600, function() {
                 $('#footnotediv').remove();
             });
-        },10000);
+        },100);
     },
     divover: function() {
         clearTimeout(Footnotes.footnotetimeout);
