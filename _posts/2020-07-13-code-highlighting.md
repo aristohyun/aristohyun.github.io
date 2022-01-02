@@ -55,8 +55,3 @@ int main(){
   return 0;
 }
 {% endhighlight %}
-
-
-## External Gist
-
-<script src="https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js"></script>
