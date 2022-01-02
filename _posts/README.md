@@ -83,6 +83,19 @@ _  _  _  _
 
 # 접어두기
 
+~~~
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+~~~
+
 <details>
   <summary>Click to expand!</summary>
   
