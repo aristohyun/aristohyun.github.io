@@ -31,13 +31,10 @@ code with tildes
 
 > c++ python java javascript html
 
-<div>
-~~~ c++
-~~~
+`~~~ c++ ~~~`
   
-{% highlight c++ linenos=table %}
-{% endhighlight %}
-</div>
+`{% highlight c++ linenos=table %} {% endhighlight %}`
+
 
 ~~~ c++
 #include <iosteam>
