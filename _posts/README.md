@@ -23,6 +23,76 @@ redirect_from:
 > [G.J Choi](http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/)    
 > [잇창명](https://eatchangmyeong.github.io/syntax/#fnref:fnrepeat:1)    
 
+# 테이블
+
+[Table Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
+
+# 접어두기
+
+~~~
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+~~~
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+# 코드
+
+# Highlighted
+## Simple Highlight
+
+> c++ python java javascript html
+
+`~~~ c++ ~~~`
+  
+`{% highlight c++ linenos=table %} {% endhighlight %}`
+
+
+~~~ c++
+
+#include <iosteam>
+using namespace std;
+
+int main(){
+  cout << "hello world"<<endl;
+  return 0;
+}
+
+~~~
+
+{% highlight c++ linenos=table %}
+#include <iosteam>
+using namespace std;
+
+int main(){
+  cout << "hello world"<<endl;
+  return 0;
+}
+{% endhighlight %}
+
+
+# 수식    
+  
+[laTeX 툴](https://www.codecogs.com/latex/eqneditor.php){: target="_ blank"}   
+
+[laTeX 공식문서](https://docs.latexbase.com/symbols/){: target="_ blank"}  
+
 
 # 일반적으로
 
@@ -76,39 +146,5 @@ _  _  _  _
 <img itemprop="image" data-src="https://kramdown.gettalong.org/overview.png" src="/assets/javascripts/unveil/loader.gif" alt="Kramdown Overview" />
 </a>
 
-
-# 테이블
-
-[Table Generator](https://www.tablesgenerator.com/markdown_tables){: target="_ blank"}
-
-# 접어두기
-
-~~~
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
-~~~
-
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
-# 수식    
-[laTeX 툴](https://www.codecogs.com/latex/eqneditor.php){: target="_ blank"}   
-
-[laTeX 공식문서](https://docs.latexbase.com/symbols/){: target="_ blank"}  
 
 [^1]: This is a footnote.
