@@ -1,10 +1,10 @@
 ~~~
 ---
 layout: post
-title: "Problem #0 Title"
+title: "Problem # "
 description: "Coding Test"
 categories: [CodingTest]
-tags: [Baekjoon, CodingTest, DP, DFS]
+tags: [Baekjoon, CodingTest]
 use_math: true
 redirect_from:
   - /2022/01/03
