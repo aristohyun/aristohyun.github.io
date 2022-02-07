@@ -37,6 +37,16 @@ redirect_from:
 
 `git reset --hard DI`
 
+## 커밋 합치기
+
+[완전범죄 영상](https://youtu.be/omXz1t-u_6k?t=2215)
+
+1. `git log` 를 통해 마지막 commit ID를 찾은 후
+2. `git rebase -i ID`를 통해 해당 위치로 이동
+3. 그러면 해당 커밋 이후의 커밋 내역이 출력이 될틴데, 맨 위에 커밋 빼고 모두 pick -> squash 로 변경
+4. 그러면 커밋 텍스트 변경 화면이 됨. 싹 지우고 원하는 내용 입력
+5. git push -f로 올리기
+
 
 # 테이블
 
