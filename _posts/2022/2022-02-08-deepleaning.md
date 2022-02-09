@@ -31,14 +31,14 @@ redirect_from:
   <div class="stage" markdown=1>
   - 가격 (예측하고자 하는 값)
   - 집주소
+  - 집 색깔
+  - 지붕 모양
   - 우편번호
   - 현관 넓이
   - 뒷문 넓이
   - 차고 넓이
-  - 차고에 넣을 수 있느 는 차 대수
+  - 차고에 넣을 수 있는 차 대수
   - 차고 건축 연도
-  - 벽난로 여부
-  - 수영장 여부
   </div>
   <div class="stage" markdown=1>
   - 방 갯수
@@ -49,7 +49,9 @@ redirect_from:
   - 전체 넓이
   - 집 건축 연도
   - 집 리모델링 여부 
-  - 집 리모델링 연도 ...
+  - 집 리모델링 연도 
+  - 벽난로 여부
+  - 수영장 여부 ...
   </div>
 </div>
   
@@ -167,4 +169,5 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
 model.add(Dense(128, activation='relu'))
 model.add(Dense(4, activation='softmax'))
+
 ~~~
