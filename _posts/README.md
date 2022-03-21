@@ -14,10 +14,11 @@ redirect_from:
 {:toc .toc} 
 ~~~
 
-> This is [kramdown](https://kramdown.gettalong.org/) formatting test page for [Simple Texture](https://github.com/yizeng/jekyll-theme-simple-texture) theme.
+> This is [kramdown](https://kramdown.gettalong.org/) formatting test page for [Simple Texture](https://github.com/yizeng/jekyll-theme-simple-texture) theme.  
 
 # 참고사이트
 
+> [code box](https://rdmd.readme.io/docs/code-blocks)
 > [취미로 시작하는 웹코딩](https://kilbong0508.tistory.com/303)        
 > [HEROPY Tech](https://heropy.blog/2017/09/30/markdown/)                    
 > [G.J Choi](http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/)    
