@@ -14,7 +14,7 @@ redirect_from:
 {:toc .toc} 
 ~~~
 
-> This is [kramdown](https://kramdown.gettalong.org/) formatting test page for [Simple Texture](https://github.com/yizeng/jekyll-theme-simple-texture) theme.
+> This is [kramdown](https://kramdown.gettalong.org/) formatting test page for [Simple Texture](https://github.com/yizeng/jekyll-theme-simple-texture) theme.  
 
 # 참고사이트
 
