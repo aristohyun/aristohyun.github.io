@@ -30,7 +30,7 @@ sass:
 url: # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: Note
-description: sihyeon
+description:
 keywords: 'jekyll,theme,gem-based,blog'
 author:
   name: Sihyeon
