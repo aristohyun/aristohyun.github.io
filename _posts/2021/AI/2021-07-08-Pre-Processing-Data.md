@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Pre-Processing Data"
 description: "데이터 전처리, Pre Processing Data"
 categories: [MachineLearning]
-tags: [Machine Learning, Pre Processing Data, Standardization, Normalization, Regularization]
+tags: [Machine Learning, Pre Processing Data, Standardization, Normalization, Regularization, kaggle]
 use_math: true
 redirect_from:
-  - /2021/07/08/
+  - /kaggle/13
+  - /blog/kaggle/13
 ---
 
 * Kramdown table of contents

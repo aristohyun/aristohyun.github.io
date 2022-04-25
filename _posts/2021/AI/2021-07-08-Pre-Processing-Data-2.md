@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Pre-Processing Data 2"
 description: "Pre-Processing Data, 데이터 전처리"
 categories: [MachineLearning]
-tags: [Machine Learning, Pre Processing Data]
+tags: [Machine Learning, Pre Processing Data, kaggle]
 use_math: true
 redirect_from:
-  - /2021/06/25/
+  - /kaggle/12
+  - /blog/kaggle/12
 ---
 
 * Kramdown table of contents

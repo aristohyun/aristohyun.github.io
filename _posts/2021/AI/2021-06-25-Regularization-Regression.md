@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Reqularization Regression"
 description: "Regression, 회귀분석"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, Regression, Lasso, Ridge]
+tags: [Machine Learning, Supervised Learning, Regression, Lasso, Ridge, kaggle]
 use_math: true
 redirect_from:
-  - /2021/06/25/
+  - /kaggle/06
+  - /blog/kaggle/06
 ---
 
 * Kramdown table of contents

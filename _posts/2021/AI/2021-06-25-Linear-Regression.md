@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Linear Regression"
 description: "Regression, 회귀분석"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, Regression, R^2]
+tags: [Machine Learning, Supervised Learning, Regression, kaggle]
 use_math: true
 redirect_from:
-  - /2021/06/25/
+  - /kaggle/05
+  - /blog/kaggle/05
 ---
 
 * Kramdown table of contents

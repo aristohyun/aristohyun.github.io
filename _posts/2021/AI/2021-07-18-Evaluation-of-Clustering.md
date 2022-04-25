@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Evaluating of Clustering"
 description: "Evaluating of Clustering, 클러스터링 평가"
 categories: [MachineLearning]
-tags: [Machine Learning, Unsupervised Learning, Kmeans Clustering, Evaluating of Clustering]
+tags: [Machine Learning, Unsupervised Learning, Kmeans Clustering, Evaluating of Clustering, kaggle]
 use_math: true
 redirect_from:
-  - /2021/07/18/
+  - /kaggle/17
+  - /blog/kaggle/17
 ---
 
 * Kramdown table of contents

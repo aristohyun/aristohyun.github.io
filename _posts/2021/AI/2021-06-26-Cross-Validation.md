@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Cross Validation"
 description: "교차검증, Cross Validation"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, CV]
+tags: [Machine Learning, Supervised Learning, CV, kaggle]
 use_math: true
 redirect_from:
-  - /2021/06/26/
+  - /kaggle/07
+  - /blog/kaggle/07
 ---
 
 * Kramdown table of contents

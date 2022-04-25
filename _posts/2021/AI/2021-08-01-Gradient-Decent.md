@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Gradient Decent"
 description: "Gradient Decent, 경사하강법"
 categories: [MachineLearning]
-tags: [Machine Learning, Gradient Decent]
+tags: [Machine Learning, Gradient Decent, kaggle]
 use_math: true
 redirect_from:
-  - /2021/08/01/
+  - /kaggle/21
+  - /blog/kaggle/21
 ---
 
 * Kramdown table of contents

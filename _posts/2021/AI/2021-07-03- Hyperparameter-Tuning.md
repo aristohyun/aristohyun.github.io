@@ -3,10 +3,11 @@ layout: post
 title: "기계학습, Hyperparameter Tuning"
 description: "Hyperparameter Tuning"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, Hyperparameter Tuning]
+tags: [Machine Learning, Supervised Learning, Hyperparameter Tuning, kaggle]
 use_math: true
 redirect_from:
-  - /2021/07/03/
+  - /kaggle/11
+  - /blog/kaggle/11
 ---
 
 * Kramdown table of contents

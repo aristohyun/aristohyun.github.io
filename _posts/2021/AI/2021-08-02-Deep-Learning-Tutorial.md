@@ -2,11 +2,12 @@
 layout: post
 title: "딥러닝, 튜토리얼"
 description: "딥러닝"
-categories: [DeepLearning]
-tags: [Deep Learning]
+categories: [MachineLearning]
+tags: [Deep Learning, kaggle]
 use_math: true
 redirect_from:
-  - /2021/08/02/
+  - /kaggle/22
+  - /blog/kaggle/22
 ---
 
 * Kramdown table of contents

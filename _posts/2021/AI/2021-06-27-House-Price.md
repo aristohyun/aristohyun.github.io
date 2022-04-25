@@ -3,10 +3,11 @@ layout: post
 title: "Kaggle, House Price Regression"
 description: "Regression, 회귀분석"
 categories: [MachineLearning]
-tags: [Machine Learning, Supervised Learning, Kaggle, Python, Regression, CV]
+tags: [Machine Learning, Supervised Learning, Kaggle, Python, Regression, CV, kaggle]
 use_math: true
 redirect_from:
-  - /2021/06/27/
+  - /kaggle/08
+  - /blog/kaggle/08
 ---
 
 * Kramdown table of contents

@@ -2,11 +2,12 @@
 layout: post
 title: "딥러닝, Logistic Regression"
 description: "Logistic Regression, 로지스틱 회귀"
-categories: [DeepLearning]
-tags: [Deep Learning, Logistic Regression]
+categories: [MachineLearning]
+tags: [Deep Learning, Logistic Regression, kaggle]
 use_math: true
 redirect_from:
-  - /2021/08/08/
+  - /kaggle/23
+  - /blog/kaggle/23
 ---
 
 * Kramdown table of contents

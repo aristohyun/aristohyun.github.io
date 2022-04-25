@@ -3,10 +3,11 @@ layout: post
 title: "Kaggle, Iris Classification"
 description: "KMEANS, KMeans Clustering"
 categories: [MachineLearning]
-tags: [Kaggle, Machine Learning, Unsupervised Learning, Kmeans Clustering, Iris Dataset]
+tags: [Kaggle, Machine Learning, Unsupervised Learning, Kmeans Clustering, Iris Dataset, kaggle]
 use_math: true
 redirect_from:
-  - /2021/07/12/
+  - /kaggle/16
+  - /blog/kaggle/16
 ---
 
 * Kramdown table of contents
